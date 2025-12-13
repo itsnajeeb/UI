@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.manrope-fontFamliy {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Custom CSS class for styling the scrollbar */
+.sliding-panel-scroll {
+  overflow-y: auto;
+  /* IMPORTANT: Enables vertical scrolling */
+}
+
+.sliding-panel-scroll::-webkit-scrollbar {
+  width: 5px;
+  /* Set the width of the scrollbar */
+}
+
+.sliding-panel-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light track background */
+  border-radius: 10px;
+}
+
+.sliding-panel-scroll::-webkit-scrollbar-thumb {
+  background: #959595;
+  /* Darker thumb for visibility */
+  border-radius: 10px;
+  /* Rounded edges for the thumb */
+
+}
+
+.sliding-panel-scroll::-webkit-scrollbar-thumb:hover {
+  background: #959595;
+  /* Even darker on hover */
+}
+
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #635BFF;
+  /* Darker thumb for visibility */
+  border-radius: 10px;
+  /* Rounded edges for the thumb */
+
+}
+
+/* BUTTON BORDER ANIMATION */
+/* BORDER DRAW CONTAINER */
+.border-anim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* common border styles */
+.border-anim span {
+  position: absolute;
+  background-color: #635BFF;
+  display: block;
+}
+
+/* TOP LINE */
+.border-anim .top {
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  transition: width 0.35s ease-out 0.55s;
+  /* Start after BG+text animation */
+}
+
+/* RIGHT LINE */
+.border-anim .right {
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0;
+  transition: height 0.35s ease-out 0.90s;
+}
+
+/* BOTTOM LINE */
+.border-anim .bottom {
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  width: 0;
+  transition: width 0.35s ease-out 1.25s;
+}
+
+/* LEFT LINE */
+.border-anim .left {
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  transition: height 0.35s ease-out 1.60s;
+}
+
+/* ACTIVATE BORDER LINES */
+.group:hover .border-anim .top {
+  width: 100%;
+}
+
+.group:hover .border-anim .right {
+  height: 100%;
+}
+
+.group:hover .border-anim .bottom {
+  width: 100%;
+}
+
+.group:hover .border-anim .left {
+  height: 100%;
+}
+
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

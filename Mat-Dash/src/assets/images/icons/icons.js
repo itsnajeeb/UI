@@ -1,0 +1,10 @@
+export { default as Icon1 } from './icon1.svg';
+export { default as Icon2 } from './Dasbhoard2.svg';
+export { default as Icon3 } from './Dashboard3.svg';
+export { default as Icon10 } from './Dasbhoard1.svg';
+export { default as Icon4 } from './Email.svg';
+export { default as Icon5 } from './FrontPages.svg';
+export { default as Icon6 } from './FrontPage1.svg';
+export { default as Icon7 } from './icon7.svg';
+export { default as Icon8 } from './Calander.svg';
+export { default as Icon9 } from './icon9.svg';
