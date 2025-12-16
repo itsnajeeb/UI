@@ -14,7 +14,7 @@ const Dashboard3 = () => {
 
     return (
 
-        <div className='bg-[#F4F7FB] space-y-6 px-4 py-5 rounded-3xl md:p-10 w-full overflow-hidden'>
+        <div className='bg-dashboard-bg space-y-6 px-4 py-5 rounded-3xl md:p-10 w-full overflow-hidden'>
 
             <div className="xl:flex xl:gap-7 w-full overflow-hidden space-y-7 xl:space-y-0">
                 {/* Left side */}
@@ -43,7 +43,7 @@ const Dashboard3 = () => {
 
             <div className="space-y-7 xl:flex xl:gap-7 w-full min-w-0">
 
-                <div className="w-full h-full  xl:min-w-[400px] xl:max-w-[500px] ">
+                <div className="w-full h-full  xl:min-w-100 xl:max-w-125 ">
                     <Performance />
                 </div>
 

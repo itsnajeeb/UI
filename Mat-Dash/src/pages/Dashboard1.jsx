@@ -13,9 +13,9 @@ const Dashboard1 = () => {
     // console.log("DASHBOARD-1 ");
     return (
 
-        <div className='bg-[#F4F7FB] space-y-6 px-4 py-5 rounded-3xl md:p-10 w-full overflow-hidden'>
+        <div className='bg-dashboard-bg space-y-6 px-4 py-5 rounded-3xl md:p-10 w-full overflow-hidden'>
             <div className="xl:flex xl:gap-7 w-full overflow-hidden space-y-7 xl:space-y-0">
-                <div className="flex  flex-col gap-7 shrink-0 xl:min-w-[400px] xl:max-w-[500px] ">
+                <div className="flex  flex-col gap-7 shrink-0 xl:min-w-100 xl:max-w-125 ">
                     <div className="">
                         <WelcomeCard />
                     </div>
@@ -36,7 +36,7 @@ const Dashboard1 = () => {
             </div>
 
             <div className="space-y-7 xl:flex xl:gap-7 w-full min-w-0 h-fit ">
-                <div className="w-full xl:min-w-[400px] xl:max-w-[500px]  shrink-0 ">
+                <div className="w-full xl:min-w-100 xl:max-w-125  shrink-0 ">
                     <Performance />
                 </div>
                 <div className="w-full lg:grid lg:grid-cols-2 lg:gap-7 space-y-7 lg:space-y-0 min-w-0">

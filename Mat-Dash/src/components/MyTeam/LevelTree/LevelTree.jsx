@@ -41,7 +41,7 @@ export default function LevelTree() {
           {/* Header */}
           <div className="flex justify-between mb-6">
             <div>
-              <button className="ml-2 px-4 py-2 rounded bg-[#635BFF] text-white font-semibold">Team Network : <span>1153</span></button>
+              <button className="ml-2 px-4 py-2 rounded bg-primary-bg text-white font-semibold">Team Network : <span>1153</span></button>
             </div>
 
             <div className="flex gap-5 justify-center items-center">
@@ -50,7 +50,7 @@ export default function LevelTree() {
           </div>
 
           {/* Parent Node */}
-          <div className="relative w-full h-[380px] overflow-hidden">
+          <div className="relative w-full h-95 overflow-hidden">
             <div className="absolute inset-0 overflow-x-auto overflow-y-hidden">
 
               <div

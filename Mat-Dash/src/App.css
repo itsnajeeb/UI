@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root {
+  /* TEXT PRIMARY COLOR  */
+  --text-secondary-color: #505056;
+  --text-primary-color: #635BFF;
+
+  /*ACTIVE BACKGROUND COLOR  */
+  --bg-primary-color: #635BFF;
+
+  /*HOVER BACKGROUND COLOR  */
+  --hover-bg-color: #f2f4f6;
+}
+
+
 .manrope-fontFamliy {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;

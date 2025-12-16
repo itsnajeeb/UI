@@ -4,9 +4,6 @@ import Breadcrumb from "../../CommonComponents/Breadcrumb";
 import CommonTable from '../../CommonComponents/CommomTable'
 import { TableCell, TableRow } from '@mui/material';
 
-
-
-/*MAIN TABLE */
 export default function Infinite() {
     const [rows, _] = React.useState(InfinitBonus)
 
@@ -25,9 +22,7 @@ export default function Infinite() {
             <Breadcrumb title={"INFINITY BONUS "} fontStyle='uppercase' />
          
             <div className='w-full overflow-hidden rounded-xl  ' >
-                <div className='bg-white shadow-xl rounded-xl overflow-hidden px-2 py-4'
-                >
-
+                <div className='bg-white shadow-xl rounded-xl overflow-hidden px-2 py-4' >
                     <CommonTable
                         columns={referralColumns}
                         rows={rows}

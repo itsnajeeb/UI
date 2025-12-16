@@ -19,10 +19,10 @@ export default function Withdrawal() {
         <>
             <Breadcrumb title={"Withdrawal "} fontStyle='' />
             <div className="bg-white  manrope-fontFamliy flex justify-center items-center py-10 overflow-visible rounded-xl flex-col-reverse gap-8 px-3 lg:flex-row">
-                <div className="relative h-[150px] overflow-visible w-fit   ">
+                <div className="relative h-37.5 overflow-visible w-fit   ">
                     <WalletPocketCard totalWithdrawal={"10,200"} />
                 </div>
-                <div className='bg-white boxShadow px-10  max-w-[400px] py-7 rounded-xl '>
+                <div className='bg-white boxShadow px-10  max-w-100 py-7 rounded-xl '>
                     <h1>
                         {isWalletConnected ? (
                             <span className='text-green-500 text-lg'>Wallet is Connected</span>
@@ -89,15 +89,15 @@ export default function Withdrawal() {
                                 placeholder=" "
                                 value={wallet}
                                 onChange={(e) => setWallet(e.target.value)}
-                                className=" peer w-full rounded-lg px-4 py-3 border-2 border-indigo-700
+                                className=" peer w-full rounded-lg px-4 py-3 border-2 border-primary-bg
                                             outline-none bg-transparent
                                             placeholder-transparent "
                             />
 
                             <label className={`  absolute left-4 bg-white px-1 transition-all duration-300
                                          ${wallet
-                                        ? "-top-3 text-sm text-indigo-600"   // When value exists
-                                        : "top-3 text-base text-gray-700 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-indigo-600"
+                                        ? "-top-3 text-sm text-primary-text"   // When value exists
+                                        : "top-3 text-base text-gray-700 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-primary-text"
                                     } `} >
                                 Wallet Address
                             </label>
@@ -105,14 +105,14 @@ export default function Withdrawal() {
 
 
                         <div className="relative w-full">
-                            <input type="text" className="peer w-full border-2 border-indigo-700 rounded-lg px-4 py-3 
+                            <input type="text" className="peer w-full border-2 border-primary-color rounded-lg px-4 py-3 
                                         outline-none bg-transparent
                                         placeholder-transparent
-                                        focus:border-indigo-500" />
+                                        focus:border-primary-color" />
 
                             <label className="absolute left-4 top-3 text-gray-700 transition-all duration-300 
                                              peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                                             peer-focus:-top-3 peer-focus:text-sm peer-focus:text-indigo-600
+                                             peer-focus:-top-3 peer-focus:text-sm peer-focus:text-primary-text
                                              bg-white px-1 ">
                                 Enter Amount in USDT
                             </label>
@@ -120,7 +120,7 @@ export default function Withdrawal() {
 
                         <div className="group relative w-fit mx-auto">
                             <button
-                                className="  relative overflow-hidden px-10 py-3 rounded-md font-semibold  text-white bg-[#635BFF] transition-all duration-300 cursor-pointer "
+                                className="  relative overflow-hidden px-10 py-3 rounded-md font-semibold  text-white bg-primary-bg transition-all duration-300 cursor-pointer "
                             >
                                 {/* BG SLIDE */}
                                 <span
@@ -136,7 +136,7 @@ export default function Withdrawal() {
 
                                 {/* NEW TEXT STARTS IMMEDIATELY (same as BG) */}
                                 <span
-                                    className="absolute inset-0 flex items-center justify-center text-[#635BFF] -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20 "
+                                    className="absolute inset-0 flex items-center justify-center text-primary-bg -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20 "
                                 >
                                     Withdrawal
                                 </span>
@@ -150,14 +150,6 @@ export default function Withdrawal() {
                                 </div>
                             </button>
                         </div>
-
-
-
-
-
-
-
-
 
                     </div>
 

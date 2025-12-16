@@ -5,7 +5,7 @@ import welcomeBg from '/Images/welcome-bg.png'
 
 const WelcomeCard = () => {
   return (
-    <div className='bg-[#635BFF] px-7 pt-7 rounded-xl flex flex-col 
+    <div className='bg-primary-text px-7 pt-7 rounded-xl flex flex-col 
     sm:grid sm:grid-cols-2
     '>
       <div className='md:flex md:flex-col md:justify-between md:pb-7'>
@@ -36,8 +36,8 @@ const WelcomeCard = () => {
       <div className='mt-7 flex justify-center'>
         <img
           src={welcomeBg}
-          className='max-w-[180px] w-full h-auto 
-          sm:max-w-[200px] xl:max-w-[150px]'
+          className='max-w-45 w-full h-auto 
+          sm:max-w-50 xl:max-w-37.5'
           alt=""
         />
       </div>

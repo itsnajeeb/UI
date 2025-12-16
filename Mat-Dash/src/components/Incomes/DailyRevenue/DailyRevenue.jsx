@@ -1,17 +1,10 @@
 import * as React from 'react';
 import { roiData } from '../../../data/Income';
-// import SearchTab from './SearchInput';
 import Breadcrumb from "../../CommonComponents/Breadcrumb";
-// import SearchBox from '../SearchBox';
-import { ParseCustomDateFormate } from '../../../utils/utils';
 import CommonTable from '../../CommonComponents/CommomTable'
 import { TableCell, TableRow } from '@mui/material';
 
-
-
-/*MAIN TABLE */
 export default function DailyRevenue() {
-
   // const [order, setOrder] = React.useState('asc');
   const [rows, _] = React.useState(roiData)
 

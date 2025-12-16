@@ -51,7 +51,7 @@ const RevenueChart = () => {
 
         {/* LEFT SIDE: title + icon */}
         <div className="flex items-center space-x-4 mb-4 lg:mb-0">
-          <div className="p-3 rounded-xl bg-[#ECEBFF] text-blue-600">
+          <div className="p-3 rounded-xl bg-hover-bg text-primary-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24" height="24" fill="none"

@@ -28,7 +28,7 @@ const FixedSidebarIcons = React.memo(function FixedSidebarIcons({
                         justifyContent: "center",
                         cursor: "pointer",
                         "&:hover svg": {
-                            color: "#635BFF", // hover color
+                            color: "var(--text-primary-color)", // hover color
                         },
                     }}   >
                     <IconButton  >
@@ -41,15 +41,27 @@ const FixedSidebarIcons = React.memo(function FixedSidebarIcons({
                     const active = selectedMenu === item.id;
 
                     return (
-                        <ListItem key={item.id} disablePadding>
+                        <ListItem key={item.id} disablePadding sx={{  marginBottom:1.3 }}>
                             <ListItemButton
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     onMenuSelect(item.id);   //  ONLY place where menu changes
                                 }}
+                                sx={{
+                                    // border: 1,
+                                    display: 'flex', justifyContent: 'center', alignItems: 'center',
+                                    padding: 1.8,
+                                    marginX:1.4,
+                                    width: "40px",
+                                    borderRadius: 4,
+                                    bgcolor: `${active ? "var(--bg-primary-color)" : ""}`,
+                                    "&:hover": {
+                                        bgcolor: `${active ? "var(--bg-primary-color)" : ""}`
+                                    }
+                                }}
                                 disableTouchRipple
                             >
-                                <span className={`p-3 rounded-xl ${active ? "bg-[#635BFF] text-white" : ""}`}>
+                                <span className={` rounded-xl ${active ? 'text-white' : ""}`}>
                                     {item.icon}
                                 </span>
                             </ListItemButton>

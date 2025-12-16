@@ -78,8 +78,8 @@ const TwoLineChart = () => {
             {/* Legends Under Chart */}
             <div className="flex flex-col items-center gap-2 justify-between  ">
                 <div className='flex  justify-between w-full'>
-                    <p className="text-sm font-semibold text-blue-600 flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-blue-600 inline-block"></span>
+                    <p className="text-sm font-semibold text-primary-text flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-primary-bg inline-block"></span>
                         April 07 - April 14
                     </p>
                     <p className='text-sm'>6,380</p>

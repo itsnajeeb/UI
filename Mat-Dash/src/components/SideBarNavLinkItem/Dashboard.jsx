@@ -13,11 +13,9 @@ import {
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { DASHBOARD_NAV_ITEMS } from "../../data/SideBarData";
 
-const ACTIVE_COLOR = "#635BFF";
 
 const Dashboard = React.memo(function DASHBOARDS() {
   // console.log("DASHBOARD NAV LINK LIST");
-
   const location = useLocation();
   const [openDropdown, setOpenDropdown] = useState({});
 
@@ -63,17 +61,16 @@ const Dashboard = React.memo(function DASHBOARDS() {
                       sx={{
                         borderRadius: "12px",
                         my: 0.5,
-                        color: "#505056",
-                        "&:hover": { bgcolor: "#f2f4f6" },
-                      }}
-                    >
+                        color: "var(--text-secondary-color)",
+                        "&:hover": { bgcolor: "var(--hover-bg-color)" },
+                      }}  >
                       <ListItemIcon sx={{ minWidth: 40 }}>
                         {item.icon}
                       </ListItemIcon>
 
                       <ListItemText primary={item.name} />
 
-                      {openDropdown[item.id] ? (
+                      { openDropdown[item.id] ? (
                         <ChevronUp size={16} />
                       ) : (
                         <ChevronDown size={16} />
@@ -94,20 +91,20 @@ const Dashboard = React.memo(function DASHBOARDS() {
                               <ListItemButton
                                 sx={{
                                   pl: 4,
-                                  color: "#505056",
+                                  color: "var(--text-secondary-color)",
                                   borderRadius: "8px",
                                   my: 0.5,
                                   ...(active
                                     ? {
-                                      bgcolor: ACTIVE_COLOR,
+                                      bgcolor: "var(--bg-primary-color)",
                                       color: "white",
                                       "&:hover": {
-                                        bgcolor: ACTIVE_COLOR,
+                                        bgcolor: "var(--bg-primary-color)",
                                       },
                                     }
                                     : {
                                       "&:hover": {
-                                        bgcolor: "#f2f4f6",
+                                        bgcolor: "var(--hover-bg-color)",
                                       },
                                     }),
                                 }}
@@ -136,18 +133,18 @@ const Dashboard = React.memo(function DASHBOARDS() {
                     sx={{
                       borderRadius: "12px",
                       my: 0.8,
-                      color: "#505056",
+                      color: "var(--text-secondary-color)",
                       ...(active
                         ? {
-                          bgcolor: ACTIVE_COLOR,
+                          bgcolor: "var(--bg-primary-color)",
                           color: "white",
                           "&:hover": {
-                            bgcolor: ACTIVE_COLOR,
+                            bgcolor: "var(--bg-primary-color)",
                           },
                         }
                         : {
                           "&:hover": {
-                            bgcolor: "#f2f4f6",
+                            bgcolor: "var(--hover-bg-color)",
                           },
                         }),
                     }}

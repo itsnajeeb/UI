@@ -4,7 +4,6 @@ import Breadcrumb from "../../CommonComponents/Breadcrumb";
 import CommonTable from '../../CommonComponents/CommomTable'
 import { TableCell, TableRow } from '@mui/material';
 
-
 export default function TeamAffiliate() {
   const [rows, _] = React.useState(TeamAffiliateData)
 
@@ -33,7 +32,6 @@ export default function TeamAffiliate() {
                 <TableCell align="center">{row.userId}</TableCell>
                 <TableCell align="center">{row.fromId}</TableCell>
                 <TableCell align="center">{row.level}</TableCell>
-
                 <TableCell align="center">{row.onAmount}</TableCell>
                 <TableCell align="center">{row.income}</TableCell>
                 <TableCell align="center">{row.date}</TableCell>

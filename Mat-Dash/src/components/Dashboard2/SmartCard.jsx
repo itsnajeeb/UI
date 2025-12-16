@@ -38,7 +38,7 @@ const SmartCard = () => {
             <h2 className="text-xl font-semibold mb-4">Annual Profit</h2>
 
             {/* Conversion Card */}
-            <div className="bg-[#E8E7FF] rounded-2xl p-5 mb-6 w-full shrink-0 overflow-hidden ">
+            <div className="bg-hover-bg rounded-2xl p-5 mb-6 w-full shrink-0 overflow-hidden ">
                 <div className="flex items-center justify-between mb-2">
                     <span className="text-gray-500 font-medium">Conversion Rate</span>
                     <span className="text-2xl font-semibold md:text-3xl">18.4%</span>
@@ -59,11 +59,11 @@ const SmartCard = () => {
                 {/* Item 1 */}
                 <div className="flex items-start justify-between">
                     <div>
-                        <p className="font-medium text-gray-600 text-sm">Added to Cart</p>
-                        <p className="text-gray-600 text-sm font-medium">5 clicks</p>
+                        <p className="font-medium text-subtle-text text-sm">Added to Cart</p>
+                        <p className="text-main-text text-sm font-medium">5 clicks</p>
                     </div>
                     <div className="text-right">
-                        <p className="font-semibold text-sm">$21,120.70</p>
+                        <p className="font-semibold text-base">$21,120.70</p>
                         <p className="text-green-500 text-sm font-medium">+13.2%</p>
                     </div>
                 </div>
@@ -73,11 +73,11 @@ const SmartCard = () => {
                 {/* Item 2 */}
                 <div className="flex items-start justify-between">
                     <div>
-                        <p className="font-medium text-gray-600 text-sm">Reached to Checkout</p>
-                        <p className="text-gray-600 text-sm font-medium">12 clicks</p>
+                        <p className="font-medium text-subtle-text text-sm">Reached to Checkout</p>
+                        <p className="text-main-text text-sm font-medium">12 clicks</p>
                     </div>
                     <div className="text-right">
-                        <p className="font-semibold">$16,100.00</p>
+                        <p className="font-semibold text-base">$16,100.00</p>
                         <p className="text-red-500 text-sm">-7.4%</p>
                     </div>
                 </div>
@@ -87,8 +87,8 @@ const SmartCard = () => {
                 {/* Item 3 */}
                 <div className="flex items-start justify-between">
                     <div>
-                        <p className="font-medium text-gray-600 text-sm">Added to Cart</p>
-                        <p className="text-gray-600 text-sm font-medium">24 views</p>
+                        <p className="font-medium text-subtle-text text-sm">Added to Cart</p>
+                        <p className="text-main-text text-sm font-medium">24 views</p>
                     </div>
                     <div className="text-right">
                         <p className="font-semibold">$21,120.70</p>

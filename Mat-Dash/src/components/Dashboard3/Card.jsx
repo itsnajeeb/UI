@@ -14,10 +14,10 @@ export const Card = ({ data }) => {
                                 {d.icon}
                             </div>
                             <div className=' flex flex-col text-center'>
-                                <h2 className='text-[#29343d] text-sm font-normal manrope-fontFamliy'>{d.title}</h2>
-                                <h1 className='text-[#29343d] font-semibold manrope-fontFamliy text-[22px]'>{d.NumericValue}</h1>
+                                <h2 className='text-main-text text-sm font-normal manrope-fontFamliy'>{d.title}</h2>
+                                <h1 className='text-main-text font-semibold manrope-fontFamliy text-[22px]'>{d.NumericValue}</h1>
                             </div>
-                            <div className='bg-white px-3 cursor-pointer py-2 text-sm shadow-md text-blue-500 rounded-lg hover:bg-[linear-gradient(180deg,#635bff1f_0%,#635bff08_100%)]'>
+                            <div className='bg-white px-3 cursor-pointer py-2 text-sm shadow-md text-primary-text rounded-lg hover:bg-[linear-gradient(180deg,#635bff1f_0%,#635bff08_100%)]'>
                                 <a href="#" target='black'>View Details</a>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ import { TableCell, TableRow } from '@mui/material';
 
 export default function DirectLegBusiness() {
     const [rows] = React.useState(DirectLegBusinessData)
-
+    
     const referralColumns = [
         { id: "sno", label: "S.No.", sortable: true },
         { id: "userId", label: "User ID", sortable: true },

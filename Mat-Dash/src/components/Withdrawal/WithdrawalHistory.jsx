@@ -65,7 +65,7 @@ export default function WithdrawalHistory() {
                 <TableCell align="center">{"$ " + row.adminCharge}</TableCell>
 
                 <TableCell align="center">{"$ " + row.withdrawalAmount}</TableCell>
-                <TableCell align="center" sx={{ color: "#635BFF", fontWeight: "600" }}><Link>View Txn</Link></TableCell>
+                <TableCell align="center" sx={{ color: "var(--text-primary-color)", fontWeight: "600" }}><Link>View Txn</Link></TableCell>
                 <TableCell align="center">{row.requestedDate}</TableCell>
                 <TableCell align="center">{row.status}</TableCell>
                 <TableCell align="center">{row.paidDate}</TableCell>

@@ -11,7 +11,7 @@ const WelcomeCard = () => {
     const patternUrl = `url(${bg2})`;
 
     return (
-        <div className="w-full h-[260px] md:h-[230px] lg:h-full">
+        <div className="w-full h-65 md:h-57.5 lg:h-full">
             {/* Outer Card Container */}
             <div
                 className="

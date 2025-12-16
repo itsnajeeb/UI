@@ -94,7 +94,7 @@ export default function Downline() {
                 <SearchBox bgColor={"#DFE0FC"} text={"Total "} total={totalCount + " Downline"} icon={'icon-3.png'} filterClick={handleAllClick} />
                 <SearchBox bgColor={"#d8f0e6"} text={"Active"} total={activeCount + " Downline"} icon={'icon-1.png'} filterClick={handleActiveClick} />
                 <SearchBox bgColor={"#f0d8d9"} text={"Inactive"} total={InactiveCount + " Downline"} icon={'icon-2.png'} filterClick={handleInActiveClick} />
-            </div>
+            </div> 
             <div className='w-full overflow-hidden rounded-xl  ' >
                 <div className='bg-white shadow-xl rounded-xl overflow-hidden px-2 py-4'
                 >

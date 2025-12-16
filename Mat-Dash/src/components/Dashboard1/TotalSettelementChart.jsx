@@ -65,7 +65,7 @@ const TotalSettelementChart = () => {
         <div className="bg-[#EDEBFF] bg-opacity-60 p-7 rounded-xl shadow h-full flex flex-col justify-between">
 
             <div className="flex items-center mb-6 space-x-4">
-                <div className="p-3 bg-white rounded-xl text-indigo-600 shadow">
+                <div className="p-3 bg-white rounded-xl text-primary-text shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                         fill="none" stroke="currentColor" strokeWidth="2"
                         strokeLinecap="round" strokeLinejoin="round">

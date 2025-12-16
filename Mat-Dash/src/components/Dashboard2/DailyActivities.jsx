@@ -85,7 +85,7 @@ const DailyActivities = () => {
               {item.link && (
                 <a
                   href="#"
-                  className="text-sm text-indigo-500 font-semibold block mt-1"
+                  className="text-sm text-primary-text font-semibold block mt-1"
                 >
                   {item.link}
                 </a>

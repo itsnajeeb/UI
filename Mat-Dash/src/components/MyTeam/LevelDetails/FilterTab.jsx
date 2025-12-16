@@ -152,7 +152,7 @@ const FilterTab = ({ onFilter }) => {
                         status: status
                     })}
                     className='bg-[#544cfb] text-white px-10 rounded-lg cursor-pointer font-semibold
-            hover:bg-[#635BFF] transition-all duration-300 py-3
+            hover:bg-primary-bg transition-all duration-300 py-3
             '>SEARCH</button>
 
             </div>

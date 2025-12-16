@@ -90,27 +90,27 @@ export default function ProfileDropDownforLgScreen() {
                 </div>
 
                 <div className='px-8 mt-4 manrope-fontFamliy space-y-3 font-semibold text-[#29343d] text-sm'> {/* Padding for the menu items block */}
-                    <div onClick={handleClose} className='hover:text-[#635bff] cursor-pointer'>
+                    <div onClick={handleClose} className='hover:text-primary-text cursor-pointer'>
                         <h5   >My Profile</h5>
                     </div>
                     <div onClick={handleClose} className='hover:text-[#635bff] cursor-pointer'>
-                        <h5 className='hover:text-[#635bff]'>My Subscription</h5>
+                        <h5 className='hover:text-primary-text'>My Subscription</h5>
                     </div>
 
-                    <div onClick={handleClose} className='flex gap-5 hover:text-[#635bff] cursor-pointer' >
+                    <div onClick={handleClose} className='flex gap-5 hover:text-primary-text cursor-pointer' >
                         <h5  >My Invoice</h5>
                         <span label="5" className='bg-red-200 w-5 h-5 text-center text-xs place-items-center items-center rounded-full text-red-500 '>5</span>
                     </div>
 
                     <div onClick={handleClose} className='cursor-pointer'>
-                        <h5 className='hover:text-[#635bff]'>Account Settings</h5>
+                        <h5 className='hover:text-primary-text'>Account Settings</h5>
                     </div>
                 </div>
 
                 <Divider sx={{ my: 2 }} /> {/* Divider for separation */}
 
                 <div onClick={handleClose} className='cursor-pointer px-8 pb-3 font-semibold text-sm manrope-fontFamliy'>
-                    <h5 variant="body2" className='hover:text-[#635bff]'>Sign Out</h5>
+                    <h5 variant="body2" className='hover:text-primary-text'>Sign Out</h5>
                 </div>
             </Menu>
         </Box>
@@ -372,18 +372,18 @@ export const ProfileDropDownMenu = ({ anchorEl, open, handleClose }) => {
 
             {/* Navigation Links Section */}
             <div className='px-8 mt-4 manrope-fontFamliy space-y-3 font-semibold text-[#29343d] text-sm'>
-                <div onClick={handleClose} className='hover:text-[#635bff] cursor-pointer'>
+                <div onClick={handleClose} className='hover:text-primary-text cursor-pointer'>
                     <h5>My Profile</h5>
                 </div>
-                <div onClick={handleClose} className='hover:text-[#635bff] cursor-pointer'>
-                    <h5 className='hover:text-[#635bff]'>My Subscription</h5>
+                <div onClick={handleClose} className='hover:text-primary-text cursor-pointer'>
+                    <h5 className='hover:text-primary-text'>My Subscription</h5>
                 </div>
-                <div onClick={handleClose} className='flex gap-5 hover:text-[#635bff] cursor-pointer' >
+                <div onClick={handleClose} className='flex gap-5 hover:text-primary-text cursor-pointer' >
                     <h5>My Invoice</h5>
                     <span label="5" className='bg-red-200 w-5 h-5 text-center text-xs place-items-center items-center rounded-full text-red-500 '>5</span>
                 </div>
                 <div onClick={handleClose} className='cursor-pointer'>
-                    <h5 className='hover:text-[#635bff]'>Account Settings</h5>
+                    <h5 className='hover:text-primary-text'>Account Settings</h5>
                 </div>
             </div>
 
@@ -391,7 +391,7 @@ export const ProfileDropDownMenu = ({ anchorEl, open, handleClose }) => {
 
             {/* Sign Out Section */}
             <div onClick={handleClose} className='cursor-pointer px-8 pb-3 font-semibold text-sm manrope-fontFamliy'>
-                <h5 variant="body2" className='hover:text-[#635bff]'>Sign Out</h5>
+                <h5 variant="body2" className='hover:text-primary-text'>Sign Out</h5>
             </div>
         </Menu>
     );

@@ -131,7 +131,7 @@ const RevenueByProduct = () => {
                 <div
                     key={item.id}
                     className="grid grid-cols-6 gap-4 items-center py-3 border-b border-gray-100 last:border-b-0 
-                   min-w-[600px] md:min-w-full"
+                   min-w-150 md:min-w-full"
                 >
                     {/* Assigned (col-span-2) */}
                     <div className="col-span-2 flex items-center space-x-3">
@@ -218,7 +218,7 @@ const RevenueByProduct = () => {
                 {/* LEFT Scroll Button (Hidden on Medium and larger screens)  */}
                 <button
                     onClick={() => scrollTabs('left')}
-                    className="shrink-0 w-8 h-10  mr-1 flex items-center justify-center rounded-lg  sm:hidden text-gray-500 hover:text-indigo-600 transition duration-150 z-10"
+                    className="shrink-0 w-8 h-10  mr-1 flex items-center justify-center rounded-lg  sm:hidden text-gray-500 hover:text-primary-text transition duration-150 z-10"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -237,7 +237,7 @@ const RevenueByProduct = () => {
                             key={tab}
                             // flex-shrink-0 ensures the buttons stay in one line and don't wrap
                             className={`shrink-0 flex cursor-pointer items-center space-x-2 py-2 px-5 rounded-lg font-medium transition-colors duration-200 text-base
-                                ${activeTab === tab ? 'bg-[#6058F6] text-white shadow-md' : 'bg-[#f9f6f6] text-gray-600 hover:bg-[#EDEEF0]'}`}
+                                ${activeTab === tab ? 'bg-primary-bg text-white shadow-md' : 'bg-secondary-bg text-gray-600 hover:bg-[#EDEEF0]'}`}
                             onClick={() => handleTabClick(tab)}
                         >
                             <TabIcon tab={tab} isActive={activeTab === tab} />
