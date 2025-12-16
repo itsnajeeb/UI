@@ -7,39 +7,25 @@
 }
 
 /* Custom CSS class for styling the scrollbar */
-.sliding-panel-scroll {
-  overflow-y: auto;
-  /* IMPORTANT: Enables vertical scrolling */
-}
 
 .sliding-panel-scroll::-webkit-scrollbar {
   width: 5px;
-  /* Set the width of the scrollbar */
 }
 
 .sliding-panel-scroll::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  /* Light track background */
-  border-radius: 10px;
+  background: #e9e9e9;
 }
 
 .sliding-panel-scroll::-webkit-scrollbar-thumb {
   background: #959595;
-  /* Darker thumb for visibility */
-  border-radius: 10px;
-  /* Rounded edges for the thumb */
-
 }
 
 .sliding-panel-scroll::-webkit-scrollbar-thumb:hover {
-  background: #959595;
-  /* Even darker on hover */
+  background: #6d6d6d;
 }
-
 
 .scrollbar-thin::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
 }
 
 /* Firefox */
@@ -50,7 +36,7 @@
 .scrollbar-thin::-webkit-scrollbar-track {
   background: #635BFF;
   /* Darker thumb for visibility */
-  border-radius: 10px;
+  border-radius: 2px;
   /* Rounded edges for the thumb */
 
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const SearchBox = ({ bgColor, icon, text, total, filterClick }) => {
+    
     return (
         <div className={` px-8 py-8 flex gap-3 rounded-xl w-full cursor-pointer`} style={{ backgroundColor: bgColor }} onClick={filterClick}>
             <div className='bg-[#635BFF] w-fit text-white p-2 rounded-lg flex justify-center items-center'>

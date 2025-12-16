@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { LevelData } from '../../../data/MyTeamStaticData';
 // import SearchTab from './SearchInput';
-import Breadcrumb from "../../Breadcrumb";
+import Breadcrumb from "../../CommonComponents/Breadcrumb";
 import SearchBox from '../SearchBox';
 import { formatWallet, ParseCustomDateFormate } from '../../../utils/utils';
 import CommonTable from '../../CommonComponents/CommomTable'
@@ -15,33 +15,12 @@ export default function LevelDetails() {
 
     // const [order, setOrder] = React.useState('asc');
     const [rows, setRows] = React.useState(LevelData)
-    const [, setStatusFilter] = React.useState('ALL')
     const originalData = React.useRef(LevelData);
-
-    const totalCount = originalData.current.length;
-    const activeCount = originalData.current.filter((row) =>
-        row.status?.toLowerCase() === 'active').length
-
-    const InactiveCount = originalData.current.filter((row) =>
-        row.status?.toLowerCase() === 'inactive').length
-
-    const lastWeekReferralCount = React.useMemo(() => {
-        const today = new Date();
-        const last7Days = new Date();
-        last7Days.setDate(today.getDate() - 7);
-
-        return LevelData.filter((row) => {
-            const referralDate = ParseCustomDateFormate(row.registrationDate);
-            return referralDate >= last7Days && referralDate <= today;
-        }).length;
-    }, []);
-
 
     const clickHandleFilter = ({ levels, status }) => {
         let data = [...originalData.current];
         // console.log(data);
 
-        // LEVEL FILTER
         if (levels && levels.length > 0) {
             const isAllLevelSelected = levels.includes('ALL');
 
@@ -64,70 +43,6 @@ export default function LevelDetails() {
     };
 
 
-
-    const applyFilter = (filterType) => {
-        // console.log("FILTER APPLIED ");
-
-        let filteredData = originalData.current;
-        const today = new Date();
-
-        switch (filterType) {
-            case 'ALL':
-                // no filter, keep all data
-                filteredData = originalData.current;
-                break;
-
-            case 'Active':
-                filteredData = filteredData.filter(
-                    row => row.status?.toLowerCase() === 'active'
-                );
-                break;
-
-            case 'Inactive':
-                filteredData = filteredData.filter(
-                    row => row.status?.toLowerCase() === 'inactive'
-                );
-                break;
-
-            case 'LAST_WEEK': {
-                const last7Days = new Date();
-                last7Days.setDate(today.getDate() - 7);
-
-                filteredData = filteredData.filter((row) => {
-                    const date = ParseCustomDateFormate(row.registrationDate);
-                    return date >= last7Days && date <= today;
-                });
-                break;
-            }
-
-            default:
-                break;
-        }
-
-        setRows(filteredData);
-        // setPage(0);
-    };
-
-    const handleActiveClick = () => {
-        setStatusFilter("Active")
-        applyFilter("Active")
-    }
-    const handleInActiveClick = () => {
-        setStatusFilter("Inactive")
-        applyFilter('Inactive')
-    }
-
-    const handleAllClick = () => {
-        setStatusFilter('ALL')
-        applyFilter('ALL')
-    }
-
-    const handleLastWeekClick = () => {
-        setStatusFilter('LAST_WEEK');
-        applyFilter("LAST_WEEK")
-    }
-
-
     const referralColumns = [
         { id: "sno", label: "S.No.", sortable: true },
         { id: "userId", label: "User ID", sortable: true },
@@ -141,19 +56,10 @@ export default function LevelDetails() {
     return (
         <>
             <Breadcrumb title={"Level Details"} />
-            {/* <div className='flex w-full gap-5 flex-1  '>
-                <SearchBox bgColor={"#DFE0FC"} text={"Total"} total={totalCount} icon={'icon-3.png'} filterClick={handleAllClick} />
-                <SearchBox bgColor={"#eef0d8"} text={"Last Week Referral"} total={lastWeekReferralCount} icon={'icon-4.png'} filterClick={handleLastWeekClick} />
-                <SearchBox bgColor={"#d8f0e6"} text={"Active"} total={activeCount} icon={'icon-1.png'} filterClick={handleActiveClick} />
-                <SearchBox bgColor={"#f0d8d9"} text={"Inactive"} total={InactiveCount} icon={'icon-2.png'} filterClick={handleInActiveClick} />
-            </div> */}
             <FilterTab onFilter={clickHandleFilter} />
             <div className='w-full overflow-hidden rounded-xl  ' >
                 <div className='bg-white shadow-xl rounded-xl overflow-hidden px-2 py-4'
-                //  sx={{ width: '100%', mb: 2, boxShadow:2 }}
                 >
-
-
                     <CommonTable
                         columns={referralColumns}
                         rows={rows}

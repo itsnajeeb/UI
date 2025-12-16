@@ -67,8 +67,14 @@ const FilterTab = ({ onFilter }) => {
         <div className='flex gap-4 bg-white flex-col pb-7 pt-5 px-8 rounded-xl manrope-fontFamliy' >
             <h1 className='text-xl  font-semibold text-[#29343d] mb-2'>Find by Level & Status</h1>
             {/* LEVEL SELECT */}
-            <div className='flex gap-4'>
-                <FormControl sx={{ width: 350 }} focused={levelOpen}>
+            <div className='flex gap-4 flex-wrap md:flex-nowrap'>
+                <FormControl sx={{
+                    width:
+                    {
+                        xs: '100%',
+                        md: 350,
+                    }
+                }} focused={levelOpen}>
                     <InputLabel
                         id="level-label"
                         shrink={levelOpen || selectedLevels.length > 0}
@@ -115,7 +121,12 @@ const FilterTab = ({ onFilter }) => {
 
 
                 {/* STATUS SELECT */}
-                <FormControl sx={{ width: 250 }} focused={statusOpen}>
+                <FormControl sx={{
+                    width: {
+                        xs: "100%",
+                        md: 250,
+                    }
+                }} focused={statusOpen}>
                     <Select
                         open={statusOpen}
                         onOpen={() => setStatusOpen(true)}
@@ -141,7 +152,7 @@ const FilterTab = ({ onFilter }) => {
                         status: status
                     })}
                     className='bg-[#544cfb] text-white px-10 rounded-lg cursor-pointer font-semibold
-            hover:bg-[#635BFF] transition-all duration-300
+            hover:bg-[#635BFF] transition-all duration-300 py-3
             '>SEARCH</button>
 
             </div>

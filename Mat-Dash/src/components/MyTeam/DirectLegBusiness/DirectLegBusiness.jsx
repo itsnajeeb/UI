@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DirectLegBusinessData } from '../../../data/MyTeamStaticData';
-import Breadcrumb from "../../Breadcrumb";
+import Breadcrumb from "../../CommonComponents/Breadcrumb";
 import CommonTable from '../../CommonComponents/CommomTable'
 import { TableCell, TableRow } from '@mui/material';
 

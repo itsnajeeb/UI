@@ -17,7 +17,7 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-import logo from '../../assets/images/logos/logo.svg';
+import logo from '/Images/logo.svg';
 const data = [
     {
         title: "Chat Application",

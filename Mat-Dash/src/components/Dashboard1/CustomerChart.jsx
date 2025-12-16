@@ -39,8 +39,8 @@ const CustomerChart = () => {
         <div className="bg-[rgba(22,205,199,0.15)]  rounded-xl w-full h-full">
             <div className="px-7 py-8">
                 <h1 className='text-base text-gray-600 mb-1 '>Customers</h1>
-                <div className="flex items-baseline space-x-2">
-                    <span className="text-2xl font-semibold">36,358</span>
+                <div className="flex items-baseline space-x-2 flex-wrap">
+                    <span className="text-xl font-semibold md:text-2xl">36,358</span>
                     <span className="font-semibold text-sm">-12%</span>
                 </div>
             </div>

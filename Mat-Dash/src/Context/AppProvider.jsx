@@ -1,7 +1,13 @@
 import { ChatProvider } from "./Chats/ChatProvider";
 import { MenuProvider } from "./Menu/MenuProvider";
+import { ThemeProvider } from "./ThemeContext";
+
+
 
 const providers = [
+  // if we need to pass props 
+  // ({ children }) => <ThemeProvider defaultTheme="dark">{children}</ThemeProvider>,
+  ThemeProvider,
   MenuProvider,
   ChatProvider
   // DashboardProvider,

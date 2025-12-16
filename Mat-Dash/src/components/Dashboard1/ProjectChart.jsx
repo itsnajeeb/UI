@@ -32,8 +32,8 @@ const ProjectChart = () => {
         <div className="bg-pink-200 rounded-xl w-full">
             <div className=" py-5 px-7">
                 <h1 className='text-base text-gray-600 mb-1 '>Projects</h1>
-                <div className="flex items-baseline space-x-2">
-                    <span className="text-2xl font-semibold">78,298</span>
+                <div className="flex items-baseline space-x-2 flex-wrap">
+                    <span className="text-xl font-semibold md:text-2xl">78,298</span>
                     <span className="font-semibold text-sm">+31.8%</span>
                 </div>
             </div>

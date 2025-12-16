@@ -22,7 +22,9 @@
     "@mui/material": "^7.3.5",
     "@tailwindcss/vite": "^4.1.17",
     "apexcharts": "^5.3.6",
+    "framer-motion": "^12.23.26",
     "lucide-react": "^0.554.0",
+    "motion": "^12.23.26",
     "react": "^19.1.0",
     "react-apexcharts": "^1.8.0",
     "react-d3-tree": "^3.6.6",
@@ -30,6 +32,7 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.6",
     "recharts": "^3.5.1",
+    "sweetalert2": "^11.26.4",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {

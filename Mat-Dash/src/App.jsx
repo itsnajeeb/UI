@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import Dashboard1 from './pages/Dashboard1'
+import React, { lazy } from 'react'
+const Dashboard1 = lazy(() => import("./pages/Dashboard1"));
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard2 from './pages/Dashboard2';
-import Dashboard3 from './pages/Dashboard3';
+const Dashboard2 = lazy(() => import("./pages/Dashboard2"));
+const Dashboard3 = lazy(() => import("./pages/Dashboard3"));
 import Chats from './pages/Chats';
 import MyReferral from './pages/MyTeam/MyReferral';
 import LevelDetails from './pages/MyTeam/LevelDetails';
@@ -18,31 +18,35 @@ import InfiniteBonus from './pages/Incomes/InfiniteBonus';
 import Withdrawal from './pages/Withdrawal/withdrawal';
 import WithdrawalHistory from './pages/Withdrawal/WithdrawalHistory';
 import Support from './pages/Support';
+import DashboardLayout from './components/CommonComponents/DashboardLayout';
+import LogoutButton from './pages/Logout';
 const App = () => {
-  // This State Handle left Side bar (Dashboard1, Dashboard2, Dasbhoad3 .......)
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
+    <>
+      <Routes>
+        <Route element={<DashboardLayout />}>
+          <Route path='/' element={<Dashboard1 />} />
+          <Route path='/dashboard2' element={<Dashboard2 />} />
+          <Route path='/dashboard3' element={<Dashboard3 />} />
 
-
-    <Routes>
-      <Route path='/' element={<Dashboard1 isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/dashboard2' element={<Dashboard2 isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/dashboard3' element={<Dashboard3 isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/apps/chat' element={<Chats isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/MyReferral' element={<MyReferral isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/LevelDetails' element={<LevelDetails isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/Downline' element={<Downline isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/DirectLegBusiness' element={<DirectLegBusiness isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/RewardRunningReport' element={<RewardBusiness isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/MyTeam/LevelTree' element={<LevelTree isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Incomes/DailyRevenueBonus' element={<DailyRevenue isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Incomes/TeamAffiliateBonus' element={<TeamAffiliate isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Incomes/Leadership' element={<LeadershipBonus isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Incomes/InfinitBonus' element={<InfiniteBonus isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Withdrawal/Withdrawal' element={<Withdrawal isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/Withdrawal/WithdrawalHistory' element={<WithdrawalHistory isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-      <Route path='/support' element={<Support isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />} />
-    </Routes>
+          <Route path='/apps/chat' element={<Chats />} />
+          <Route path='/MyTeam/MyReferral' element={<MyReferral />} />
+          <Route path='/MyTeam/LevelDetails' element={<LevelDetails />} />
+          <Route path='/MyTeam/Downline' element={<Downline />} />
+          <Route path='/MyTeam/DirectLegBusiness' element={<DirectLegBusiness />} />
+          <Route path='/MyTeam/RewardRunningReport' element={<RewardBusiness />} />
+          <Route path='/MyTeam/LevelTree' element={<LevelTree />} />
+          <Route path='/Incomes/DailyRevenueBonus' element={<DailyRevenue />} />
+          <Route path='/Incomes/TeamAffiliateBonus' element={<TeamAffiliate />} />
+          <Route path='/Incomes/Leadership' element={<LeadershipBonus />} />
+          <Route path='/Incomes/InfinitBonus' element={<InfiniteBonus />} />
+          <Route path='/Withdrawal/Withdrawal' element={<Withdrawal />} />
+          <Route path='/Withdrawal/WithdrawalHistory' element={<WithdrawalHistory />} />
+          <Route path='/support' element={<Support />} />
+          <Route path='/logout' element={<LogoutButton />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 

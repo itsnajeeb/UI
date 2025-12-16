@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Customers = () => {
     return (
-        <div className="bg-white p-6 rounded-2xl shadow  h-fit ">
+        <div className="bg-white p-6 rounded-2xl shadow    ">
             <div className='flex justify-between '>
                 <div>
                     <h1 className='text-lg font-semibold'>Customers</h1>
@@ -22,7 +22,7 @@ const Customers = () => {
 import ReactApexChart from "react-apexcharts";
 
 const TwoLineChart = () => {
-    const [chartData, setChartData] = useState({
+    const [chartData, _] = useState({
         series: [
             {
                 name: "This Week",
@@ -65,7 +65,7 @@ const TwoLineChart = () => {
 
     return (
         <div className="text-center  ">
-            <div className='h-[230px] lg:h-[250px]'>
+            <div className='h-[230px] lg:h-[250px] '>
                 <ReactApexChart
                     options={chartData.options}
                     series={chartData.series}

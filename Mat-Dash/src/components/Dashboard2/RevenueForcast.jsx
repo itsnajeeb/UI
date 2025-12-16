@@ -5,7 +5,6 @@ import useResponsiveChart from "../../hooks/useRevenueForcase";
 // Define the colors based on the image
 const TEXT_COLOR = "#635BFF"; // Blue (2024)
 const SECONDARY_COLOR = "#FF6692"; // Pink (2025)
-const ZERO_OFFSET = 0;
 
 const RevenueForecast = () => {
     const chartHeight = useResponsiveChart()

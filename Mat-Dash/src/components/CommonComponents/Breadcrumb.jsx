@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Breadcrumb = ({ title, fontStyle="capitalize" }) => {
     return (
-        <div className='bg-white h-16 flex justify-between items-center px-7 rounded-xl '>
+        <div className='bg-white  flex justify-between items-start px-7 rounded-xl flex-col py-4 gap-2 md:flex-row  '>
             <h1 className='manrope-fontFamliy font-bold text-lg text-[#29343d] -tracking-normal' style={{textTransform:fontStyle}}> {title}</h1>
             <div className='flex justify-center items-center gap-2'>
                 <h1><Link to={'/'} className='hover:text-indigo-600 transition-all'>Dashboard</Link></h1>

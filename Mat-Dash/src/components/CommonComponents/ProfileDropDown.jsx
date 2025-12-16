@@ -5,14 +5,13 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { ListFilter } from 'lucide-react';
-import CountryFlagEn from '../assets/images/icons/icon-flag-en.svg';
-import Bell from '../assets/images/icons/bell.svg';
-import { ListItemIcon, MenuItem } from '@mui/material';
-import CountryFlagDropDown from './TopBarDropDown/CountryFlagDropDown';
-import Notification from './TopBarDropDown/Notification';
+import CountryFlagEn from '/Images/icon/icon-flag-en.svg';
+import Bell from '/Images/icon/bell.svg';
+import {  MenuItem } from '@mui/material';
+import CountryFlagDropDown from '../TopBarDropDown/CountryFlagDropDown';
+import Notification from '../TopBarDropDown/Notification';
 
 export default function ProfileDropDownforLgScreen() {
     const [anchorEl, setAnchorEl] = useState(null);

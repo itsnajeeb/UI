@@ -6,7 +6,7 @@ export default function WalletPocketCard({totalWithdrawal}) {
 
     return (
         /** OUTER YELLOW BACKGROUND WRAPPER **/
-        <div className="p-4 rounded-xl">
+        <div className="p-4 rounded-xl ">
 
             {/* INNER CARD-POCKET LOGIC */}
             <div className="relative w-[220px]  grid place-items-center">

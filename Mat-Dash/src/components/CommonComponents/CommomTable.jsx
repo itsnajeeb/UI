@@ -52,15 +52,17 @@ export default function ShowDataTable({
 
   return (
     <>
-      <TableContainer className="sliding-panel-scroll scrollbar-thin">
-        <Table className="custom-scrollbar">
+      <TableContainer className="sliding-panel-scroll scrollbar-thin" >
+        <Table className="custom-scrollbar" sx={{
+          // tableLayout: "fixed"
+        }}>
           <TableHead >
             <TableRow className="manrope-fontFamily">
               {columns.map((col) => (
                 <TableCell
                   key={col.id}
                   align="center"
-                  sx={{ fontWeight: "600",  paddingLeft:3 }}
+                  sx={{ fontWeight: "600", paddingLeft: 3 }}
                   sortDirection={orderBy === col.id ? order : false}
                 >
                   {col.sortable ? (

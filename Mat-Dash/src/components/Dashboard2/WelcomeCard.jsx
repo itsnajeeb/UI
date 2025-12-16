@@ -1,6 +1,6 @@
 import React from 'react';
 // Make sure this path is correct and the image is a suitable pattern (like a PNG with transparency)
-import bg2 from '../../assets/images/welcome-bg2.png';
+import bg2 from '/Images/welcome-bg2.png';
 import { Check } from 'lucide-react';
 
 const WelcomeCard = () => {

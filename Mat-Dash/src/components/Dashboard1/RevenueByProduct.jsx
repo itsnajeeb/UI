@@ -1,31 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
+import dashrPrd1 from '/Images/dash-prd-1.jpg'
+import dashrPrd2 from '/Images/dash-prd-2.jpg'
+import dashrPrd3 from '/Images/dash-prd-3.jpg'
+import dashrPrd4 from '/Images/dash-prd-4.jpg'
 
 // --- MOCK DATA ---
 const mockData = {
     // NOTE: For production, ensure IDs are unique across all categories, e.g., id: 'App-1', id: 'Mobile-1', etc.
     App: [
-        { id: 'app-1', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-1.jpg', name: 'Minecraf App', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
-        { id: 'app-2', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-2.jpg', name: 'Web App Project', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
-        { id: 'app-3', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-3.jpg', name: 'Modernize Dashboard', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
-        { id: 'app-4', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-4.jpg', name: 'Dashboard Co', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
+        { id: 'app-1', image: dashrPrd1, name: 'Minecraf App', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
+        { id: 'app-2', image: dashrPrd2, name: 'Web App Project', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
+        { id: 'app-3', image: dashrPrd3, name: 'Modernize Dashboard', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
+        { id: 'app-4', image: dashrPrd4, name: 'Dashboard Co', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
     ],
     Mobile: [
-        { id: 'mobile-1', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-1.jpg', name: 'iOS E-Commerce', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
-        { id: 'mobile-2', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-2.jpg', name: 'Android Widget', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
-        { id: 'mobile-3', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-3.jpg', name: 'React Native Update', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
-        { id: 'mobile-4', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-4.jpg', name: 'Flutter Project', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
+        { id: 'mobile-1', image: dashrPrd1, name: 'iOS E-Commerce', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
+        { id: 'mobile-2', image: dashrPrd2, name: 'Android Widget', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
+        { id: 'mobile-3', image: dashrPrd3, name: 'React Native Update', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
+        { id: 'mobile-4', image: dashrPrd4, name: 'Flutter Project', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
     ],
     SaaS: [
-        { id: 'saas-1', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-1.jpg', name: 'Cloud API Service', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
-        { id: 'saas-2', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-2.jpg', name: 'Subscription Model', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
-        { id: 'saas-3', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-3.jpg', name: 'Server Migration', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
-        { id: 'saas-4', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-4.jpg', name: 'Platform Scaling', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
+        { id: 'saas-1', image: dashrPrd1, name: 'Cloud API Service', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
+        { id: 'saas-2', image: dashrPrd2, name: 'Subscription Model', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
+        { id: 'saas-3', image: dashrPrd3, name: 'Server Migration', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
+        { id: 'saas-4', image: dashrPrd4, name: 'Platform Scaling', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
     ],
     Others: [
-        { id: 'other-1', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-1.jpg', name: 'Hardware Prototyping', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
-        { id: 'other-2', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-2.jpg', name: 'Internal Tooling', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
-        { id: 'other-3', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-3.jpg', name: 'Legacy System Update', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
-        { id: 'other-4', image: 'https://matdash-angular-stylish.netlify.app/assets/images/products/dash-prd-4.jpg', name: 'Research Project X', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
+        { id: 'other-1', image: dashrPrd1, name: 'Hardware Prototyping', assignee: 'Jason Roy', progress: '73.2%', priority: 'Low', budget: '$3.5k' },
+        { id: 'other-2', image: dashrPrd2, name: 'Internal Tooling', assignee: 'Mathew Flintoff', progress: '73.2%', priority: 'Medium', budget: '$3.5k' },
+        { id: 'other-3', image: dashrPrd3, name: 'Legacy System Update', assignee: 'Anil Kumar', progress: '73.2%', priority: 'Very High', budget: '$3.5k' },
+        { id: 'other-4', image: dashrPrd4, name: 'Research Project X', assignee: 'George Cruize', progress: '73.2%', priority: 'High', budget: '$3.5k' },
     ],
 };
 

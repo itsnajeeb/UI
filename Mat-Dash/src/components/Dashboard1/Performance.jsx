@@ -3,7 +3,7 @@ import ReactApexChart from "react-apexcharts";
 
 const Performance = () => {
     return (
-        <div className="bg-white p-6 rounded-2xl shadow  h-full ">
+        <div className="bg-white p-6 rounded-2xl shadow h-full flex-1 mb-0 ">
             <div>
                 <h1 className='text-base font-semibold'>Your Performance</h1>
                 <p className='text-sm'>Last check on 25 february</p>
@@ -68,7 +68,7 @@ const Performance = () => {
 }
 
 const ApexChart = () => {
-    const [state, setState] = useState({
+    const [state, _] = useState({
         series: [30, 20, 10, 20, 20], // 5 equal color segments
         options: {
             chart: {

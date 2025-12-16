@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const TotalSettelementChart = () => {
-    const [state, setState] = useState({
+    const [state, _] = useState({
         series: [
             {
                 name: "settlements",

@@ -1,6 +1,7 @@
 import React from 'react'
 // import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import { IoIosTrendingUp } from "react-icons/io";
+import welcomeBg from '/Images/welcome-bg.png'
 
 const WelcomeCard = () => {
   return (
@@ -34,7 +35,7 @@ const WelcomeCard = () => {
 
       <div className='mt-7 flex justify-center'>
         <img
-          src="https://matdash-angular-stylish.netlify.app/assets/images/backgrounds/welcome-bg.png"
+          src={welcomeBg}
           className='max-w-[180px] w-full h-auto 
           sm:max-w-[200px] xl:max-w-[150px]'
           alt=""

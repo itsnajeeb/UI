@@ -1,23 +1,17 @@
 import * as React from 'react';
 import { ReferralData } from '../../../data/MyTeamStaticData';
 import SearchTab from './SearchInput';
-import Breadcrumb from "../../Breadcrumb";
+import Breadcrumb from "../../CommonComponents/Breadcrumb";
 import SearchBox from '../SearchBox';
 import { formatWallet, ParseCustomDateFormate } from '../../../utils/utils';
 import CommonTable from '../../CommonComponents/CommomTable'
 import { TableCell, TableRow } from '@mui/material';
 
-
-
-/*MAIN TABLE */
 export default function ReferralTable() {
 
-  // const [order, setOrder] = React.useState('asc');
   const [rows, setRows] = React.useState(ReferralData)
-  const [statusFilter, setStatusFilter] = React.useState('ALL')
+  const [_, setStatusFilter] = React.useState('ALL')
   const originalData = React.useRef(ReferralData);
-
-
 
   const totalCount = originalData.current.length;
   const activeCount = originalData.current.filter((row) =>
@@ -36,7 +30,6 @@ export default function ReferralTable() {
       return referralDate >= last7Days && referralDate <= today;
     }).length;
   }, []);
-
 
   const handleSearch = (searchText) => {
     const keyword = searchText.toLowerCase()
@@ -115,19 +108,18 @@ export default function ReferralTable() {
   const referralColumns = [
     { id: "sno", label: "S.No.", sortable: true },
     { id: "userId", label: "User ID", sortable: true },
-    { id: "wallet", label: "Wallet", sortable: true  },
-    { id: "registrationDate", label: "Registration Date", sortable: true  },
-    { id: "status", label: "Status", sortable: true  },
-    { id: "package", label: "Package", sortable: true  },
-    { id: "activationDate", label: "Activation Date", sortable: true  },
+    { id: "wallet", label: "Wallet", sortable: true },
+    { id: "registrationDate", label: "Registration Date", sortable: true },
+    { id: "status", label: "Status", sortable: true },
+    { id: "package", label: "Package", sortable: true },
+    { id: "activationDate", label: "Activation Date", sortable: true },
   ];
   return (
     <>
       <Breadcrumb title={"Referral"} />
-      <div className='flex w-full gap-5 flex-1  '>
+      <div className='grid w-full gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
         <SearchBox bgColor={"#DFE0FC"} text={"Total "} total={totalCount + " Referral"} icon={'icon-3.png'} filterClick={handleAllClick} />
         <SearchBox bgColor={"#eef0d8"} text={"Last Week Referral"} total={lastWeekReferralCount + " Referral"} icon={'icon-4.png'} filterClick={handleLastWeekClick} />
-
         <SearchBox bgColor={"#d8f0e6"} text={"Active"} total={activeCount + " Referral"} icon={'icon-1.png'} filterClick={handleActiveClick} />
         <SearchBox bgColor={"#f0d8d9"} text={"Inactive"} total={InactiveCount + " Referral"} icon={'icon-2.png'} filterClick={handleInActiveClick} />
       </div>
@@ -163,23 +155,7 @@ export default function ReferralTable() {
             )}
           />
 
-
-          {/* <TablePagination
-            sx={{ marginY: 2 }}
-            rowsPerPageOptions={[5, 10, 25]}
-            component="div"
-            count={rows.length}
-            rowsPerPage={rowsPerPage}
-            page={page}
-            onPageChange={handleChangePage}
-            onRowsPerPageChange={handleChangeRowsPerPage}
-          /> */}
-        </div>
-
-        {/* <FormControlLabel
-        control={<Switch checked={dense} onChange={(e) => setDense(e.target.checked)} />}
-        label="Dense padding"
-      /> */}
+      </div>
       </div>
     </>
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import blog from '../../assets/images/blog.jpg';
+import blog from '/Images/blog.jpg';
 import { Avatar, AvatarGroup } from '@mui/material';
-import user1 from '../../assets/images/user-1.jpg'
-import user2 from '../../assets/images/user-2.jpg'
-import user3 from '../../assets/images/user-3.jpg'
-import user4 from '../../assets/images/user-4.jpg'
+import user1 from '/Images/profile/user-1.jpg'
+import user2 from '/Images/profile/user-2.jpg'
+import user3 from '/Images/profile/user-3.jpg'
+import user4 from '/Images/profile/user-4.jpg'
 
 const FigmaTips = () => {
   return (
