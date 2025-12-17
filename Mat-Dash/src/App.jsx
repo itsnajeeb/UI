@@ -20,6 +20,10 @@ import WithdrawalHistory from './pages/Withdrawal/WithdrawalHistory';
 import Support from './pages/Support';
 import DashboardLayout from './components/CommonComponents/DashboardLayout';
 import LogoutButton from './pages/Logout';
+import Dashboard4 from './pages/Dashboard4';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const App = () => {
   return (
     <>
@@ -28,6 +32,7 @@ const App = () => {
           <Route path='/' element={<Dashboard1 />} />
           <Route path='/dashboard2' element={<Dashboard2 />} />
           <Route path='/dashboard3' element={<Dashboard3 />} />
+          <Route path='/dashboard4' element={<Dashboard4 />} />
 
           <Route path='/apps/chat' element={<Chats />} />
           <Route path='/MyTeam/MyReferral' element={<MyReferral />} />

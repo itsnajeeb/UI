@@ -140,7 +140,7 @@ export default function Withdrawal() {
                                 >
                                     Withdrawal
                                 </span>
-
+ 
                                 {/* BORDER DRAW (last stage) */}
                                 <div className="border-anim z-30">
                                     <span className="top"></span>

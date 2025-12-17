@@ -41,7 +41,7 @@ const FixedSidebarIcons = React.memo(function FixedSidebarIcons({
                     const active = selectedMenu === item.id;
 
                     return (
-                        <ListItem key={item.id} disablePadding sx={{  marginBottom:1.3 }}>
+                        <ListItem key={item.id} disablePadding sx={{ marginBottom: 1.3 }}>
                             <ListItemButton
                                 onClick={(e) => {
                                     e.stopPropagation();
@@ -50,9 +50,9 @@ const FixedSidebarIcons = React.memo(function FixedSidebarIcons({
                                 sx={{
                                     // border: 1,
                                     display: 'flex', justifyContent: 'center', alignItems: 'center',
-                                    padding: 1.8,
-                                    marginX:1.4,
-                                    width: "40px",
+                                    // padding: 1.8,
+                                    padding:0,
+                                    marginX: 1.4,
                                     borderRadius: 4,
                                     bgcolor: `${active ? "var(--bg-primary-color)" : ""}`,
                                     "&:hover": {
@@ -61,15 +61,15 @@ const FixedSidebarIcons = React.memo(function FixedSidebarIcons({
                                 }}
                                 disableTouchRipple
                             >
-                                <span className={` rounded-xl ${active ? 'text-white' : ""}`}>
-                                    {item.icon}
-                                </span>
+                                <div className={`rounded-xl ${active ? 'text-white' : ""}`} >
+                                    <img src={item.icon} alt="" className="object-cover  transition-all duration-300 hover:scale-125" />
+                                </div>
                             </ListItemButton>
                         </ListItem>
                     );
                 })}
             </List>
-        </Box>
+        </Box >
     );
 });
 

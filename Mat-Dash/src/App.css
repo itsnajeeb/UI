@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 :root {
   /* TEXT PRIMARY COLOR  */
   --text-secondary-color: #505056;
@@ -55,75 +56,137 @@
 }
 
 /* BUTTON BORDER ANIMATION */
+
+
 /* BORDER DRAW CONTAINER */
+
+/* Remove default border on hover */
+.group:hover {
+  border-color: transparent;
+}
+
+/* Animated border wrapper */
 .border-anim {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
 
-/* common border styles */
+/* Common */
 .border-anim span {
   position: absolute;
   background-color: #635BFF;
   display: block;
 }
 
-/* TOP LINE */
+/* ===== DEFAULT (hover OUT reverse order) ===== */
+
+/* TOP */
 .border-anim .top {
   top: 0;
   left: 0;
   height: 4px;
   width: 0;
-  transition: width 0.35s ease-out 0.55s;
-  /* Start after BG+text animation */
+  transition: width 0.3s ease;
+  transition-delay: 0.9s;
 }
 
-/* RIGHT LINE */
+/* RIGHT */
 .border-anim .right {
   top: 0;
   right: 0;
   width: 4px;
   height: 0;
-  transition: height 0.35s ease-out 0.90s;
+  transition: height 0.3s ease;
+  transition-delay: 0.6s;
 }
 
-/* BOTTOM LINE */
+/* BOTTOM */
 .border-anim .bottom {
   bottom: 0;
   right: 0;
   height: 4px;
   width: 0;
-  transition: width 0.35s ease-out 1.25s;
+  transition: width 0.3s ease;
+  transition-delay: 0.3s;
 }
 
-/* LEFT LINE */
+/* LEFT */
 .border-anim .left {
   bottom: 0;
   left: 0;
   width: 4px;
   height: 0;
-  transition: height 0.35s ease-out 1.60s;
+  transition: height 0.3s ease;
+  transition-delay: 0s;
 }
 
-/* ACTIVATE BORDER LINES */
+/* ===== HOVER IN (clockwise draw) ===== */
+
 .group:hover .border-anim .top {
   width: 100%;
+  transition-delay: 0s;
 }
 
 .group:hover .border-anim .right {
   height: 100%;
+  transition-delay: 0.3s;
 }
 
 .group:hover .border-anim .bottom {
   width: 100%;
+  transition-delay: 0.6s;
 }
 
 .group:hover .border-anim .left {
   height: 100%;
+  transition-delay: 0.9s;
 }
 
+/* CUSTOM BOX SHADOW */
 
 .boxShadow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+/* CAROUSEL CSS  */
+.slick-center {
+  /* transform: scale(1.05); */
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-slide>div {
+  width: auto !important;
+  /* width: 220px; */
+  display: flex;
+  justify-content: center;
+}
+
+
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide>div {
+  height: 100%;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom {
+  animation: zoomIn 0.3s ease-out;
 }

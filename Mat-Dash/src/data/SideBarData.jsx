@@ -1,46 +1,52 @@
-
+import user11 from '/Images/profile/user-11.png'
+import user12 from '/Images/profile/user-12.png'
+import user13 from '/Images/profile/user-13.png'
+import user15 from '/Images/profile/user-15.png'
+import user16 from '/Images/profile/user-16.png'
+import user17 from '/Images/profile/user-17.png'
+import user18 from '/Images/profile/user-18.png'
 export const MAIN_MENU_ITEMS = [
     {
         id: 1,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:layers-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M4.979 9.685C2.993 8.891 2 8.494 2 8s.993-.89 2.979-1.685l2.808-1.123C9.773 4.397 10.767 4 12 4s2.227.397 4.213 1.192l2.808 1.123C21.007 7.109 22 7.506 22 8s-.993.89-2.979 1.685l-2.808 1.124C14.227 11.603 13.233 12 12 12s-2.227-.397-4.213-1.191z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="m5.766 10l-.787.315C2.993 11.109 2 11.507 2 12s.993.89 2.979 1.685l2.808 1.124C9.773 15.603 10.767 16 12 16s2.227-.397 4.213-1.191l2.808-1.124C21.007 12.891 22 12.493 22 12s-.993-.89-2.979-1.685L18.234 10M5.766 14l-.787.315C2.993 15.109 2 15.507 2 16s.993.89 2.979 1.685l2.808 1.124C9.773 19.603 10.767 20 12 20s2.227-.397 4.213-1.192l2.808-1.123C21.007 16.891 22 16.494 22 16c0-.493-.993-.89-2.979-1.685L18.234 14" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user11,
         ToolTip: "Dashboards",
     },
     {
         id: 2,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:notes-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="m20.312 12.647l.517-1.932c.604-2.255.907-3.382.68-4.358a4 4 0 0 0-1.162-2.011c-.731-.685-1.859-.987-4.114-1.591c-2.255-.605-3.383-.907-4.358-.68a4 4 0 0 0-2.011 1.162c-.587.626-.893 1.543-1.348 3.209l-.244.905l-.517 1.932c-.605 2.255-.907 3.382-.68 4.358a4 4 0 0 0 1.162 2.011c.731.685 1.859.987 4.114 1.592c2.032.544 3.149.843 4.064.73q.15-.019.294-.052a4 4 0 0 0 2.011-1.16c.685-.732.987-1.86 1.592-4.115Z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M16.415 17.974a4 4 0 0 1-1.068 1.678c-.731.685-1.859.987-4.114 1.591s-3.383.907-4.358.679a4 4 0 0 1-2.011-1.161c-.685-.731-.988-1.859-1.592-4.114l-.517-1.932c-.605-2.255-.907-3.383-.68-4.358a4 4 0 0 1 1.162-2.011c.731-.685 1.859-.987 4.114-1.592q.638-.172 1.165-.309" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path strokeLinecap="round" d="m11.777 10l4.83 1.294" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path strokeLinecap="round" d="m11 12.898l2.898.776" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user12,
         ToolTip: "Pages",
     },
     {
         id: 3,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:palette-round-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M2 6a4 4 0 1 1 8 0v12a4 4 0 0 1-8 0z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="m10 8.243l3.314-3.314a4 4 0 1 1 5.657 5.657L9.306 20.25" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M6 22h12a4 4 0 0 0 0-8h-2.5M7 18a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user13,
         ToolTip: "Forms",
     },
     {
         id: 4,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:tuning-square-2-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M10 14a2 2 0 1 1 0 4a2 2 0 0 1 0-4Z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><circle cx="2" cy="2" r="2" transform="matrix(0 -1 -1 0 16 10)" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></circle><path strokeLinecap="round" d="M14 16h5m-9-8H5m0 8h1m13-8h-1" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user15,
         ToolTip: "Tables",
     },
 
     {
         id: 5,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:chart-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M22 22H2" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M21 22v-7.5a1.5 1.5 0 0 0-1.5-1.5h-3a1.5 1.5 0 0 0-1.5 1.5V22" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M15 22V5c0-1.414 0-2.121-.44-2.56C14.122 2 13.415 2 12 2s-2.121 0-2.56.44C9 2.878 9 3.585 9 5v17" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M9 22V9.5A1.5 1.5 0 0 0 7.5 8h-3A1.5 1.5 0 0 0 3 9.5V22" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user16,
         ToolTip: "Charts",
     },
 
     {
         id: 6,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:widget-6-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M2.5 6.5a4 4 0 1 1 8 0v2.667c0 .31 0 .465-.034.592a1 1 0 0 1-.707.707c-.127.034-.282.034-.592.034H6.5a4 4 0 0 1-4-4Zm11 8.333c0-.31 0-.465.034-.592a1 1 0 0 1 .707-.707c.127-.034.282-.034.592-.034H17.5a4 4 0 1 1-4 4z" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path d="M2.5 17.5a4 4 0 0 1 4-4h2.4c.56 0 .84 0 1.054.109a1 1 0 0 1 .437.437c.109.214.109.494.109 1.054v2.4a4 4 0 0 1-8 0Zm11-11a4 4 0 1 1 4 4h-2.857c-.133 0-.2 0-.255-.006a1 1 0 0 1-.882-.882c-.006-.056-.006-.122-.006-.255z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user17,
         ToolTip: "UI Components",
     },
 
     {
         id: 7,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:lock-keyhole-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M2 16c0-2.828 0-4.243.879-5.121C3.757 10 5.172 10 8 10h8c2.828 0 4.243 0 5.121.879C22 11.757 22 13.172 22 16s0 4.243-.879 5.121C20.243 22 18.828 22 16 22H8c-2.828 0-4.243 0-5.121-.879C2 20.243 2 18.828 2 16Z" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><circle cx="12" cy="16" r="2" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></circle><path strokeLinecap="round" d="M6 10V8a6 6 0 1 1 12 0v2" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user18,
         ToolTip: "Authentication Pages",
     },
     {
         id: 8,
-        icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar f-s-24 d-flex justify-content-center m-auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:mirror-left-line-duotone" width="18" height="18"><g fill="transparent" stroke="currentColor" strokeWidth="1.5px"><path d="M12 3h-1C7.229 3 5.343 3 4.172 4.172S3 7.229 3 11v2c0 3.771 0 5.657 1.172 6.828S7.229 21 11 21h1" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path strokeDasharray="2.5 3" strokeLinecap="round" d="M11 3h4c2.828 0 4.243 0 5.121.879C21 4.757 21 6.172 21 9v6c0 2.828 0 4.243-.879 5.121C19.243 21 17.828 21 15 21h-4" opacity=".5" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M12 2v20" stroke="currentColor" fill="transparent" strokeWidth="1.5px"></path></g></svg>,
+        icon: user13,
         ToolTip: "Other",
     },
 
@@ -70,22 +76,27 @@ export const DASHBOARD_NAV_ITEMS = [
                 path: "/dashboard3"
             },
             {
-                id: 4,
+                id: 4, name: "Dashboard 4",
+                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:screencast-2-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M7.142 18.97c-1.957-.07-3.142-.313-3.97-1.142C2 16.657 2 14.771 2 11s0-5.657 1.172-6.828S6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172S22 7.229 22 11s0 5.657-1.172 6.828c-.808.809-1.956 1.06-3.828 1.137" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9.95 16.05c.93-.93 1.396-1.396 1.97-1.427q.08-.003.159 0c.574.03 1.04.496 1.971 1.427c2.026 2.026 3.039 3.039 2.755 3.913a1.5 1.5 0 0 1-.09.218C16.297 21 14.865 21 12 21s-4.298 0-4.715-.819a1.5 1.5 0 0 1-.09-.218c-.284-.874.729-1.887 2.755-3.913Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                path: "/dashboard4"
+            },
+            {
+                id: 5,
                 name: "My Team",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>,
                 path: null, // No direct path, acts as a toggle
                 isDropdown: true,
                 subLinks: [
-                    { id: 41, name: "My Referral", path: "/MyTeam/MyReferral" },
-                    { id: 42, name: "Level Details", path: "/MyTeam/LevelDetails" },
-                    { id: 43, name: "Downline", path: "/MyTeam/Downline" },
-                    { id: 44, name: "Direct Leg Business", path: "/MyTeam/DirectLegBusiness" },
-                    { id: 45, name: "Reward Running Report", path: "/MyTeam/RewardRunningReport" },
-                    { id: 46, name: "LevelTree", path: "/MyTeam/LevelTree" },
+                    { id: 51, name: "My Referral", path: "/MyTeam/MyReferral" },
+                    { id: 52, name: "Level Details", path: "/MyTeam/LevelDetails" },
+                    { id: 53, name: "Downline", path: "/MyTeam/Downline" },
+                    { id: 54, name: "Direct Leg Business", path: "/MyTeam/DirectLegBusiness" },
+                    { id: 55, name: "Reward Running Report", path: "/MyTeam/RewardRunningReport" },
+                    { id: 56, name: "LevelTree", path: "/MyTeam/LevelTree" },
                 ]
             },
             {
-                id: 5,
+                id: 6,
                 name: "Incomes",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-hand-coins-icon lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 16 6 6" /><circle cx="16" cy="9" r="2.9" /><circle cx="6" cy="5" r="3" /></svg>,
                 path: null, // No direct path, acts as a toggle
@@ -98,7 +109,7 @@ export const DASHBOARD_NAV_ITEMS = [
                 ]
             },
             {
-                id: 6,
+                id: 7,
                 name: "Withdrawal",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-landmark-icon lucide-landmark"><path d="M10 18v-7" /><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg>, path: null, // No direct path, acts as a toggle
                 isDropdown: true,
@@ -108,131 +119,132 @@ export const DASHBOARD_NAV_ITEMS = [
                 ]
             },
             {
-                id: 7, name: "Support",
+                id: 8, name: "Support",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-bot-message-square-icon lucide-bot-message-square"><path d="M12 6V2H8" /><path d="M15 11v2" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" /><path d="M9 11v2" /></svg>,
                 path: "/support"
             }, {
-                id: 8, name: "Log Out",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>,
+                id: 9, name: "Log Out",
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></svg>,
                 path: "/logout"
             },
         ]
     },
-    {
-        section: "APPS",
-        links: [
-            {
-                id: 9, name: "Chat", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:chat-round-line-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 10.5h8M8 14h5.5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: "/apps/chat"
-            },
+    
+    // {
+    //     section: "APPS",
+    //     links: [
+    //         {
+    //             id: 9, name: "Chat", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:chat-round-line-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 10.5h8M8 14h5.5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: "/apps/chat"
+    //         },
 
-            {
-                id: 10, name: "Calendar", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:calendar-mark-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M7 4V2.5M17 4V2.5M2 9h20" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><circle cx="16.5" cy="16.5" r="1.5" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle></g></svg>,
-                path: "/apps/calendar"
-            },
-            { id: 11, name: "Email", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:letter-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="m6 8l2.159 1.8c1.837 1.53 2.755 2.295 3.841 2.295s2.005-.765 3.841-2.296L18 8" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>, path: "/apps/email" },
+    //         {
+    //             id: 10, name: "Calendar", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:calendar-mark-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M7 4V2.5M17 4V2.5M2 9h20" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><circle cx="16.5" cy="16.5" r="1.5" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle></g></svg>,
+    //             path: "/apps/calendar"
+    //         },
+    //         { id: 11, name: "Email", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:letter-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="m6 8l2.159 1.8c1.837 1.53 2.755 2.295 3.841 2.295s2.005-.765 3.841-2.296L18 8" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>, path: "/apps/email" },
 
-            { id: 12, name: "Kanban", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:clapperboard-edit-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M21.998 10.5c-.016-3.732-.162-5.735-1.463-7.036C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535c1.241 1.241 3.123 1.43 6.536 1.46" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M21.5 8h-19M7 8l3.5-5.5m3 5.5L17 2.5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="m18.562 13.935l.417-.417a1.77 1.77 0 1 1 2.503 2.503l-.417.417m-2.503-2.503s.052.887.834 1.669s1.669.834 1.669.834m-2.503-2.503l-3.835 3.835c-.26.26-.39.39-.5.533a3 3 0 0 0-.338.545c-.078.164-.136.338-.252.686l-.372 1.116l-.12.36m7.92-4.572l-3.835 3.835c-.26.26-.39.39-.533.5a3 3 0 0 1-.545.338c-.164.078-.338.136-.686.252l-1.116.372l-.36.12m0 0l-.362.12a.477.477 0 0 1-.604-.603l.12-.361m.845.844l-.844-.844" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>, path: "/apps/kanban" },
+    //         { id: 12, name: "Kanban", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:clapperboard-edit-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M21.998 10.5c-.016-3.732-.162-5.735-1.463-7.036C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535c1.241 1.241 3.123 1.43 6.536 1.46" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M21.5 8h-19M7 8l3.5-5.5m3 5.5L17 2.5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="m18.562 13.935l.417-.417a1.77 1.77 0 1 1 2.503 2.503l-.417.417m-2.503-2.503s.052.887.834 1.669s1.669.834 1.669.834m-2.503-2.503l-3.835 3.835c-.26.26-.39.39-.5.533a3 3 0 0 0-.338.545c-.078.164-.136.338-.252.686l-.372 1.116l-.12.36m7.92-4.572l-3.835 3.835c-.26.26-.39.39-.533.5a3 3 0 0 1-.545.338c-.164.078-.338.136-.686.252l-1.116.372l-.36.12m0 0l-.362.12a.477.477 0 0 1-.604-.603l.12-.361m.845.844l-.844-.844" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>, path: "/apps/kanban" },
 
-            {
-                id: 13,
-                name: "User Profile",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:user-circle-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><circle cx="12" cy="9" r="3" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><path strokeLinecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: null, // No direct path, acts as a toggle
-                isDropdown: true,
-                subLinks: [
-                    { id: 91, name: "Profile", path: "/userProfile/profile" },
-                    { id: 92, name: "Followers", path: "/userProfile/followers" },
-                    { id: 93, name: "Friends", path: "/userProfile/friends" },
-                    { id: 94, name: "Gallery", path: "/userProfile/gallery" },
-                ]
-            },
-            {
-                id: 14,
-                name: "Ecommerce",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:cart-5-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3.555 14.257c-.718-3.353-1.078-5.03-.177-6.143C4.278 7 5.993 7 9.422 7h5.156c3.43 0 5.143 0 6.044 1.114s.541 2.79-.177 6.143l-.429 2c-.487 2.273-.73 3.409-1.555 4.076S16.474 21 14.15 21h-4.3c-2.324 0-3.486 0-4.31-.667c-.826-.667-1.07-1.803-1.556-4.076z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8m-6 3h4" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" strokeLinejoin="round" d="m18 9l-3-6M6 9l3-6" opacity=".6" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: null, // No direct path, acts as a toggle
-                isDropdown: true,
-                subLinks: [
-                    { id: 101, name: "Product List", path: "/ecommerce/productList" },
-                    { id: 102, name: "Add Product", path: "/ecommerce/addProduct" },
-                    { id: 104, name: "Edit Product", path: "/ecommerce/editProduct" },
-                    { id: 105, name: "Shop", path: "/ecommerce/shop" },
-                ]
-            },
+    //         {
+    //             id: 13,
+    //             name: "User Profile",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:user-circle-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><circle cx="12" cy="9" r="3" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><path strokeLinecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: null, // No direct path, acts as a toggle
+    //             isDropdown: true,
+    //             subLinks: [
+    //                 { id: 91, name: "Profile", path: "/userProfile/profile" },
+    //                 { id: 92, name: "Followers", path: "/userProfile/followers" },
+    //                 { id: 93, name: "Friends", path: "/userProfile/friends" },
+    //                 { id: 94, name: "Gallery", path: "/userProfile/gallery" },
+    //             ]
+    //         },
+    //         {
+    //             id: 14,
+    //             name: "Ecommerce",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:cart-5-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3.555 14.257c-.718-3.353-1.078-5.03-.177-6.143C4.278 7 5.993 7 9.422 7h5.156c3.43 0 5.143 0 6.044 1.114s.541 2.79-.177 6.143l-.429 2c-.487 2.273-.73 3.409-1.555 4.076S16.474 21 14.15 21h-4.3c-2.324 0-3.486 0-4.31-.667c-.826-.667-1.07-1.803-1.556-4.076z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8m-6 3h4" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" strokeLinejoin="round" d="m18 9l-3-6M6 9l3-6" opacity=".6" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: null, // No direct path, acts as a toggle
+    //             isDropdown: true,
+    //             subLinks: [
+    //                 { id: 101, name: "Product List", path: "/ecommerce/productList" },
+    //                 { id: 102, name: "Add Product", path: "/ecommerce/addProduct" },
+    //                 { id: 104, name: "Edit Product", path: "/ecommerce/editProduct" },
+    //                 { id: 105, name: "Shop", path: "/ecommerce/shop" },
+    //             ]
+    //         },
 
-            {
-                id: 15,
-                name: "Contacts",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:phone-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="m16.1 13.359l.456-.453c.63-.626 1.611-.755 2.417-.317l1.91 1.039c1.227.667 1.498 2.302.539 3.255l-1.42 1.412c-.362.36-.81.622-1.326.67M4.003 5.745c-.035-.62.255-1.178.689-1.61l1.57-1.56c.874-.87 2.348-.735 3.111.284l1.261 1.684c.617.824.55 1.952-.157 2.654l-.286.286" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M18.676 18.965c-1.63.152-5.614-.016-9.86-4.238c-4.005-3.982-4.723-7.395-4.813-8.981" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M16.1 13.359s-1.082 1.076-4.037-1.862s-1.872-4.015-1.872-4.015" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: "/apps/kanban"
-            },
+    //         {
+    //             id: 15,
+    //             name: "Contacts",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:phone-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="m16.1 13.359l.456-.453c.63-.626 1.611-.755 2.417-.317l1.91 1.039c1.227.667 1.498 2.302.539 3.255l-1.42 1.412c-.362.36-.81.622-1.326.67M4.003 5.745c-.035-.62.255-1.178.689-1.61l1.57-1.56c.874-.87 2.348-.735 3.111.284l1.261 1.684c.617.824.55 1.952-.157 2.654l-.286.286" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M18.676 18.965c-1.63.152-5.614-.016-9.86-4.238c-4.005-3.982-4.723-7.395-4.813-8.981" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M16.1 13.359s-1.082 1.076-4.037-1.862s-1.872-4.015-1.872-4.015" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: "/apps/kanban"
+    //         },
 
-            {
-                id: 16,
-                name: "Course",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:book-bookmark-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M4 8c0-2.828 0-4.243.879-5.121C5.757 2 7.172 2 10 2h4c2.828 0 4.243 0 5.121.879C20 3.757 20 5.172 20 8v8c0 2.828 0 4.243-.879 5.121C18.243 22 16.828 22 14 22h-4c-2.828 0-4.243 0-5.121-.879C4 20.243 4 18.828 4 16z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M19.898 16h-12c-.93 0-1.395 0-1.777.102A3 3 0 0 0 4 18.224" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 7h8m-8 3.5h5m0 5.5v3.53c0 .276 0 .414-.095.47s-.224-.006-.484-.13l-1.242-.59c-.088-.04-.132-.062-.179-.062s-.091.021-.179.063l-1.242.59c-.26.123-.39.185-.484.129C9 19.944 9 19.806 9 19.53v-3.08" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: "/apps/kanban"
-            },
+    //         {
+    //             id: 16,
+    //             name: "Course",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:book-bookmark-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M4 8c0-2.828 0-4.243.879-5.121C5.757 2 7.172 2 10 2h4c2.828 0 4.243 0 5.121.879C20 3.757 20 5.172 20 8v8c0 2.828 0 4.243-.879 5.121C18.243 22 16.828 22 14 22h-4c-2.828 0-4.243 0-5.121-.879C4 20.243 4 18.828 4 16z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M19.898 16h-12c-.93 0-1.395 0-1.777.102A3 3 0 0 0 4 18.224" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 7h8m-8 3.5h5m0 5.5v3.53c0 .276 0 .414-.095.47s-.224-.006-.484-.13l-1.242-.59c-.088-.04-.132-.062-.179-.062s-.091.021-.179.063l-1.242.59c-.26.123-.39.185-.484.129C9 19.944 9 19.806 9 19.53v-3.08" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: "/apps/kanban"
+    //         },
 
-            {
-                id: 17,
-                name: "Employee",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:user-id-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><circle cx="9" cy="9" r="2" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><path d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M19 12h-4m4-3h-5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M19 15h-3" opacity=".9" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: "/apps/kanban"
-            },
-
-
-            {
-                id: 18,
-                name: "Notes",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:document-text-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3 10c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h2c3.771 0 5.657 0 6.828 1.172S21 6.229 21 10v4c0 3.771 0 5.657-1.172 6.828S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.172S3 17.771 3 14z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 12h8M8 8h8m-8 8h5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: "/apps/kanban"
-            },
+    //         {
+    //             id: 17,
+    //             name: "Employee",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:user-id-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><circle cx="9" cy="9" r="2" stroke="currentColor" fill="none" strokeWidth="1.5px"></circle><path d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M19 12h-4m4-3h-5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M19 15h-3" opacity=".9" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: "/apps/kanban"
+    //         },
 
 
-            {
-                id: 19,
-                name: "Tickets",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:ticket-sale-line-duotone" width="18" height="18"><g fill="none"><path stroke="currentColor" strokeWidth="1.5px" d="M14.005 4h-4.01c-3.78 0-5.67 0-6.845 1.172c-.81.806-1.061 1.951-1.14 3.817c-.015.37-.023.556.046.679c.07.123.345.278.897.586a1.999 1.999 0 0 1 0 3.492c-.552.309-.828.463-.897.586s-.061.308-.045.678c.078 1.867.33 3.012 1.139 3.818C4.324 20 6.214 20 9.995 20h4.01c3.78 0 5.67 0 6.845-1.172c.81-.806 1.061-1.951 1.14-3.817c.015-.37.023-.556-.046-.679c-.07-.123-.345-.277-.897-.586a1.999 1.999 0 0 1 0-3.492c.552-.308.828-.463.897-.586s.061-.308.045-.679c-.078-1.866-.33-3.01-1.139-3.817C19.676 4 17.786 4 14.005 4Z" opacity=".5" fill="none"></path><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5px" d="m9 15l6-6" fill="none"></path><path fill="currentColor" d="M15.5 14.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5-5a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g></svg>,
-                path: "/apps/kanban"
-            },
+    //         {
+    //             id: 18,
+    //             name: "Notes",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:document-text-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3 10c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h2c3.771 0 5.657 0 6.828 1.172S21 6.229 21 10v4c0 3.771 0 5.657-1.172 6.828S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.172S3 17.771 3 14z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M8 12h8M8 8h8m-8 8h5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: "/apps/kanban"
+    //         },
 
 
-            {
-                id: 20, name: "Contact List", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:phone-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="m16.1 13.359l.456-.453c.63-.626 1.611-.755 2.417-.317l1.91 1.039c1.227.667 1.498 2.302.539 3.255l-1.42 1.412c-.362.36-.81.622-1.326.67M4.003 5.745c-.035-.62.255-1.178.689-1.61l1.57-1.56c.874-.87 2.348-.735 3.111.284l1.261 1.684c.617.824.55 1.952-.157 2.654l-.286.286" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M18.676 18.965c-1.63.152-5.614-.016-9.86-4.238c-4.005-3.982-4.723-7.395-4.813-8.981" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M16.1 13.359s-1.082 1.076-4.037-1.862s-1.872-4.015-1.872-4.015" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: '/contact/list',
-            },
+    //         {
+    //             id: 19,
+    //             name: "Tickets",
+    //             icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:ticket-sale-line-duotone" width="18" height="18"><g fill="none"><path stroke="currentColor" strokeWidth="1.5px" d="M14.005 4h-4.01c-3.78 0-5.67 0-6.845 1.172c-.81.806-1.061 1.951-1.14 3.817c-.015.37-.023.556.046.679c.07.123.345.278.897.586a1.999 1.999 0 0 1 0 3.492c-.552.309-.828.463-.897.586s-.061.308-.045.678c.078 1.867.33 3.012 1.139 3.818C4.324 20 6.214 20 9.995 20h4.01c3.78 0 5.67 0 6.845-1.172c.81-.806 1.061-1.951 1.14-3.817c.015-.37.023-.556-.046-.679c-.07-.123-.345-.277-.897-.586a1.999 1.999 0 0 1 0-3.492c.552-.308.828-.463.897-.586s.061-.308.045-.679c-.078-1.866-.33-3.01-1.139-3.817C19.676 4 17.786 4 14.005 4Z" opacity=".5" fill="none"></path><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5px" d="m9 15l6-6" fill="none"></path><path fill="currentColor" d="M15.5 14.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5-5a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g></svg>,
+    //             path: "/apps/kanban"
+    //         },
 
-            {
-                id: 21, name: "Invoice", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:bill-list-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M16.755 2h-9.51c-1.159 0-1.738 0-2.206.163a3.05 3.05 0 0 0-1.881 1.936C3 4.581 3 5.177 3 6.37v14.004c0 .858.985 1.314 1.608.744a.946.946 0 0 1 1.284 0l.483.442a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0l.483-.442a.946.946 0 0 1 1.284 0c.623.57 1.608.114 1.608-.744V6.37c0-1.193 0-1.79-.158-2.27a3.05 3.05 0 0 0-1.881-1.937C18.493 2 17.914 2 16.755 2Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M10.5 11H17M7 11h.5M7 7.5h.5m-.5 7h.5m3-7H17m-6.5 7H17" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: null, // No direct path, acts as a toggle
-                isDropdown: true,
-                subLinks: [
-                    { id: 171, name: "List", path: "/invoice/list" },
-                    { id: 172, name: "Detail", path: "/invoice/detail" },
-                    { id: 173, name: "Create", path: "/invoice/create" },
-                    { id: 174, name: "Edit", path: "/invoice/edit" },
-                ]
-            },
 
-            {
-                id: 22, name: "Todo", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:airbuds-case-minimalistic-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3 11c0-3.75 0-5.625.955-6.939A5 5 0 0 1 5.06 2.955C6.375 2 8.251 2 12 2s5.625 0 6.939.955a5 5 0 0 1 1.106 1.106C21 5.375 21 7.251 21 11v2c0 3.75 0 5.625-.955 6.939a5 5 0 0 1-1.106 1.106C17.625 22 15.749 22 12 22s-5.625 0-6.939-.955a5 5 0 0 1-1.106-1.106C3 18.625 3 16.749 3 13z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M7 9h10" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: '/todo',
-            },
+    //         {
+    //             id: 20, name: "Contact List", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:phone-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="m16.1 13.359l.456-.453c.63-.626 1.611-.755 2.417-.317l1.91 1.039c1.227.667 1.498 2.302.539 3.255l-1.42 1.412c-.362.36-.81.622-1.326.67M4.003 5.745c-.035-.62.255-1.178.689-1.61l1.57-1.56c.874-.87 2.348-.735 3.111.284l1.261 1.684c.617.824.55 1.952-.157 2.654l-.286.286" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M18.676 18.965c-1.63.152-5.614-.016-9.86-4.238c-4.005-3.982-4.723-7.395-4.813-8.981" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M16.1 13.359s-1.082 1.076-4.037-1.862s-1.872-4.015-1.872-4.015" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: '/contact/list',
+    //         },
 
-            {
-                id: 23, name: "Blog", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:widget-4-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414v11c0 1.886 0 2.828-.586 3.414S8.386 21.5 6.5 21.5s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M13.5 15.5c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414v2c0 1.886 0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414zm0-10c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083c.367-.152.833-.152 1.765-.152h2c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083c.152.367.152.833.152 1.765s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083c-.367.152-.833.152-1.765.152h-2c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C13.5 6.898 13.5 6.432 13.5 5.5Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
-                path: null,
-                isDropdown: true,
-                subLinks: [
-                    { id: 191, name: "Post", path: "/blog/post" },
-                    { id: 192, name: "Detail", path: "/blog/detail" },
-                ]
-            },
+    //         {
+    //             id: 21, name: "Invoice", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:bill-list-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M16.755 2h-9.51c-1.159 0-1.738 0-2.206.163a3.05 3.05 0 0 0-1.881 1.936C3 4.581 3 5.177 3 6.37v14.004c0 .858.985 1.314 1.608.744a.946.946 0 0 1 1.284 0l.483.442a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0l.483-.442a.946.946 0 0 1 1.284 0c.623.57 1.608.114 1.608-.744V6.37c0-1.193 0-1.79-.158-2.27a3.05 3.05 0 0 0-1.881-1.937C18.493 2 17.914 2 16.755 2Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M10.5 11H17M7 11h.5M7 7.5h.5m-.5 7h.5m3-7H17m-6.5 7H17" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: null, // No direct path, acts as a toggle
+    //             isDropdown: true,
+    //             subLinks: [
+    //                 { id: 171, name: "List", path: "/invoice/list" },
+    //                 { id: 172, name: "Detail", path: "/invoice/detail" },
+    //                 { id: 173, name: "Create", path: "/invoice/create" },
+    //                 { id: 174, name: "Edit", path: "/invoice/edit" },
+    //             ]
+    //         },
 
-        ]
-    },
+    //         {
+    //             id: 22, name: "Todo", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:airbuds-case-minimalistic-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M3 11c0-3.75 0-5.625.955-6.939A5 5 0 0 1 5.06 2.955C6.375 2 8.251 2 12 2s5.625 0 6.939.955a5 5 0 0 1 1.106 1.106C21 5.375 21 7.251 21 11v2c0 3.75 0 5.625-.955 6.939a5 5 0 0 1-1.106 1.106C17.625 22 15.749 22 12 22s-5.625 0-6.939-.955a5 5 0 0 1-1.106-1.106C3 18.625 3 16.749 3 13z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path strokeLinecap="round" d="M7 9h10" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: '/todo',
+    //         },
+
+    //         {
+    //             id: 23, name: "Blog", icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:widget-4-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414v11c0 1.886 0 2.828-.586 3.414S8.386 21.5 6.5 21.5s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M13.5 15.5c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414v2c0 1.886 0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414zm0-10c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083c.367-.152.833-.152 1.765-.152h2c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083c.152.367.152.833.152 1.765s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083c-.367.152-.833.152-1.765.152h-2c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C13.5 6.898 13.5 6.432 13.5 5.5Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+    //             path: null,
+    //             isDropdown: true,
+    //             subLinks: [
+    //                 { id: 191, name: "Post", path: "/blog/post" },
+    //                 { id: 192, name: "Detail", path: "/blog/detail" },
+    //             ]
+    //         },
+
+    //     ]
+    // },
 
 ]
 
