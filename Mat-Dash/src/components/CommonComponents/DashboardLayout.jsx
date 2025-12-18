@@ -5,13 +5,13 @@ import TopBar from "./TopBar";
 import useIsLgScreen from "../../hooks/useIsLgScreen";
 import RouteLoader from "./RouteLoader";
 
-const SLIDING_PANEL_WIDTH = 250;
-const FIXED_SIDEBAR_WIDTH = 70;
+const SLIDING_PANEL_WIDTH = 300;
+const FIXED_SIDEBAR_WIDTH = 20;
 
 const DashboardLayout = () => {
   // console.log("LAYOUT RENDER");
 
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
 
   const isLgScreen = useIsLgScreen();
 

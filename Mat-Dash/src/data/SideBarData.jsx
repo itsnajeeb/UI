@@ -1,3 +1,4 @@
+
 import user11 from '/Images/profile/user-11.png'
 import user12 from '/Images/profile/user-12.png'
 import user13 from '/Images/profile/user-13.png'
@@ -5,6 +6,7 @@ import user15 from '/Images/profile/user-15.png'
 import user16 from '/Images/profile/user-16.png'
 import user17 from '/Images/profile/user-17.png'
 import user18 from '/Images/profile/user-18.png'
+
 export const MAIN_MENU_ITEMS = [
     {
         id: 1,
@@ -62,28 +64,33 @@ export const DASHBOARD_NAV_ITEMS = [
             {
                 id: 1,
                 name: "Dashboard 1",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:widget-add-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M14.5 6.5h3m0 0h3m-3 0v3m0-3v-3" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2.5 17.5c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:widget-add-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M14.5 6.5h3m0 0h3m-3 0v3m0-3v-3" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M2.5 17.5c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                icon: user11,
                 path: "/"
             },
             {
                 id: 2, name: "Dashboard 2",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:chart-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M22 22H2" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M21 22v-7.5a1.5 1.5 0 0 0-1.5-1.5h-3a1.5 1.5 0 0 0-1.5 1.5V22" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M15 22V5c0-1.414 0-2.121-.44-2.56C14.122 2 13.415 2 12 2s-2.121 0-2.56.44C9 2.878 9 3.585 9 5v17" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9 22V9.5A1.5 1.5 0 0 0 7.5 8h-3A1.5 1.5 0 0 0 3 9.5V22" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:chart-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M22 22H2" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M21 22v-7.5a1.5 1.5 0 0 0-1.5-1.5h-3a1.5 1.5 0 0 0-1.5 1.5V22" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M15 22V5c0-1.414 0-2.121-.44-2.56C14.122 2 13.415 2 12 2s-2.121 0-2.56.44C9 2.878 9 3.585 9 5v17" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9 22V9.5A1.5 1.5 0 0 0 7.5 8h-3A1.5 1.5 0 0 0 3 9.5V22" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                icon: user12,
                 path: "/dashboard2"
             },
             {
                 id: 3, name: "Dashboard 3",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:screencast-2-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M7.142 18.97c-1.957-.07-3.142-.313-3.97-1.142C2 16.657 2 14.771 2 11s0-5.657 1.172-6.828S6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172S22 7.229 22 11s0 5.657-1.172 6.828c-.808.809-1.956 1.06-3.828 1.137" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9.95 16.05c.93-.93 1.396-1.396 1.97-1.427q.08-.003.159 0c.574.03 1.04.496 1.971 1.427c2.026 2.026 3.039 3.039 2.755 3.913a1.5 1.5 0 0 1-.09.218C16.297 21 14.865 21 12 21s-4.298 0-4.715-.819a1.5 1.5 0 0 1-.09-.218c-.284-.874.729-1.887 2.755-3.913Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:screencast-2-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M7.142 18.97c-1.957-.07-3.142-.313-3.97-1.142C2 16.657 2 14.771 2 11s0-5.657 1.172-6.828S6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172S22 7.229 22 11s0 5.657-1.172 6.828c-.808.809-1.956 1.06-3.828 1.137" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9.95 16.05c.93-.93 1.396-1.396 1.97-1.427q.08-.003.159 0c.574.03 1.04.496 1.971 1.427c2.026 2.026 3.039 3.039 2.755 3.913a1.5 1.5 0 0 1-.09.218C16.297 21 14.865 21 12 21s-4.298 0-4.715-.819a1.5 1.5 0 0 1-.09-.218c-.284-.874.729-1.887 2.755-3.913Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                icon: user13,
                 path: "/dashboard3"
             },
             {
                 id: 4, name: "Dashboard 4",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:screencast-2-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M7.142 18.97c-1.957-.07-3.142-.313-3.97-1.142C2 16.657 2 14.771 2 11s0-5.657 1.172-6.828S6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172S22 7.229 22 11s0 5.657-1.172 6.828c-.808.809-1.956 1.06-3.828 1.137" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9.95 16.05c.93-.93 1.396-1.396 1.97-1.427q.08-.003.159 0c.574.03 1.04.496 1.971 1.427c2.026 2.026 3.039 3.039 2.755 3.913a1.5 1.5 0 0 1-.09.218C16.297 21 14.865 21 12 21s-4.298 0-4.715-.819a1.5 1.5 0 0 1-.09-.218c-.284-.874.729-1.887 2.755-3.913Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" matlistitemicon data-icon="solar:screencast-2-line-duotone" width="18" height="18"><g fill="none" stroke="currentColor" strokeWidth="1.5px"><path strokeLinecap="round" d="M7.142 18.97c-1.957-.07-3.142-.313-3.97-1.142C2 16.657 2 14.771 2 11s0-5.657 1.172-6.828S6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172S22 7.229 22 11s0 5.657-1.172 6.828c-.808.809-1.956 1.06-3.828 1.137" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path><path d="M9.95 16.05c.93-.93 1.396-1.396 1.97-1.427q.08-.003.159 0c.574.03 1.04.496 1.971 1.427c2.026 2.026 3.039 3.039 2.755 3.913a1.5 1.5 0 0 1-.09.218C16.297 21 14.865 21 12 21s-4.298 0-4.715-.819a1.5 1.5 0 0 1-.09-.218c-.284-.874.729-1.887 2.755-3.913Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path></g></svg>,
+                icon: user15,
                 path: "/dashboard4"
             },
             {
                 id: 5,
                 name: "My Team",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>,
+                icon : user16,
                 path: null, // No direct path, acts as a toggle
                 isDropdown: true,
                 subLinks: [
@@ -98,7 +105,8 @@ export const DASHBOARD_NAV_ITEMS = [
             {
                 id: 6,
                 name: "Incomes",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-hand-coins-icon lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 16 6 6" /><circle cx="16" cy="9" r="2.9" /><circle cx="6" cy="5" r="3" /></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-hand-coins-icon lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 16 6 6" /><circle cx="16" cy="9" r="2.9" /><circle cx="6" cy="5" r="3" /></svg>,
+                icon : user17,
                 path: null, // No direct path, acts as a toggle
                 isDropdown: true,
                 subLinks: [
@@ -111,7 +119,8 @@ export const DASHBOARD_NAV_ITEMS = [
             {
                 id: 7,
                 name: "Withdrawal",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-landmark-icon lucide-landmark"><path d="M10 18v-7" /><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg>, path: null, // No direct path, acts as a toggle
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-landmark-icon lucide-landmark"><path d="M10 18v-7" /><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg>, path: null, // No direct path, acts as a toggle
+                icon : user18,
                 isDropdown: true,
                 subLinks: [
                     { id: 61, name: "Withdrawal", path: "/Withdrawal/Withdrawal" },
@@ -120,16 +129,18 @@ export const DASHBOARD_NAV_ITEMS = [
             },
             {
                 id: 8, name: "Support",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-bot-message-square-icon lucide-bot-message-square"><path d="M12 6V2H8" /><path d="M15 11v2" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" /><path d="M9 11v2" /></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-bot-message-square-icon lucide-bot-message-square"><path d="M12 6V2H8" /><path d="M15 11v2" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" /><path d="M9 11v2" /></svg>,
+                icon:user13,
                 path: "/support"
             }, {
                 id: 9, name: "Log Out",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></svg>,
+                // icon: <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokelnejoin="round" className="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></svg>,
+                icon:user12,
                 path: "/logout"
             },
         ]
     },
-    
+
     // {
     //     section: "APPS",
     //     links: [

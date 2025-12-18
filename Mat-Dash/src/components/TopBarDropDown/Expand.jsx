@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Menu from '@mui/material/Menu';
 import { ArrowDownNarrowWide, BookText, CalendarDays, ChevronDown, ChevronUp, Ellipsis, ListChecks, MailCheck, MessageSquareMore, NotebookText, SquareUser, TicketMinus } from 'lucide-react';
-
+import image from '/Images/profile/user-14.png';
 import {
     Box,
     Button,
@@ -15,7 +15,7 @@ import {
     Collapse,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+// import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import logo from '/Images/logo.svg';
 const data = [
@@ -106,26 +106,27 @@ export const LgScreen = () => {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
+                disableRipple
                 sx={{
-                    width: 36,
-                    height: 36,
+                    width: 62,
+                    height: 32,
                     color: "black",
                     minWidth: 0,
                     zIndex: 0,
                     position: "relative",
                     p: 1,
-                    '&:hover': {
-                        color: "#827cf4"
-                    },
+                   
                 }}
             >
-                
-                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar icon-20 d-flex" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:widget-3-line-duotone">
+
+                {/* <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--solar icon-20 d-flex" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:widget-3-line-duotone">
                     <g fill="none" stroke="currentColor" strokeWidth="1.5px">
                         <path d="M2.5 6.5a4 4 0 1 1 8 0a4 4 0 0 1-8 0Zm11 11a4 4 0 1 1 8 0a4 4 0 0 1-8 0Z" opacity=".5" stroke="currentColor" fill="none" strokeWidth="1.5px"></path>
                         <path d="M21.5 6.5a4 4 0 1 0-8 0a4 4 0 0 0 8 0Zm-11 11a4 4 0 1 0-8 0a4 4 0 0 0 8 0Z" stroke="currentColor" fill="none" strokeWidth="1.5px"></path>
                     </g>
-                </svg>
+                </svg> */}
+
+                <img src={image} alt="" className='transition-all duration-300 hover:scale-110' />
             </Button>
 
             <Menu

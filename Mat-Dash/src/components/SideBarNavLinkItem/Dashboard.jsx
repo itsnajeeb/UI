@@ -65,7 +65,8 @@ const Dashboard = React.memo(function DASHBOARDS() {
                         "&:hover": { bgcolor: "var(--hover-bg-color)" },
                       }}  >
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        {item.icon}
+                        {/* {item.icon} */}
+                        <img src={item.icon} alt="" className="w-12 h-12" />
                       </ListItemIcon>
 
                       <ListItemText primary={item.name} />
@@ -155,8 +156,9 @@ const Dashboard = React.memo(function DASHBOARDS() {
                         color: active ? "white" : "black",
                       }}
                     >
-                      {item.icon}
+                      <img src={item.icon} alt="" srcset="" className="w-12 h-12" />
                     </ListItemIcon>
+                    
                     <ListItemText primary={item.name} />
                   </ListItemButton>
                 </NavLink>
