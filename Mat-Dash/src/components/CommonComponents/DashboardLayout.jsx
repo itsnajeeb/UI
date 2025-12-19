@@ -51,7 +51,7 @@ const DashboardLayout = () => {
         className="px-3 py-4 rounded-3xl bg-white w-full"
         style={{ marginLeft, transition: "margin-left 0.3s ease" }}
       >
-        <TopBar setIsDrawerOpen={setIsDrawerOpen} />
+        <TopBar setIsDrawerOpen={setIsDrawerOpen}  />
         <Suspense fallback={<RouteLoader/>}>
           <Outlet />
         </Suspense>

@@ -4,7 +4,7 @@ import Notification from '../TopBarDropDown/Notification'
 import { LgScreen, MdScreen } from '../TopBarDropDown/Expand'
 import Search from '../TopBarDropDown/Search'
 import ProfileDropDownforLgScreen, { ProfileDropDownforMediumScreen } from './ProfileDropDown'
-import { MenuIcon } from 'lucide-react'
+import { Menu, MenuIcon } from 'lucide-react'
 
 const TopBar = ({ setIsDrawerOpen }) => {
     const [openSearchDialog, setOpenSearchDialog] = useState(false);
@@ -17,7 +17,7 @@ const TopBar = ({ setIsDrawerOpen }) => {
     return (
         <div className='flex  justify-between mb-5'>
             <div className='flex  gap-3 justify-center items-center px-4 lg:px-0'>
-                <div className='block lg:hidden cursor-pointer'
+                <div className='block  cursor-pointer'
                     onClick={() => setIsDrawerOpen(prev => !prev)} // Toggle the state
                 >
                     <MenuIcon size={18} />
@@ -31,6 +31,9 @@ const TopBar = ({ setIsDrawerOpen }) => {
                 <Search open={openSearchDialog}
                     handleClose={handleCloseSearchDialog}
                 /> */}
+                <div>
+                    {/* <Menu/> */}
+                </div>
 
                 <div className='hidden lg:flex cursor-pointer   rounded-full  z-10' >
                     <LgScreen />

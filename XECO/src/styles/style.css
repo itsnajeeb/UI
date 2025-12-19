@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+.manrope-fonts {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.oxanium-fonts {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.saira-fonts {
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@keyframes floatLeft {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes floatRight {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+
+.scroll-arrow {
+    font-size: 26px;
+    color: #ffffff;
+    opacity: 0;
+    animation: smoothDown 2.2s linear infinite;
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.15s;
+}
+
+.delay-2 {
+    animation-delay: 0.3s;
+}
+
+@keyframes smoothDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(12px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+/* FOR Parners slider  */
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+
+.slick-slide>div {
+    width: auto !important;
+    /* width: 220px; */
+    display: flex;
+    justify-content: center;
+}

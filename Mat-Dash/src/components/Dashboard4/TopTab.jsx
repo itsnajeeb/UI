@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 const TopTab = () => {
     return (
-        <div className='bg-white px-8 py-4 flex justify-between items-center rounded-xl manrope-fontFamliy'>
-            <h1 className='font-semibold text-lg'>Main Stream </h1>
+        <div className='bg-white px-4 py-4 flex justify-between items-center rounded-xl manrope-fontFamliy 
+        lg:px-8'>
+            <h1 className='font-semibold text-base lg:text-lg'>Main Stream </h1>
             <button
                 className="group relative overflow-hidden
                         transition-all duration-300 font-medium
@@ -14,7 +15,7 @@ const TopTab = () => {
                         text-base flex gap-2 items-center"  >
                 <Link className='flex gap-1 justify-center items-center text-base'>
                     <span className='text-primary-color'><UserRoundPlus size={17} /></span>
-                    <span className='text-primary-color text-sm'>Add Friends</span>
+                    <span className='text-primary-color text-xs lg:text-sm'>Add Friends</span>
                 </Link>
 
                 <div className="border-anim pointer-events-none">

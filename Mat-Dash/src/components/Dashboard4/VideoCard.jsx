@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 export default function VideoCard({play, setPlay}) {
 
   return (
-    <div className="w-full h-67.5 rounded-xl overflow-hidden relative bg-black">
+    <div className="w-full lg:h-67.5 rounded-xl overflow-hidden relative bg-black h-48 md:h-56">
 
       {/* THUMBNAIL */}
       {!play && (
