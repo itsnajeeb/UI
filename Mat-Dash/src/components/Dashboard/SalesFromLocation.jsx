@@ -1,4 +1,3 @@
-// src/components/SalesLocationsDashboard.jsx
 import React, { useRef, useEffect, useMemo } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
@@ -148,7 +147,7 @@ const SalesFromLocation = () => {
                 <p className="text-sm font-normal text-[#526b7a]">4 top most countries</p>
             </header>
 
-            <div className="relative mb-10 h-[200px] rounded-lg  overflow-hidden ">
+            <div className="relative mb-10 h-50 rounded-lg  overflow-hidden ">
                 <div ref={mapRef} id="chartdiv" className="w-full h-full"></div>
             </div>
 

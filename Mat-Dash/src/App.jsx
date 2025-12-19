@@ -1,9 +1,6 @@
-import React, { lazy } from 'react'
-const Dashboard1 = lazy(() => import("./pages/Dashboard1"));
+import React  from 'react'
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-const Dashboard2 = lazy(() => import("./pages/Dashboard2"));
-const Dashboard3 = lazy(() => import("./pages/Dashboard3"));
 import Chats from './pages/Chats';
 import MyReferral from './pages/MyTeam/MyReferral';
 import LevelDetails from './pages/MyTeam/LevelDetails';
@@ -20,19 +17,16 @@ import WithdrawalHistory from './pages/Withdrawal/WithdrawalHistory';
 import Support from './pages/Support';
 import DashboardLayout from './components/CommonComponents/DashboardLayout';
 import LogoutButton from './pages/Logout';
-import Dashboard4 from './pages/Dashboard4';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Dashboard from './pages/Dashboard';
 const App = () => {
   return (
     <>
       <Routes>
         <Route element={<DashboardLayout />}>
-          <Route path='/' element={<Dashboard1 />} />
-          <Route path='/dashboard2' element={<Dashboard2 />} />
-          <Route path='/dashboard3' element={<Dashboard3 />} />
-          <Route path='/dashboard4' element={<Dashboard4 />} />
+          <Route path='/' element={<Dashboard />} />
 
           <Route path='/apps/chat' element={<Chats />} />
           <Route path='/MyTeam/MyReferral' element={<MyReferral />} />

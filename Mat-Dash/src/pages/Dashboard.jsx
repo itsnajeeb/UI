@@ -1,21 +1,21 @@
 import React from 'react'
-import WelcomeCard from '../components/Dashboard2/WelcomeCard'
-import RevenueByProduct from '../components/Dashboard1/RevenueByProduct'
-import Card from '../components/Dashboard2/Card'
+import WelcomeCard from '../components/Dashboard/WelcomeCard'
+import RevenueByProduct from '../components/CommonComponents/RevenueByProduct'
+import Card from '../components/Dashboard/Card'
 import { customerData, subscriptionData } from '../data/DashboardData'
-import RevenueForcast from '../components/Dashboard2/RevenueForcast'
-import SmartCard from '../components/Dashboard2/SmartCard'
-import Customer from '../components/Dashboard2/Customer'
-import WeeklySchedule from '../components/Dashboard2/WeeklySchedule'
-import TotalIncome from '../components/Dashboard2/TotalIncome'
-import SalesFromLocation from '../components/Dashboard2/SalesFromLocation'
+import RevenueForcast from '../components/Dashboard/RevenueForcast'
+import SmartCard from '../components/Dashboard/SmartCard'
+import Customer from '../components/Dashboard/Customer'
+import WeeklySchedule from '../components/Dashboard/WeeklySchedule'
+import TotalIncome from '../components/Dashboard/TotalIncome'
+import SalesFromLocation from '../components/Dashboard/SalesFromLocation'
 import { locationData } from '../data/CountryLocation'
-import WeeklyStats from '../components/Dashboard2/WeeklyStats'
-import DailyActivities from '../components/Dashboard2/DailyActivities'
-import FigmaTips from '../components/Dashboard2/FigmaTips'
+import WeeklyStats from '../components/Dashboard/WeeklyStats'
+import DailyActivities from '../components/Dashboard/DailyActivities'
+import FigmaTips from '../components/Dashboard/FigmaTips'
 
-const Dashboard2 = () => {
-    // console.log("DASHBOARD-2 ");
+const Dashboard = () => {
+    // console.log("DASHBOARD ");
 
     return (
 
@@ -98,4 +98,4 @@ const Dashboard2 = () => {
     )
 }
 
-export default React.memo(Dashboard2);
+export default React.memo(Dashboard);
