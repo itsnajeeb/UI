@@ -23,7 +23,7 @@ export default function PlatformIntro() {
   ]
   return (
     <section className="relative w-full min-h-screen overflow-hidden rounded-3xl
-      bg-linear-to-b from-[#3f9f8f] via-[#0c4f4a] to-[#02040f] px-6 py-24">
+      bg-linear-to-b from-[#3f9f8f] via-[#0c4f4a] to-[#010314] px-6 py-24">
 
       {/* GRID LINES */}
       {/* PERSPECTIVE GRID */}
@@ -56,7 +56,7 @@ export default function PlatformIntro() {
           data.map((dt, idx) => (
 
 
-            <div
+            <div key={idx}
               className="
         relative py-5
         rounded-2xl
@@ -132,14 +132,26 @@ export default function PlatformIntro() {
       </div>
 
       {/* LEFT BLUR CIRCLE */}
-      <div className="absolute left-[-120px] bottom-32 w-80 h-80 rounded-full
+      {/* <div className="absolute left-[-120px] bottom-32 w-80 h-80 rounded-full
         bg-gradient-to-br from-[#3fbfa8] to-[#0b3a36]
-        blur-3xl opacity-80" />
+        blur-3xl opacity-80" /> */}
 
       {/* RIGHT BLUR CIRCLE */}
-      <div className="absolute right-[-180px] bottom-16 w-[420px] h-[420px]
+      {/* <div className="absolute right-[-180px] bottom-16 w-[420px] h-[420px]
         rounded-full bg-gradient-to-br from-[#4fd1c5] to-[#0a2e2a]
-        blur-3xl opacity-80" />
+        blur-3xl opacity-80" /> */}
+
+
+      <div className="w-full absolute bottom-0 flex justify-center my-10">
+        <div className="h-[2px] w-full max-w-6xl bg-linear-to-r 
+    from-transparent 
+    via-[#fff] 
+    to-transparent
+    opacity-60
+  " />
+      </div>
+
+
     </section >
   );
 }

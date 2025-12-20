@@ -4,18 +4,18 @@ export default function Card({ title, description, img }) {
     return (
         <div
             className="
-        relative w-full max-w-[650px] 
+        relative w-full max-w-162.5 
         rounded-2xl overflow-hidden
         bg-linear-to-br from-[#0b0f1d] via-[#0a0d1a] to-[#050814]
         border border-white/10
         shadow-[0_20px_60px_rgba(0,0,0,0.6)]
         px-14 py-10
-        flex items-center justify-between
+        flex items-center justify-between 
       "
         >
             {/* LEFT CONTENT */}
-            <div className="z-10 max-w-[300px] ">
-                <h2 className="text-3xl font-semibold text-white leading-tight">
+            <div className="z-10 max-w-75 ">
+                <h2 className="text-3xl font-semibold text-white leading-tight hover:text-primary-color transition-all duration-500 cursor-pointer">
                     {title}
                 </h2>
 

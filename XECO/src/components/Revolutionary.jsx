@@ -15,7 +15,7 @@ const Revolutionary = () => {
 
             <br />
 
-            <div className='flex flex-wrap justify-center gap-8 mt-10'>
+            <div className='flex flex-wrap justify-center gap-8 mt-10 '>
                 <Card title="Mobile Payment Make Easy" description=" Add new, trending and rare artwork to your collection." img={img1} />
                 <Card title="Lifetime Free Transaction" description=" Add new, trending and rare artwork to your collection." img={img2} />
                 <Card title="Protect the Identity" description=" Add new, trending and rare artwork to your collection." img={img3} />

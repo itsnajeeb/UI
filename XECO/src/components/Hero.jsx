@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import ScrollDownArrow from "./scrollDownArrow";
+import ScrollDownArrow from "./CommonComponents/scrollDownArrow";
 import shape01 from '/assets/images/banner_shape01.png'
 import shape02 from '/assets/images/banner_shape02.png'
 const Hero = () => {
