@@ -9,7 +9,6 @@ import img5 from '/assets/images/profile/team_img05.png'
 import img6 from '/assets/images/profile/team_img06.png'
 import img7 from '/assets/images/profile/team_img07.png'
 import img8 from '/assets/images/profile/team_img08.png'
-import { ChevronRight } from "lucide-react";
 
 const team = [
     { name: "Floyd Miles", role: "Marketer", image: img1 },
@@ -34,10 +33,10 @@ const TeamSlider = () => {
         arrows: true,
         dots: false,
 
-        draggable: true,       
-        swipe: true,           
+        draggable: true,
+        swipe: true,
 
-        touchThreshold: 20,    
+        touchThreshold: 20,
         speed: 500,
         cssEase: "ease-out",
 
@@ -45,14 +44,27 @@ const TeamSlider = () => {
         pauseOnFocus: true,
 
         responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 3 } },
-            { breakpoint: 640, settings: { slidesToShow: 2 } },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false, // ✅
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false, // ✅ MOST IMPORTANT
+                },
+            },
         ],
+
 
     };
 
     return (
-        <div className="py-32 manrope-fonts">
+        <div className="py-10 md:py-20 lg:py-32 manrope-fonts">
             <div className="text-center my-14">
                 <GradientText title="Meet the Brick Veneers" />
             </div>

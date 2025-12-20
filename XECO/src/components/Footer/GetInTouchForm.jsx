@@ -2,19 +2,20 @@ import GradientText from "../CommonComponents/GradientText";
 
 export default function GetInTouchForm() {
     return (
-        <section className="flex justify-center items-center  bg-[#050714] rounded-3xl flex-col mt-40">
+        <section id="CONTACT" className=" scroll-mt-10 flex justify-center  items-center  bg-[#050714] rounded-3xl flex-col mt-40">
             <div className='text-center mb-14'>
                 <GradientText title={"Have Any Questions?"} />
             </div>
             <div
                 className="
-          w-full max-w-4xl rounded-3xl overflow-hidden 
+          w-full max-w-4xl  rounded-3xl overflow-hidden 
           bg-gradient-to-b from-[#141728] to-[#0a0d1c]
-          p-12 shadow-[0_40px_80px_rgba(0,0,0,0.6)]
+          px-5 py-7 shadow-[0_40px_80px_rgba(0,0,0,0.6)]
+          md-p-12
         "
             >
                 {/* TITLE */}
-                <h2 className="text-center text-3xl font-semibold text-white mb-10">
+                <h2 className="text-center text-3xl font-semibold text-white mb-7 md:mb-10">
                     Get In Touch Now
                 </h2>
 

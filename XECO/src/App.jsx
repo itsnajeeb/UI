@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from './components/Hero'
-import './styles/style.css';
 import ContributionReceive from './components/ContributionReceive';
 import Partners from './components/Partners';
 import Revolutionary from './components/Revolutionary';
@@ -12,6 +11,10 @@ import TeamSlider from './components/OurTeam/TeamSlider';
 import Accordion from './components/Accordions';
 import MobileControlHero from './components/MobileControl';
 import FooterSection from './components/Footer/FooterSection';
+import 'remixicon/fonts/remixicon.css'
+import './styles/style.css';
+
+
 const App = () => {
   return (
     <div>

@@ -4,18 +4,20 @@ import img1 from "/assets/images/features_img01.png"; // apna coin / bitcoin ima
 import img2 from "/assets/images/features_img02.png"; // apna coin / bitcoin image
 import img3 from "/assets/images/features_img03.png"; // apna coin / bitcoin image
 import img4 from "/assets/images/features_img04.png"; // apna coin / bitcoin image
+import GradientText from './CommonComponents/GradientText';
 
 const Revolutionary = () => {
     return (
-        <div className='mt-36 mb-28'>
+        <div id="FEATURE" className= ' min-h-screen scroll-mt-28 mb-20 md:mt-38'>
             <div className='flex item-center flex-col justify-center space-y-3'>
-                <h1 className=' text-5xl text-center font-semibold text-gray-200/95'>Revolutionary ICO Platform with Exclusive </h1>
-                <h4 className='text-white text-4xl text-center font-medium '>Rewards Program</h4>
+                <div className='px-5 text-center max-w-4xl mx-auto'>
+                    <GradientText title={"Revolutionary ICO Platform with Rewards Program "} />
+                </div>
             </div>
 
             <br />
 
-            <div className='flex flex-wrap justify-center gap-8 mt-10 '>
+            <div className='flex flex-wrap justify-center gap-8 mt-6 px-3 md:mt-10 '>
                 <Card title="Mobile Payment Make Easy" description=" Add new, trending and rare artwork to your collection." img={img1} />
                 <Card title="Lifetime Free Transaction" description=" Add new, trending and rare artwork to your collection." img={img2} />
                 <Card title="Protect the Identity" description=" Add new, trending and rare artwork to your collection." img={img3} />

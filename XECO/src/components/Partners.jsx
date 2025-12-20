@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,13 +11,6 @@ import brand_img06 from '/assets/images/brand_img06.png';
 import brand_img07 from '/assets/images/brand_img07.png';
 
 function Partners() {
-  let sliderRef = useRef(null);
-  const play = () => {
-    sliderRef.slickPlay();
-  };
-  const pause = () => {
-    sliderRef.slickPause();
-  };
 
   const settings = {
     variableWidth: true,

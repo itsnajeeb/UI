@@ -88,6 +88,7 @@
 /* FOR Parners slider  */
 .slick-slider {
     overflow: hidden;
+    height: auto !important;
 }
 
 .slick-list {
@@ -95,8 +96,8 @@
 }
 
 .slick-track {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: stretch;
 }
 
 

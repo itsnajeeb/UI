@@ -1,4 +1,3 @@
-import GradientText from '../CommonComponents/GradientText';
 import GetInTouchForm from './GetInTouchForm';
 import footerShape01 from '/assets/images/footer_shape01.png'
 import footerShape02 from '/assets/images/footer_shape02.png'
@@ -8,16 +7,11 @@ export default function FooterSection() {
         <footer className="relative mt-64 manrope-fonts">
            
 
-            <div className="absolute -top-80 left-1/2  -translate-x-1/2 z-30 w-full max-w-4xl px-6">
+            <div className="absolute -top-80 left-1/2  -translate-x-1/2 z-30 w-full max-w-4xl px-11">
                 <GetInTouchForm />
             </div>
 
-            <div className=" mx-7 rounded-2xl border border-white
-  relative overflow-hidden
-  top-20    pt-[300px]
-  bg-linear-to-b from-[#2f8b7a] via-[#0e3b3a] to-[#050714]
-  text-white
-">
+            <div className=" mx-5 rounded-2xl relative overflow-hidden top-25 pt-75 bg-linear-to-b from-[#2f8b7a] via-[#0e3b3a] to-[#050714] text-white ">
 
                 {/* BACKGROUND GRID EFFECT */}
                 <div className="absolute inset-0 opacity-20 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.08)_96%),linear-gradient(90deg,transparent_95%,rgba(255,255,255,0.08)_96%)] bg-[size:80px_80px]" />
@@ -25,7 +19,7 @@ export default function FooterSection() {
                 {/* LEFT BALL */}
                 <img
                     src={footerShape01}
-                    className="absolute left-[0px] top-40 bottom-40 w-20 h-38 opacity-70"
+                    className="hidden md:block absolute left-[0px] top-40 bottom-40 w-20 h-38 opacity-70"
                     alt=""
                 />
 
@@ -39,9 +33,6 @@ export default function FooterSection() {
                
 
                 <div className="relative z-10 max-w-[1200px] mx-auto px-10 pt-32 pb-16">
-
-                    {/* TITLE */}
-
 
                     {/* FOOTER GRID */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12  overflow-visible">
@@ -92,7 +83,7 @@ export default function FooterSection() {
                                 Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo
                             </p>
 
-                            <div className="flex  items-center justify-center bg-[#0b1220] rounded-xl overflow-hidden">
+                            <div className="flex  items-center justify-between bg-[#0b1220] rounded-xl overflow-hidden  ">
 
                                 <input
                                     type="email"
@@ -100,7 +91,7 @@ export default function FooterSection() {
                                     className="bg-transparent px-4 py-4 outline-none text-sm "
                                 />
 
-                                <button className="bg-white px-4 hover:bg-primary-color transition-all duration-300 overflow-visible  cursor-pointer flex justify-center items-center text-black  py-4   mr-1">
+                                <button className="bg-white px-4 hover:bg-primary-color transition-all duration-300 overflow-hidden cursor-pointer flex justify-center items-center text-black  py-4   mr-1">
                                     <TelegramIcon/>
                                 </button>
                             </div>

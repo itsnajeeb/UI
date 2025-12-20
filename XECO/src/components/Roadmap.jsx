@@ -54,8 +54,8 @@ const RoadmapSlider = () => {
     };
 
     return (
-        <div className="bg-gradient-to-b from-[#050816] to-[#02040f] pt-28 overflow-hidden manrope-fonts ">
-            <div className="text-center mb-16">
+        <div id="ROADMAP" className="min-h-screen scroll-mt-10 bg-lienar-to-b  h-auto from-[#050816] to-[#02040f] pt-20  overflow-hidden manrope-fonts md:pt-28 ">
+            <div className="text-center mb-10 md:mb-16">
                 <GradientText title="Our Roadmap"/>
             </div>
             <Slider {...settings} className="">

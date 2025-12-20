@@ -23,7 +23,7 @@ export default function PlatformIntro() {
   ]
   return (
     <section className="relative w-full min-h-screen overflow-hidden rounded-3xl
-      bg-linear-to-b from-[#3f9f8f] via-[#0c4f4a] to-[#010314] px-6 py-24">
+      bg-linear-to-b from-[#3f9f8f] via-[#0c4f4a] to-[#010314] px-3 py-20 md:py-28 md:px6 ">
 
       {/* GRID LINES */}
       {/* PERSPECTIVE GRID */}
@@ -50,7 +50,7 @@ export default function PlatformIntro() {
 
 
       {/* FEATURE CARDS */}
-      <div className="flex max-w-7xl  mx-auto justify-between gap-10">
+      <div className="flex max-w-7xl flex-wrap  mx-auto justify-center gap-10">
 
         {
           data.map((dt, idx) => (
@@ -58,15 +58,16 @@ export default function PlatformIntro() {
 
             <div key={idx}
               className="
-        relative py-5
+        relative py-3
         rounded-2xl
         bg-white/10
+        w-full
+        max-w-100 flex-shirink
         backdrop-blur-md
-        border border-white/20
+        border border-white/10
         shadow-[0_8px_30px_rgba(0,0,0,0.35)]
-        px-6
-        flex items-center gap-5
-      "
+        px-4 md:px-6 md:py-5
+        flex items-center gap-5  "
             >
               {/* ICON */}
               <img
@@ -95,20 +96,19 @@ export default function PlatformIntro() {
       </div>
 
       {/* CENTER TEXT */}
-      <div className="relative z-10 mt-32 max-w-7xl mx-auto text-center">
+      <div className="relative z-10 mt-20 max-w-7xl mx-auto text-center">
 
 
         <div
-          className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-center
+          className=" mx-1 text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-center
              bg-clip-text text-transparent"
           style={{
             backgroundImage:
               "linear-gradient(to bottom, #ffffff 0%, #ffff 40%, #3fbfa8 100%)",
-          }}
-        >
+          }}  >
           <span>The World's 1st ICO Platform That Offers Rewards </span>
 
-          <span className="inline-flex items-center mx-2 align-middle">
+          <span className="inline-flex w-26 lg:w-32 items-center mx-2 align-middle">
             <img
               src={titleImg1}
               alt=""
@@ -118,7 +118,7 @@ export default function PlatformIntro() {
 
           <span>  is a groundbreaking platform that revolutionizes the way </span>
 
-          <span className="inline-flex items-center mx-2 align-middle">
+          <span className="inline-flex w-26 lg:w-32 items-center mx-2 align-middle">
             <img
               src={titleImg2}
               alt=""
@@ -130,6 +130,7 @@ export default function PlatformIntro() {
 
         </div>
       </div>
+      
 
       {/* LEFT BLUR CIRCLE */}
       {/* <div className="absolute left-[-120px] bottom-32 w-80 h-80 rounded-full
@@ -143,9 +144,9 @@ export default function PlatformIntro() {
 
 
       <div className="w-full absolute bottom-0 flex justify-center my-10">
-        <div className="h-[2px] w-full max-w-6xl bg-linear-to-r 
+        <div className="h-0.5 w-full max-w-6xl bg-linear-to-r 
     from-transparent 
-    via-[#fff] 
+    via-white 
     to-transparent
     opacity-60
   " />

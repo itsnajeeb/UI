@@ -25,44 +25,42 @@ const Toekmics = () => {
 
     ]
     return (
-        <div className="min-h-screen bg-linear-to-br from-[#010314] via-[#010314] to-[#010314] flex items-center justify-center p-6 manrope-fonts">
-            <div className="max-w-8xl  w-full flex ">
+        <div id="ICOCHART" className="min-h-screen scroll-mt-28 bg-linear-to-br from-[#010314] via-[#010314] to-[#010314] flex items-center justify-center p-6 manrope-fonts">
 
+            <div className="relative md:max-w-8xl gap-8 w-full flex flex-col justify-center items-center lg:flex-row lg:justify-between ">
+                
                 {/* LEFT SIDE */}
-                <div className=" flex flex-col justify-center items-center w-[49%]">
+                <div className=" flex flex-col justify-center items-center lg:w-[49%] w-full px-5">
                     {/* Donut Chart */}
-                    <div className="flex justify-center mb-8">
+                    <div className="flex justify-center mb-8 ">
                         <PieChartMics />
                     </div>
 
                     {/* Toggle Buttons */}
-                    <div className="flex justify-center mb-8">
-                        <div className="bg-[#1C1D34] rounded-full py-3 flex px-3 ">
-                            <button
-                                onClick={() => setActive("funding")}
-                                className={`px-6 py-2 font-semibold rounded-full text-sm cursor-pointer transition ${active === "funding"
-                                    ? "bg-white text-black"
-                                    : "text-gray-400"
-                                    }`}
-                            >
-                                Funding Allocation
-                            </button>
-                            <button
-                                onClick={() => setActive("token")}
-                                className={`px-6 py-2 rounded-full font-semibold text-sm cursor-pointer transition ${active === "token"
-                                    ? "bg-white text-black"
-                                    : "text-gray-400"
-                                    }`}
-                            >
-                                Token Distribution
-                            </button>
-                        </div>
+                    <div className="bg-[#1C1D34] rounded-3xl  py-4 flex-col flex px-8 gap-1 w-full mb-7 max-w-100 md:flex-row md:max-w-110 md:py-5 justify-center">
+                        <button
+                            onClick={() => setActive("funding")}
+                            className={`px-6 py-2 font-semibold rounded-full text-sm cursor-pointer transition ${active === "funding"
+                                ? "bg-white text-black"
+                                : "text-gray-400"
+                                }`}
+                        >
+                            Funding Allocation
+                        </button>
+                        <button
+                            onClick={() => setActive("token")}
+                            className={`px-6 py-2 rounded-full font-semibold text-sm cursor-pointer transition ${active === "token"
+                                ? "bg-white text-black"
+                                : "text-gray-400"
+                                }`}
+                        >
+                            Token Distribution
+                        </button>
                     </div>
 
 
-
                     {/* Legend */}
-                    <div className="grid grid-cols-2 gap-y-4 text-sm text-gray-300">
+                    <div className="grid grid-cols-1 gap-y-4 text-sm text-gray-300 md:grid-cols-2">
                         <div className="flex items-center gap-3">
                             <span className="w-3 h-3 rounded-full bg-[#3fbfa8]" />
                             Contingency: 70%
@@ -91,27 +89,24 @@ const Toekmics = () => {
                 </div>
 
                 {/* Middle Line */}
-                <div className="  bottom-0  my-10 text-white justify-center w-[2%]  ">
-                    <div className=" h-full w-[1px]  bg-linear-to-b 
-                            from-transparent 
-                            via-[#fff] 
-                            to-transparent
-                            opacity-60
-                        " />
+                <div
+                    className=" hidden lg:flex absolute top-0 bottom-0 left-1/2 -translate-x-1/2 justify-center  pointer-events-none  " >
+                    <div className="h-[90%] w-0.5 bg-linear-to-b from-transparent via-white to-transparent opacity-60" />
                 </div>
 
+
                 {/* RIGHT SIDE */}
-                <div className="flex flex-col justify-center items-center  w-[49%]">
+                <div className="flex flex-col justify-center items-center  lg:w-[49%]">
                     {/* Coin Image */}
-                    <div className="flex justify-center mb-6  w-90">
+                    <div className="flex justify-center mb-6 w-full max-w-60 lg:max-w-82 ">
                         <img
                             src={chartImg}
                             alt="Ethereum"
-                            className="w-full drop-shadow-[0_25px_40px_rgba(0,0,0,0.6)]"
+                            className="w-full  drop-shadow-[0_25px_40px_rgba(0,0,0,0.6)]"
                         />
                     </div>
 
-                    <p className="text-gray-400 text-base mb-8 text-left">
+                    <p className="text-gray-400 text-sm mb-8 text-left">
                         Ethereum is a decentralized, open-source <br />
                         blockchain with smart contract
                     </p>
@@ -125,7 +120,7 @@ const Toekmics = () => {
                                         <span className="w-8 h-8 flex items-center justify-center rounded-full text-base text-white bg-[#1B1D2C] font-bold">
                                             {dt.sno}
                                         </span>
-                                        <span className="text-white font-bold">{dt.label}: <b className="text-white">{dt.value}</b></span>
+                                        <span className="text-white font-bold text-base">{dt.label}: <b className="text-white">{dt.value}</b></span>
                                     </div>
                                 )
                             })

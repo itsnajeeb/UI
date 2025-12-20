@@ -2,17 +2,12 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary, {
-  accordionSummaryClasses,
-} from '@mui/material/AccordionSummary';
+import MuiAccordionSummary, { accordionSummaryClasses, } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import { faqs } from '../data/data.js'
 import GradientText from './CommonComponents/GradientText.jsx';
-/*  FIXED CONTENT HEIGHT (MOST IMPORTANT) */
-// const CONTENT_HEIGHT = 180;
 
-/* ---------- ACCORDION ---------- */
+/*  ACCORDION  */
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -27,7 +22,7 @@ const Accordion = styled((props) => (
   },
 }));
 
-/* ---------- SUMMARY ---------- */
+/* SUMMARY */
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: '#fff' }} />}
@@ -49,9 +44,8 @@ const AccordionSummary = styled((props) => (
   },
 }));
 
-/* ---------- DETAILS (FIXED HEIGHT – NO SCROLL ISSUE) ---------- */
+/* DETAILS (FIXED HEIGHT – NO SCROLL ISSUE) */
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  // height: CONTENT_HEIGHT,              //  FIX
   padding: theme.spacing(0, 3, 3),
   color: '#cbd5e1',
   transition: 'opacity 0.3s ease',
@@ -66,8 +60,8 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto my-28 space-y-6">
-      <div className='text-center mb-20'>
+    <div className="max-w-6xl mx-auto mt-20 space-y-6 ">
+      <div className='text-center mb-10'>
         <GradientText title={"Ask Quick Question"} />
       </div>
 
@@ -79,8 +73,8 @@ export default function CustomizedAccordions() {
             key={index}
             onClick={() => handleToggle(index)}
             className={`
-              cursor-pointer rounded-2xl px-20 py-10
-              transition-colors duration-300
+              cursor-pointer rounded-2xl px-5 py-8 mx-5
+              transition-colors duration-300 sm:px-10 md:px-20 md:py-10
               ${isActive
                 ? 'bg-linear-to-b from-[#010314] to-[#3a8f7a]'
                 : 'bg-[#0F101E]'
@@ -88,7 +82,7 @@ export default function CustomizedAccordions() {
             `}   >
             {/* QUESTION ROW */}
             <div className="flex items-center justify-between">
-              <h3 className="text-white text-xl font-semibold">
+              <h3 className="text-white text-base font-semibold  sm:text-lg md:text-xl">
                 {item.question}
               </h3>
 
@@ -102,7 +96,6 @@ export default function CustomizedAccordions() {
               />
             </div>
 
-            {/* ANSWER — NO SCROLL, SMOOTH HEIGHT */}
             <div
               className={`
                 grid transition-all duration-500 ease-in-out
@@ -120,12 +113,13 @@ export default function CustomizedAccordions() {
         );
       })}
 
-      <div className="w-full my-32  bottom-0 flex justify-center ">
-        <div className="h-[2px] w-full max-w-6xl bg-linear-to-r 
+      <div className="w-full my-16  bottom-0 flex justify-center ">
+        <div className="h-0.5 w-full max-w-6xl bg-linear-to-r 
             from-transparent 
-            via-[#fff] 
+            via-white 
             to-transparent
             opacity-60
+            md:my-20
           " />
       </div>
     </div>
