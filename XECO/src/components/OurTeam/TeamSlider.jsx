@@ -48,14 +48,14 @@ const TeamSlider = () => {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    variableWidth: false, // ✅
+                    variableWidth: false, 
                 },
             },
             {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    variableWidth: false, // ✅ MOST IMPORTANT
+                    variableWidth: false, 
                 },
             },
         ],
