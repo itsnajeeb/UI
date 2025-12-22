@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './CommonComponents/Card'
-import img1 from "/assets/images/features_img01.png"; // apna coin / bitcoin image
-import img2 from "/assets/images/features_img02.png"; // apna coin / bitcoin image
-import img3 from "/assets/images/features_img03.png"; // apna coin / bitcoin image
-import img4 from "/assets/images/features_img04.png"; // apna coin / bitcoin image
+import img1 from "/assets/images/features_img01.png"; 
+import img2 from "/assets/images/features_img02.png"; 
+import img3 from "/assets/images/features_img03.png"; 
+import img4 from "/assets/images/features_img04.png"; 
 import GradientText from './CommonComponents/GradientText';
 
 const Revolutionary = () => {
