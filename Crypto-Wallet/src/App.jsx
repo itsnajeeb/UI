@@ -11,7 +11,7 @@ const App = () => {
   return (
 
     <div className="min-h-screen bg-[#0c0c0cc8] flex justify-center  ">
-      <div className="w-full max-w-97.5 b min-h-full rounded-3xl my-1 border-2 border-[#8ac9ff] shadow-2xl overflow-hidden bg-[#111116] flex flex-col  items-center">
+      <div className="w-full max-w-97.5 b min-h-full lg:rounded-3xl my-1 lg:border-2 lg:border-[#8ac9ff] shadow-2xl overflow-hidden bg-[#111116] flex flex-col  items-center">
         <Profile />
         <Wallet />
         <div className=" flex items-center justify-center px-10 w-full mb-10 ">
