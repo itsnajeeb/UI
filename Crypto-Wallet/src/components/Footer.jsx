@@ -3,20 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className="w-full mt-5">
-
-            <div
-                className="
-          fixed md:absolute
-          bottom-0 md:bottom-0
-          left-1/2 md:left-0
-          -translate-x-1/2 md:translate-x-0
-          w-full
-          px-8 py-2
-          bg-[#222]
-          rounded-tl-3xl rounded-tr-3xl md:rounded-tl-none md:rounded-bl-3xl md:rounded-br-3xl md:rounded-tr-none
-          z-50
-        "
-            >
+            <div className=" fixed md:absolute bottom-0 md:bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 w-full px-8 md:py-2 py-4 bg-[#222] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-none md:rounded-bl-3xl md:rounded-br-3xl md:rounded-tr-none z-50 " >
                 <div className="flex justify-between">
 
                     <div className='bg-[#222] rounded-lg text-white w-10 h-10 p-2 cursor-pointer  hover:bg-[#333333] transition-all duration-300'>
