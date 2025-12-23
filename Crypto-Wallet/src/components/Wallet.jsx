@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Clipboard } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
+import { formattedWalletId } from '../utils/customFunction';
 const Wallet = () => {
-    const [walletId,] = useState('03345X...8d3e');
+    const id = '91F3dkl9219kld912301klsd9123lk1d0'
+    const [walletId,] = useState(formattedWalletId(id));
     const [copied, setCopied] = useState(false)
     const handeCopy = async () => {
         try {
-            await navigator.clipboard.writeText(walletId);
+            await navigator.clipboard.writeText(id);
             setCopied(true)
             if (copied) {
                 toast.success("Wallet Id copied successfully ", {
