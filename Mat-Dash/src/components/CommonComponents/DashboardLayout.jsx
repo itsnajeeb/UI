@@ -5,7 +5,7 @@ import TopBar from "./TopBar";
 import useIsLgScreen from "../../hooks/useIsLgScreen";
 import RouteLoader from "./RouteLoader";
 
-const SLIDING_PANEL_WIDTH = 300;
+const SLIDING_PANEL_WIDTH = 300; 
 const FIXED_SIDEBAR_WIDTH = 20;
 
 const DashboardLayout = () => {
@@ -51,7 +51,7 @@ const DashboardLayout = () => {
         className="px-3 py-4 rounded-3xl bg-white w-full"
         style={{ marginLeft, transition: "margin-left 0.3s ease" }}
       >
-        <TopBar setIsDrawerOpen={setIsDrawerOpen}  />
+        <TopBar setIsDrawerOpen={setIsDrawerOpen} isDrawerOpen={isDrawerOpen}   />
         <Suspense fallback={<RouteLoader/>}>
           <Outlet />
         </Suspense>

@@ -1,7 +1,6 @@
 import React  from 'react'
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Chats from './pages/Chats';
 import MyReferral from './pages/MyTeam/MyReferral';
 import LevelDetails from './pages/MyTeam/LevelDetails';
 import Downline from './pages/MyTeam/Downline';
@@ -17,7 +16,6 @@ import WithdrawalHistory from './pages/Withdrawal/WithdrawalHistory';
 import Support from './pages/Support';
 import DashboardLayout from './components/CommonComponents/DashboardLayout';
 import LogoutButton from './pages/Logout';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Dashboard from './pages/Dashboard';
@@ -27,8 +25,6 @@ const App = () => {
       <Routes>
         <Route element={<DashboardLayout />}>
           <Route path='/' element={<Dashboard />} />
-
-          <Route path='/apps/chat' element={<Chats />} />
           <Route path='/MyTeam/MyReferral' element={<MyReferral />} />
           <Route path='/MyTeam/LevelDetails' element={<LevelDetails />} />
           <Route path='/MyTeam/Downline' element={<Downline />} />
