@@ -11,7 +11,7 @@ import DailyRevenue from './pages/Incomes/DailyRevenue';
 import TeamAffiliate from './pages/Incomes/TeamAffiliate';
 import LeadershipBonus from './pages/Incomes/LeadershipBonus';
 import InfiniteBonus from './pages/Incomes/InfiniteBonus';
-import Withdrawal from './pages/Withdrawal/withdrawal';
+import Withdrawal from './pages/Withdrawal/Withdrawal';
 import WithdrawalHistory from './pages/Withdrawal/WithdrawalHistory';
 import Support from './pages/Support';
 import DashboardLayout from './components/CommonComponents/DashboardLayout';

@@ -34,7 +34,7 @@ export const DASHBOARD_NAV_ITEMS = [
                 id: 3,
                 name: "Incomes",
                 icon : user17,
-                path: null, // No direct path, acts as a toggle
+                path: null, 
                 isDropdown: true,
                 subLinks: [
                     { id: 31, name: "Daily Revenue Bonus", path: "/Incomes/DailyRevenueBonus" },
