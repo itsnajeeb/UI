@@ -3,7 +3,6 @@ import { Suspense, useState } from "react";
 import AppDrawer from "./SideBar";
 import TopBar from "./TopBar";
 import useIsLgScreen from "../../hooks/useIsLgScreen";
-import RouteLoader from "./RouteLoader";
 
 const SLIDING_PANEL_WIDTH = 300; 
 const FIXED_SIDEBAR_WIDTH = 20;
@@ -52,7 +51,7 @@ const DashboardLayout = () => {
         style={{ marginLeft, transition: "margin-left 0.3s ease" }}
       >
         <TopBar setIsDrawerOpen={setIsDrawerOpen} isDrawerOpen={isDrawerOpen}   />
-        <Suspense fallback={<RouteLoader/>}>
+        <Suspense >
           <Outlet />
         </Suspense>
       </div>

@@ -1,6 +1,4 @@
 //This data used in Dashboard 2 user card
-const CARD_COLOR_START = "#8b5cf6";
-const CARD_COLOR_END = "#5b21b6";
 const TEXT_COLOR = '#FFFFFF';
 const SECONDARY_COLOR = '#D1D5DB'; // Equivalent of gray-300
 
