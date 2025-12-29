@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Deposit from './page/Deposit';
 import Withdrawal from './page/Withdrawal';
 import Profile from './page/Profile';
+import Avatar from './components/Avatar';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Route path='/deposit' element={<Deposit />} />
       <Route path='/withdrawal' element={<Withdrawal />} />
       <Route path='/profile' element={<Profile />} />
+      <Route path='/avatar' element={<Avatar />} />
     </Routes>
   );
 };

@@ -44,7 +44,7 @@ const QRCodeDownload = () => {
   };
 
   return (
-    <div className="flex items-center mt-3 flex-col w-full border-white px-14  ">
+    <div className="flex items-center mt-3 flex-col w-full border-white px-6 py-5">
       <div ref={qrRef} style={{ marginBottom: "16px", }}>
         <QRCodeCanvas
           value={url}
@@ -55,12 +55,12 @@ const QRCodeDownload = () => {
           includeMargin
         />
       </div>
-      <button onClick={downloadQR}>
+      <div onClick={downloadQR}>
         <Button onClick={downloadQR} btnText={"Download QR Code"} />
-      </button>
+      </div>
 
-      <div className="flex gap-4 items-center bg-gray-700 px-5 py-4 rounded-xl text-white overflow-hidden  my-5 max-w-75">
-        <p className="overflow-hidden  max-w-45 ">{url}</p>
+      <div className="flex gap-4 items-center bg-gray-700 px-5 py-4 rounded-xl text-white overflow-hidden  my-5 ">
+        <p className="overflow-hidden  text-nowrap w-50 border-white">{url}</p>
         <p className="cursor-pointer text-white" onClick={CopyHandler}><Copy size={18} /></p>
         <ToastContainer />
       </div>

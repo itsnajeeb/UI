@@ -23,7 +23,7 @@ const ProfileHome = () => {
                     <Link><p className='text-sm font-semibold text-blue-500'>Change</p></Link>
                 </div>
 
-                <div className='flex justify-center mb-10'>
+                <div className='flex justify-center mb-10 bg-gray-800 rounded-xl border-2 border-gray-400/80 mx-8'>
                     <QRCodeDownload/>
                 </div>
             </div>

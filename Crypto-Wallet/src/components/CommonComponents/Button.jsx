@@ -6,7 +6,7 @@ const Button = ({ btnText }) => {
       className={`
         ${btnText == "WITHDRAWAL" ? "w-[90%]" : ""}
     relative px-5 mt-7 py-3 rounded-xl text-base font-medium
-    bg-gray-800 text-white
+    bg-gray-700 text-white
     overflow-hidden
     transition-all duration-300
     active:scale-95
