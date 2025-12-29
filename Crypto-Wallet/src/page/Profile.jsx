@@ -1,6 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import ProfileImage from '../components/Profile/ProfileImage'
+import Footer from '../components/CommonComponents/Footer'
 import ProfileHome from '../components/Profile/ProfileHome'
 
 const Profile = () => {

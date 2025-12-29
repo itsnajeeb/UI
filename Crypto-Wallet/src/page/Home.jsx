@@ -1,11 +1,11 @@
 import React from 'react'
-import Profile from '../components/Profile'
-import Wallet from '../components/Wallet'
-import SegmentedStatBar from '../components/SegmentStatBar'
-import Card from '../components/Card'
+import Profile from '../components/Home/Profile'
+import Wallet from '../components/Home/Wallet'
+import SegmentedStatBar from '../components/Home/SegmentStatBar'
+import Card from '../components/Home/Card'
 import ChildCard from '../ChildCard'
 import { CardIconsData } from "../data/data";
-import Footer from '../components/Footer'
+import Footer from '../components/CommonComponents/Footer'
 const Home = () => {
     return (
         <div className="h-screen bg-[#0c0c0cc8] flex justify-center overflow-hidden">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Clipboard } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
-import { formattedWalletId } from '../utils/customFunction';
+import { formattedWalletId } from '../../utils/customFunction';
 const Wallet = () => {
     const id = '91F3dkl9219kld912301klsd9123lk1d0'
     const [walletId,] = useState(formattedWalletId(id));

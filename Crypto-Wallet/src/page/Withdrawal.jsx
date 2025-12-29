@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../components/Withrawal/Home'
-import Footer from '../components/Footer'
+import Footer from '../components/CommonComponents/Footer'
 
 const Withdrawal = () => {
     return (
