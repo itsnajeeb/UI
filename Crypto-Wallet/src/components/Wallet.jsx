@@ -29,10 +29,10 @@ const Wallet = () => {
         }
     }
     return (
-        <div className='text-white flex flex-col justify-center items-center py-4'>
+        <div className='text-white flex flex-col justify-center items-center pb-4 pt-2'>
             <div className='flex flex-col '>
                 <p className='text-sm  text-gray-500/80 '>Available Balance 90,268</p>
-                <h1 className='text-[30px] font-light -mt-1.5'>0.00589 USDT</h1>
+                <h1 className='text-[27px] font-light -mt-1.5'>0.00589 USDT</h1>
             </div>
 
             <div className=' flex mt-3 bg-gray-400/20 px-2 rounded-md py-1 gap-3'>

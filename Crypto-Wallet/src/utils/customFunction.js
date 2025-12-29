@@ -3,3 +3,9 @@ export const formattedWalletId = (walletId) => {
     const end = walletId.slice(-3)
     return `${start}...${end}`
 }
+
+export const formattedElement = (startingIndex, lastIndex, element) => {
+    const start = element.slice(0, startingIndex)
+    const end = element.slice(lastIndex)
+    return `${start}****${end}`
+}
