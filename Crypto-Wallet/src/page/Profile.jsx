@@ -18,7 +18,9 @@ const Profile = () => {
                 </div>
                 <Footer />
             </div>
-        </div>)
+        </div>
+        
+    )
 }
 export default Profile
 

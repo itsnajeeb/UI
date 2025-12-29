@@ -6,6 +6,7 @@ import Deposit from './page/Deposit';
 import Withdrawal from './page/Withdrawal';
 import Profile from './page/Profile';
 import Avatar from './components/Avatar';
+import ChangePassword from './components/ChangePassword';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/withdrawal' element={<Withdrawal />} />
       <Route path='/profile' element={<Profile />} />
       <Route path='/avatar' element={<Avatar />} />
+      <Route path='/change-password' element={<ChangePassword />} />
     </Routes>
   );
 };
