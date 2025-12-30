@@ -1,16 +1,21 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 
-export default function PasswordInput({ placeholder }) {
+export default function PasswordInput({ name, value, changeHandler, placeholder }) {
   const [show, setShow] = useState(false);
+
 
   return (
     <div style={{ position: "relative", }}>
       <div className="flex relative flex-col w-full mt-5 text-white">
         <input
+          autoComplete="off"
           id="password"
+          name={name}
+          value={value}
+          onChange={changeHandler}
           type={show ? "text" : "password"}
-          placeholder=" "  
+          placeholder=" "
           className="peer border-2 border-gray-400/80 w-full py-3 px-4 rounded-lg 
           outline-0 bg-transparent
           focus:border-[#8ac9ff] transition-all duration-300"
