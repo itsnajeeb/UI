@@ -1,40 +1,52 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, NavLink, useLocation } from 'react-router-dom'
 const Footer = () => {
+    const location = useLocation()
+    console.log(location.pathname);
 
+    const navLink = [
+        {
+            route: '/',
+            title: "Home",
+            svg: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={18} fill='#fff'><path d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg>,
+        },
+        {
+            route: '/deposit',
+            title: "Deposit",
+            svg: <svg xmlns="http://www.w3.org/2000/svg" width={18} fill='#fff' viewBox="0 0 448 512"><path d="M440.3 96.9c-9.4-26.5-30.3-47.4-56.8-57-24.1-7.9-46.3-7.9-91.6-7.9L156 32c-44.8 0-67.2 0-91.3 7.5-26.5 9.6-47.4 30.5-57 57-7.7 24.3-7.7 46.7-7.7 91.7L0 323.8c0 45.2 0 67.4 7.5 91.5 9.6 26.5 30.5 47.4 57 57 24.3 7.7 46.7 7.7 91.6 7.7l135.7 0c45 0 67.4 0 91.6-7.7 26.5-9.6 47.4-30.5 57-57 7.7-24.3 7.7-46.7 7.7-91.5l0-135.5c0-45 0-67.4-7.7-91.5zM323.1 185.4l-25.8 21.1c-2.3 1.9-5.5 1.5-7.3-.9-13.2-16.2-33.7-25.4-56.1-25.4-25 0-40.6 10.9-40.6 26.2-.4 12.8 11.7 19.6 49.1 27.7 47.2 10 68.7 29.7 68.7 62.7 0 41.4-33.7 71.9-86.4 75.3l-5.1 24.5c-.4 2.3-2.6 4.1-5.1 4.1l-40.6 0c-3.4 0-5.8-3.2-5.1-6.4l6.4-27.3c-26-7.5-47.2-22-59.3-39.7-1.5-2.3-1.1-5.3 1.1-7l28.2-22c2.3-1.9 5.8-1.3 7.5 1.1 14.9 20.9 38 33.3 65.7 33.3 25 0 43.8-12.2 43.8-29.7 0-13.4-9.4-19.6-41.2-26.2-54.2-11.7-75.8-31.8-75.8-64.9 0-38.4 32.2-67.2 80.9-71l5.3-25.4c.4-2.3 2.6-4.1 5.1-4.1l39.9 0c3.2 0 5.8 3 5.1 6.2l-6.2 28.4c20.9 6.4 38 17.9 48.7 32.2 1.7 2.1 1.3 5.3-.9 7z"/></svg>,
+
+        },
+        {
+            route: '/withdrawal',
+            title: "Withdrawal",
+            svg: <svg xmlns="http://www.w3.org/2000/svg" width={18} fill='#fff' viewBox="0 0 640 640"><path d="M31 169C21.6 159.6 21.6 144.4 31 135.1L103 63C112.4 53.6 127.6 53.6 136.9 63C146.2 72.4 146.3 87.6 136.9 96.9L105.9 127.9L173.6 127.9L173.6 127.9L511.9 127.9C547.2 127.9 575.9 156.6 575.9 191.9L575.9 370.1L570.8 365C542.7 336.9 497.1 336.9 469 365C441.8 392.2 440.9 435.6 466.2 463.9L533.9 463.9L502.9 432.9C493.5 423.5 493.5 408.3 502.9 399C512.3 389.7 527.5 389.6 536.8 399L608.8 471C618.2 480.4 618.2 495.6 608.8 504.9L536.8 576.9C527.4 586.3 512.2 586.3 502.9 576.9C493.6 567.5 493.5 552.3 502.9 543L533.9 512L127.8 512C92.5 512 63.8 483.3 63.8 448L63.8 269.8L68.9 274.9C97 303 142.6 303 170.7 274.9C197.9 247.7 198.8 204.3 173.5 176L105.8 176L136.8 207C146.2 216.4 146.2 231.6 136.8 240.9C127.4 250.2 112.2 250.3 102.9 240.9L31 169zM416 320C416 267 373 224 320 224C267 224 224 267 224 320C224 373 267 416 320 416C373 416 416 373 416 320zM504 255.5C508.4 256 512 252.4 512 248L512 200C512 195.6 508.4 192 504 192L456 192C451.6 192 447.9 195.6 448.5 200C452.1 229 475.1 251.9 504 255.5zM136 384.5C131.6 384 128 387.6 128 392L128 440C128 444.4 131.6 448 136 448L184 448C188.4 448 192.1 444.4 191.5 440C187.9 411 164.9 388.1 136 384.5z" /></svg>,
+        },
+        {
+            route: '/profile',
+            title: "Profile",
+            svg: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={18} fill='#fff'><path d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg>,
+        }
+    ]
     return (
-        <div className="w-full mt-5">
-            <div className=" fixed md:absolute bottom-0 md:bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 w-full px-8 md:py-2 py-4 bg-[#222] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-none md:rounded-bl-3xl md:rounded-br-3xl md:rounded-tr-none z-50 " >
-                <div className="flex justify-between">
 
-                    <Link to={'/'}>
-                        <div className='bg-[#222] rounded-lg text-white w-10 h-10 p-2 cursor-pointer  hover:bg-[#333333] transition-all duration-300  '  >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(248,245,245,0.92)"><path d="M6 19H18V9.15745L12 3.7029L6 9.15745V19ZM19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM8 9.99998C11.866 9.99998 15 13.134 15 17H13C13 14.2386 10.7614 12 8 12V9.99998ZM8 14C9.65685 14 11 15.3431 11 17H8V14Z"></path></svg>
-                        </div>
-                    </Link>
+        <div className="flex justify-between  w-full " >
+            {
+                navLink.map((item, idx) => (
+                    <NavLink to={`${item.route}`} key={idx}>
+                        {({ isActive }) => (
+                            <div className={`
+                                ${isActive ? "bg-[#2D8CFF]" : "bg-none"}
 
-                    <Link to={'/deposit'}>
-                        <div className='bg-[#222] rounded-lg text-white w-10 h-10 p-2 cursor-pointer hover:bg-[#333333] transition-all duration-300' path='/deposit'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(249,249,249,0.85)"><path d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"></path></svg>
-                        </div>
-                    </Link>
+                                rounded-lg flex justify-center items-center flex-col text-white px-2.5 py-1.5  cursor-pointer  hover:transition-all hover:duration-300 space-y-1 hover:bg-[#2D8CFF]`} >
+                                {item.svg}
+                              
+                                <p className='text-xs font-medium'>{item.title}</p>
+                            </div>
+                        )}
+                    </NavLink>
+                ))
+            }
 
-                    <Link to={'/withdrawal'}>
-                        <div className='bg-[#222] rounded-lg text-white w-10 h-10 p-2 cursor-pointer hover:bg-[#333333] transition-all duration-300'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(243,243,243,0.85)"><path d="M12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5L12 1ZM12 3.311L4.5 7.65311V16.3469L12 20.689L19.5 16.3469V7.65311L12 3.311ZM12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"></path></svg>
-                        </div>
-                    </Link>
-
-                    <Link to={'/profile'}>
-                    <div className='bg-[#222] rounded-lg text-white w-10 h-10 p-2 cursor-pointer hover:bg-[#333333] transition-all duration-300'>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(231,231,231,0.89)"><path d="M12 14V16C8.68629 16 6 18.6863 6 22H4C4 17.5817 7.58172 14 12 14ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM18 21.5L15.0611 23.0451L15.6224 19.7725L13.2447 17.4549L16.5305 16.9775L18 14L19.4695 16.9775L22.7553 17.4549L20.3776 19.7725L20.9389 23.0451L18 21.5Z"></path></svg>
-                    </div>
-                    </Link>
-
-
-                </div>
-            </div>
         </div>
     )
 }

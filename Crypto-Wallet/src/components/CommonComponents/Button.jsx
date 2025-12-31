@@ -12,13 +12,13 @@ const Button = ({ btnText, changePasswordHandler }) => {
     transition-all duration-300
     active:scale-95
     group cursor-pointer
-    hover:text-black
+    hover:text-white
   `}
     >
       <span
         className="
       absolute inset-0
-      bg-[#8ac9ff]
+      bg-[#2D8CFF]
       scale-0
       group-hover:scale-100
       transition-transform duration-500

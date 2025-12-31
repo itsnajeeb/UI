@@ -3,15 +3,16 @@ import Profile from '../components/Home/Profile'
 import Wallet from '../components/Home/Wallet'
 import SegmentedStatBar from '../components/Home/SegmentStatBar'
 import Card from '../components/Home/Card'
-import ChildCard from '../ChildCard'
+import ChildCard from '../components/CommonComponents/ChildCard'
 import { CardIconsData } from "../data/data";
 import Footer from '../components/CommonComponents/Footer'
 const Home = () => {
+
     return (
-        <div className="h-screen bg-[#0c0c0cc8] flex justify-center overflow-hidden">
+        <div className="h-screen bg-[#242424c8] flex justify-center overflow-hidden">
 
             {/* APP SHELL */}
-            <div className="relative w-full max-w-97.5 h-full bg-[#111116] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
+            <div className="relative w-full max-w-97.5 h-full bg-[#050816] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
 
                 {/*  Only this div will scroll*/}
                 <div className="flex-1 custom-scroll">
@@ -32,10 +33,15 @@ const Home = () => {
                     </div>
 
                 </div>
-                <Footer />
+
+                <div className='w-full px-3 mb-3'>
+                    <div className="bg-secondary shadow-(--shadow-soft) text-white py-2  rounded-xl px-4 ">
+                        <Footer />
+                    </div>
+                </div>
             </div>
         </div>
-        
+
     )
 }
 

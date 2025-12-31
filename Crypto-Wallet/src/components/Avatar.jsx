@@ -39,14 +39,14 @@ const Avatar = () => {
                 {/*  Only this div will scroll*/}
                 <div className="flex-1 custom-scroll flex mx-auto gap-8 item-center mt-10 flex-col px-5">
                     {/* <Selected Image /> */}
-                    <div className='self-center bg-gray-800 rounded-full p-3'>
+                    <div className='self-center bg-linear-to-r from-blue-500 to-purple-600  rounded-full p-2'>
                         <img src={selectedImage} alt="Profile Image" className='w-22 h-22 rounded-full' />
                     </div>
                     <div className=' absolute bg-gray-800 text-white left-5 top-5 rounded-full w-10 h-10 flex justify-center cursor-pointer'>
                         <BackArrow />
                     </div>
 
-                    <div className='flex justify-between  space-x-3  space-y-6 flex-wrap  bg-gray-800 px-6 rounded-xl py-10 mb-11 '>
+                    <div className='flex justify-between  flex-wrap  bg-secondary gap-6 py-8 px-5 rounded-xl  mb-2 '>
                         {
                             imageArr.map((elem, idx) => (
                                 <Avatars img={elem} key={idx} setProfilePictureHandler={setProfilePictureHandler} />
@@ -54,16 +54,14 @@ const Avatar = () => {
                             ))
                         }
 
-                        <img src={profileImg10} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
-                        <img src={profileImg11} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
-                        <img src={profileImg12} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
-                        <img src={profileImg13} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
-                        <img src={profileImg14} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
-                        <img src={profileImg15} alt="Profile Image" className='w-18  h-18 rounded-full cursor-pointer object-fill' />
 
                     </div>
                 </div>
-                <Footer />
+                <div className='w-full px-3 mb-3'>
+                    <div className="bg-secondary  text-white py-2 rounded-xl px-4 ">
+                        <Footer />
+                    </div>
+                </div>
             </div>
         </div>
     )

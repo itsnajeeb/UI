@@ -9,7 +9,7 @@ import Avatar from './components/Avatar';
 import ChangePassword from './components/ChangePassword';
 import ChangeTransactionPassword from './components/ChangeTransactionPassword';
 
-
+import './App.css'
 
 
 const App = () => {
