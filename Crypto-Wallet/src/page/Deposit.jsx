@@ -17,8 +17,8 @@ const Deposit = () => {
                 <div className="flex-1 custom-scroll">
                     <Header />
                 </div>
-                
-                <div className='w-full px-3 mb-1 absolute bottom-0'>
+
+                <div className='w-full px-3 mb-1 absolute bottom-0 z-999'>
                     <div className="bg-secondary  text-white py-2 rounded-xl px-4 ">
                         <Footer />
                     </div>

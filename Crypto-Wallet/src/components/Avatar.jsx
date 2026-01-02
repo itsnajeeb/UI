@@ -37,7 +37,7 @@ const Avatar = () => {
             <div className="relative w-full max-w-97.5 sm:h-screen h-[93vh] bg-[#111116] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
 
                 {/*  Only this div will scroll*/}
-                <div className="flex-1 custom-scroll flex mx-auto gap-8 item-center mt-10 flex-col px-5">
+                <div className="flex-1 custom-scroll flex mx-auto gap-8 item-center mt-10 mb-20 flex-col px-5">
                     {/* <Selected Image /> */}
                     <div className='self-center bg-linear-to-r from-blue-500 to-purple-600  rounded-full p-2'>
                         <img src={selectedImage} alt="Profile Image" className='w-22 h-22 rounded-full' />
