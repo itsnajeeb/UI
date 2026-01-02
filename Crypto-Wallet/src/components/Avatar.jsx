@@ -34,7 +34,7 @@ const Avatar = () => {
         <div className="h-screen bg-[#0c0c0cc8] flex justify-center overflow-hidden">
 
             {/* APP SHELL */}
-            <div className="relative w-full max-w-97.5 h-full bg-[#111116] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
+            <div className="relative w-full max-w-97.5 sm:h-screen h-[93vh] bg-[#111116] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
 
                 {/*  Only this div will scroll*/}
                 <div className="flex-1 custom-scroll flex mx-auto gap-8 item-center mt-10 flex-col px-5">
@@ -57,7 +57,7 @@ const Avatar = () => {
 
                     </div>
                 </div>
-                <div className='w-full px-3 mb-3'>
+                <div className='w-full px-3 mb-1 absolute bottom-0 '>
                     <div className="bg-secondary  text-white py-2 rounded-xl px-4 ">
                         <Footer />
                     </div>
