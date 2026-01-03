@@ -10,6 +10,7 @@ import ChangePassword from './components/ChangePassword';
 import ChangeTransactionPassword from './components/ChangeTransactionPassword';
 
 import './App.css'
+import Leaderboad from './components/CommonComponents/Leaderboad';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <Route path='/avatar' element={<Avatar />} />
       <Route path='/change-password' element={<ChangePassword />} />
       <Route path='/change-transaction-password' element={<ChangeTransactionPassword />} />
+      <Route path='/leaderboard' element={<Leaderboad />} />
     </Routes>
   );
 };
