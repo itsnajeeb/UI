@@ -9,7 +9,7 @@ import Footer from '../components/CommonComponents/Footer'
 const Home = () => {
 
     return (
-        <div className="h-screen bg-[#000000c8] flex justify-center overflow-hidden">
+        <div className="h-screen bg-[#0c0c0cc8] flex justify-center overflow-hidden">
 
             {/* APP SHELL */}
             <div className="relative w-full max-w-97.5 sm:h-screen h-[93vh]  bg-[#050816] lg:rounded-3xl lg:border-2 lg:border-[#8ac9ff] shadow-2xl flex flex-col ">
