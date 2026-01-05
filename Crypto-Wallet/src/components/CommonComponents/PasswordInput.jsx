@@ -1,7 +1,7 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 
-export default function PasswordInput({ name, value, changeHandler, placeholder }) {
+export default function PasswordInput({ name, value, changeHandler, placeholder,showEye }) {
   const [show, setShow] = useState(false);
 
 
@@ -43,7 +43,7 @@ export default function PasswordInput({ name, value, changeHandler, placeholder 
         onClick={() => setShow(!show)}
         className="absolute right-4 top-4.5 cursor-pointer text-white"
       >
-        {show ? <Eye size={20} /> : <EyeOff size={20} />}
+        {show || showEye ? <Eye size={20} /> : <EyeOff size={20} />}
       </div>
     </div>
   );

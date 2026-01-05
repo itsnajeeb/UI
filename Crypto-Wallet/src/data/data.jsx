@@ -3,27 +3,128 @@ import icon3 from '/image/icon/icon-3.png'
 import icon4 from '/image/icon/icon-4.png'
 import icon1 from '/image/icon/icon-1.png'
 
-
+export const roiData = [
+  {
+    sno: 1,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "11/12/2025, 12:00 AM"
+  },
+  {
+    sno: 2,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "10/12/2025, 12:00 AM"
+  },
+  {
+    sno: 3,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "09/12/2025, 12:00 AM"
+  },
+  {
+    sno: 4,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "08/12/2025, 12:00 AM"
+  },
+  {
+    sno: 5,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "07/12/2025, 12:00 AM"
+  },
+  {
+    sno: 6,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "06/12/2025, 12:00 AM"
+  },
+  {
+    sno: 7,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "05/12/2025, 12:00 AM"
+  },
+  {
+    sno: 8,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "04/12/2025, 12:00 AM"
+  },
+  {
+    sno: 9,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "03/12/2025, 12:00 AM"
+  },
+  {
+    sno: 10,
+    userId: "555111",
+    income: "$ 60",
+    onAmount: "$ 10000",
+    remark: "ROI Activate",
+    date: "02/12/2025, 12:00 AM"
+  }
+];
 
 export const CardIconsData = [
   {
     icon: icon1,
-    title: "Analytics",
+    title: "My Direct",
     description: "Dashboard Charts",
   },
   {
     icon: icon3,
-    title: "Overview",
+    title: "My Team",
     description: "Data-Driven Skin",
   },
   {
     icon: icon,
-    title: "Buy",
+    title: "Direct Income",
     description: "Any Crypto Assets",
   },
   {
     icon: icon4,
-    title: "Sell",
+    title: "ROI Income",
+    description: "Any Crypto Assets",
+  }, 
+   {
+    icon: icon1,
+    title: "Level Income",
+    description: "Dashboard Charts",
+  },
+  {
+    icon: icon3,
+    title: "Salary Income",
+    description: "Data-Driven Skin",
+  },
+  {
+    icon: icon,
+    title: "Reward Income",
+    description: "Any Crypto Assets",
+  },
+  {
+    icon: icon4,
+    title: "Royalty Income",
     description: "Any Crypto Assets",
   },
 ];

@@ -11,6 +11,8 @@ import ChangeTransactionPassword from './components/ChangeTransactionPassword';
 
 import './App.css'
 import Leaderboad from './components/CommonComponents/Leaderboad';
+import UpdateWithdrawalAddress from './components/UpdateWithdrawalAddress';
+import DepostiHistory from './components/Deposit/DepostiHistory';
 
 
 const App = () => {
@@ -24,6 +26,8 @@ const App = () => {
       <Route path='/change-password' element={<ChangePassword />} />
       <Route path='/change-transaction-password' element={<ChangeTransactionPassword />} />
       <Route path='/leaderboard' element={<Leaderboad />} />
+      <Route path='/update-withdrawal-address' element={<UpdateWithdrawalAddress />} />
+      <Route path='/deposit-history' element={<DepostiHistory />} />
     </Routes>
   );
 };

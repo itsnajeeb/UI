@@ -46,3 +46,22 @@ body {
   top: 20px;
   opacity: 1;
 }
+
+
+
+/* For Table  */
+.custom-scrollbar {
+  overflow-x: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #222;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
