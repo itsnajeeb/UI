@@ -3,89 +3,59 @@ import icon3 from '/image/icon/icon-3.png'
 import icon4 from '/image/icon/icon-4.png'
 import icon1 from '/image/icon/icon-1.png'
 
-export const roiData = [
+export const withdrawalHistoryData = [
   {
-    sno: 1,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "11/12/2025, 12:00 AM"
+    id: 1,
+    status: 'pending',
+    userId: 128372,
+    date: '12/7/2525 5:40 PM',
+    amount: 200,
   },
   {
-    sno: 2,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "10/12/2025, 12:00 AM"
+    id: 2,
+    status: 'success',
+    userId: 256356,
+    date: '15/10/2025 5:20 PM',
+    amount: 1500,
   },
   {
-    sno: 3,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "09/12/2025, 12:00 AM"
+    id: 3,
+    status: 'failed',
+    userId: 256535,
+    date: '10/08/2024 3:40 PM',
+    amount: 2500,
   },
   {
-    sno: 4,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "08/12/2025, 12:00 AM"
+    id: 4,
+    status: 'pending',
+    userId: 256345,
+    date: '10/08/2024 3:40 PM',
+    amount: 2500,
   },
   {
-    sno: 5,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "07/12/2025, 12:00 AM"
+    id: 5,
+    status: 'success',
+    userId: 259465,
+    date: '10/08/2024 4:40 PM',
+    amount: 2500,
   },
   {
-    sno: 6,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "06/12/2025, 12:00 AM"
+    id: 6,
+    status: 'pending',
+    userId: 256985,
+    date: '12/08/2024 3:23 PM',
+    amount: 2200,
   },
   {
-    sno: 7,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "05/12/2025, 12:00 AM"
+    id: 7,
+    status: 'failed',
+    userId: 265365,
+    date: '10/06/2024 3:23 PM',
+    amount: 2200,
   },
-  {
-    sno: 8,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "04/12/2025, 12:00 AM"
-  },
-  {
-    sno: 9,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "03/12/2025, 12:00 AM"
-  },
-  {
-    sno: 10,
-    userId: "555111",
-    income: "$ 60",
-    onAmount: "$ 10000",
-    remark: "ROI Activate",
-    date: "02/12/2025, 12:00 AM"
-  }
-];
 
+
+]
 export const CardIconsData = [
   {
     icon: icon1,
@@ -106,8 +76,8 @@ export const CardIconsData = [
     icon: icon4,
     title: "ROI Income",
     description: "Any Crypto Assets",
-  }, 
-   {
+  },
+  {
     icon: icon1,
     title: "Level Income",
     description: "Dashboard Charts",

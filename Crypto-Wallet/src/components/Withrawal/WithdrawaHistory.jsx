@@ -1,13 +1,11 @@
 import React from 'react'
 import DataBox from '../CommonComponents/DataBox'
-import BackArrow from '../CommonComponents/BackArrow';
-import Footer from '../CommonComponents/Footer';
-import { withdrawalHistoryData } from '../../data/data';
-const DepostiHistory = () => {
+import Footer from '../CommonComponents/Footer'
+import BackArrow from '../CommonComponents/BackArrow'
+import { withdrawalHistoryData } from '../../data/data'
 
+const WithdrawaHistory = () => {
     return (
-        // <div className='w-full overflow-hidden rounded-xl  ' >
-        //     <div className='bg-white shadow-xl rounded-xl overflow-hidden px-2 py-4'>
         <div className="h-screen bg-[#0c0c0cc8] flex justify-center overflow-hidden text-white">
 
             {/* APP SHELL */}
@@ -17,10 +15,10 @@ const DepostiHistory = () => {
                 </div>
 
                 <div className='px-10 mt-18 mb-5'>
-                    <h1 className='text-xl font-semibold mb-1'>Deposite History</h1>
-                    <p className='text-sm font-normal'>Your previous Deposit are shown below.</p>
+                    <h1 className='text-xl font-semibold mb-1'>Withdrawal History</h1>
+                    <p className='text-sm font-normal'>Your previous Withdrawa are shown below.</p>
                 </div>
-                <div className='flex flex-col gap-5 custom-scroll'>
+                <div className='flex flex-col gap-5  custom-scroll'>
                     {
                         withdrawalHistoryData.map((data, idx) => (
                             <DataBox item={data} key={idx} />
@@ -34,8 +32,7 @@ const DepostiHistory = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default DepostiHistory
+export default WithdrawaHistory

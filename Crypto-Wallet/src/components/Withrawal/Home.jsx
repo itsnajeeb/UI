@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from '../CommonComponents/Input'
 import Button from '../CommonComponents/Button'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -12,8 +13,11 @@ const Home = () => {
                 <p className='font-medium text-base text-gray-200'>375.29 $</p>
             </div>
             <Input placeholder={"Enter Amount"} />
-            <div className='w-full flex items-center justify-center'>
+            <div className=' flex items-center justify-center gap-5'>
                 <Button btnText={"WITHDRAWAL"} />
+                <Link to={'/withdrawal-history'}>
+                    <Button btnText={"HISTORY"} />
+                </Link>
             </div>
 
 

@@ -13,6 +13,7 @@ import './App.css'
 import Leaderboad from './components/CommonComponents/Leaderboad';
 import UpdateWithdrawalAddress from './components/UpdateWithdrawalAddress';
 import DepostiHistory from './components/Deposit/DepostiHistory';
+import WithdrawaHistory from './components/Withrawal/WithdrawaHistory';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <Route path='/leaderboard' element={<Leaderboad />} />
       <Route path='/update-withdrawal-address' element={<UpdateWithdrawalAddress />} />
       <Route path='/deposit-history' element={<DepostiHistory />} />
+      <Route path='/withdrawal-history' element={<WithdrawaHistory />} />
     </Routes>
   );
 };

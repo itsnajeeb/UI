@@ -5,7 +5,6 @@ const Button = ({ btnText, changePasswordHandler }) => {
     <button
       onClick={changePasswordHandler}
       className={`
-        ${btnText == "WITHDRAWAL" ? "w-[90%]" : ""}
     relative px-5 mt-7 py-3 rounded-xl text-base font-medium
     bg-gray-700 text-white
     overflow-hidden
