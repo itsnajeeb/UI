@@ -1,0 +1,175 @@
+body {
+    background: #050505;
+    font-family: Inter, sans-serif;
+}
+
+/*ACTUAL NAVBAR */
+
+.nav-container {
+    position: sticky;
+    top: 30px;
+    /* default thoda niche */
+    z-index: 1000;
+
+    transition:
+        top 0.4s ease,
+        backdrop-filter 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.nav-container.scrolled {
+    top: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.logo-container {
+    /* background: blue; */
+    background: linear-gradient(90deg, #0b0b0b, #0f1f18, #0b0b0b);
+    padding: 18px 10px;
+    width: 100%;
+    clip-path: polygon(0% 0%,
+            /* left top */
+            100% 0%,
+            /* right top cut */
+            100% 0%,
+            /* right bottom point */
+            85% 100%,
+            /* right bottom cut */
+            0% 100%
+            /* left bottom */
+        );
+    border-radius: 14px 5px 0px 14px;
+}
+
+.logo-border {
+    height: fit-content;
+    width: 100%;
+    padding: 1.5px;
+    background-color: gray;
+    /* padding: 1.5px; */
+    /* background: linear-gradient(90deg, #2cffb2, #00ffcc); */
+    clip-path: polygon(0% 0%,
+            /* left top */
+            100% 0%,
+            /* right top cut */
+            100% 5%,
+            /* right bottom point */
+            85% 100%,
+            /* right bottom cut */
+            0% 100%
+            /* left bottom */
+        );
+
+    border-radius: 14px 5px 0px 14px;
+}
+
+.nav-border {
+    padding: 1.5px;
+    /* BORDER THICKNESS */
+    background: gray;
+
+    /* background: linear-gradient(90deg, #2cffb2, #00ffcc); */
+    clip-path: polygon(6% 0%,
+            /* left top */
+            100% 0%,
+            /* right top cut */
+            100% 100%,
+            /* right bottom point */
+            100% 900%,
+            /* right bottom cut */
+            .8% 100%
+            /* left bottom */
+        );
+
+    border-radius: 0px 14px 14px 0px;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0b0b0b, #0f1f18, #0b0b0b);
+    padding: 18px 50px 18px 70px;
+    clip-path: polygon(
+            6% 0%,
+            /* left top */
+            100% 0%,
+            /* right top cut */
+            100% 100%,
+            /* right bottom point */
+            100% 100%,
+            /* right bottom cut */
+            1% 100%
+            /* left bottom */
+        );
+    border-radius: 0px 14px 14px 0px;
+}
+
+
+/* MENU  */
+.navbar {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+.navbar a:hover {
+    opacity: 1;
+}
+
+/*  BUTTON  */
+
+.nav-btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #2cffb2;
+    font-weight: 500;
+}
+
+/* button border animation */
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            #2cffb2,
+            transparent);
+    background-size: 200% 200%;
+    animation: btnBorder 2s linear infinite;
+
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+}
+
+@keyframes btnBorder {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 400%;
+    }
+}

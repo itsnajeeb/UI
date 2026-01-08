@@ -1,0 +1,143 @@
+/* MAIN BAR */
+.stats-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  margin-top: 10rem;
+
+  background: linear-gradient(90deg,
+      #121815,
+      #0f1c16,
+      #131916);
+
+  border: 1px solid rgb(80, 80, 80, 0.5);
+
+  /* angled shape */
+  clip-path: polygon(5% 0%,
+      95% 0%,
+      100% 50%,
+      95% 100%,
+      5% 100%,
+      0% 50%);
+
+  color: white;
+}
+
+/* TOP & BOTTOM ACCENT LINES */
+
+/* STAT ITEM */
+.stat {
+  text-align: center;
+  min-width: 140px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  /* color: rgba(255,255,255,0.7); */
+  color: white;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.leftSideLine {
+  position: absolute;
+  bottom: -15px;
+  left: 225px;
+  width: 350px;
+  height: 2px;
+  background-color: #2cffb2;
+}
+
+.rightSideLine {
+  position: absolute;
+  top: -15px;
+  right: 225px;
+  width: 350px;
+  height: 2px;
+  background-color: #2cffb2;
+}
+
+
+/* angled part */
+.leftSideLine::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 95px;
+  height: 2px;
+  background-color: #2cffb2;
+  transform-origin: left center;
+  transform: rotate(-134deg);
+
+  /* box-shadow: */
+  /* 0 0 6px #2cffb2, */
+  /* 0 0 12px rgba(44, 255, 178, 0.6); */
+}
+/* angled part */
+.rightSideLine::after {
+  content: '';
+  position: absolute;
+  right: -95px;
+  top: 0px;
+  width: 95px;
+  height: 2px;
+  background-color: #2cffb2;
+  transform-origin: left center;
+  transform: rotate(45deg);
+
+  /* box-shadow: */
+  /* 0 0 6px #2cffb2, */
+  /* 0 0 12px rgba(44, 255, 178, 0.6); */
+}
+/* angled part */
+.horizantalLineLeftSide{
+  position: absolute;
+  width: 100px;
+  left: 60px;
+  top: 54%;
+  height: 2px;
+  background-color: #2cffb2;
+}
+
+.horizantalLineRightSide{
+  position: absolute;
+  width: 100px;
+  right: 55px;
+  top: 44%;
+  height: 2px;
+  background-color: #2cffb2;
+}
+
+
+.horizantalLineRightSide::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2cffb2;
+}
+.horizantalLineLeftSide::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2cffb2;
+}

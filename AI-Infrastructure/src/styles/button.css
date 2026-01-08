@@ -1,0 +1,61 @@
+/* ===== BUTTON ===== */
+.nav-btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    /* background: rgba(46, 255, 185, 0.15); */
+
+    color: #2cffb2;
+    font-weight: 500;
+}
+
+/* button border animation */
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            #2cffb2,
+            transparent);
+    background-size: 200% 200%;
+    animation: btnBorder 2s linear infinite;
+
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+}
+
+@keyframes btnBorder {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 400%;
+    }
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    background:
+        linear-gradient(#0b0b0b, #0b0b0b) padding-box,
+        linear-gradient(50deg, #42f0b0, #09cbab, #4d7a69) border-box;
+    border: 2px solid transparent;
+}

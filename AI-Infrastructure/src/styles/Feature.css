@@ -1,0 +1,108 @@
+.feature-viewport.hidden-state .slide-item {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Ensure the title stays put but maybe fades in */
+.feature-title {
+  font-size: 5rem;
+  font-weight: 500;
+  transition: opacity 1s ease;
+}
+
+.feature-section {
+  background-color: #000;
+  /* Or your theme color */
+  overflow: hidden;
+}
+
+/* The viewport that hides the sliding content */
+.feature-viewport {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  /* This forces it to take up all space between heading and arrows */
+}
+
+.slide-item {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s ease;
+}
+
+/* State: Content is waiting below (for Down click) */
+.slide-stage-bottom {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* State: Content is waiting above (for Up click) */
+.slide-stage-top {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* State: Content is currently visible */
+.slide-stage-center {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* State: Content is exiting upwards */
+.slide-exit-up {
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+/* State: Content is exiting downwards */
+.slide-exit-down {
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.feature-image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  /* This makes it fill the container without stretching */
+  border-radius: 12px;
+}
+.feature-desc{
+}
+.feature-desc::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  width: 2px;
+  height: 40px;
+  background: #2cffb2;
+  /* different accent color */
+  border-radius: 999px;
+}
+
+
+.line-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.line-core {
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(107, 114, 128, 0.4) 15%,
+      rgba(107, 114, 128, 1) 50%,
+      rgba(107, 114, 128, 0.4) 85%,
+      transparent 100%);
+  border-radius: 999px;
+}
