@@ -1,0 +1,36 @@
+.ActiveNavLink {
+    background: linear-gradient(180deg,
+            #8fdc2a 0%,
+            #b7f23a 45%,
+            #9be82f 70%,
+            #6cc41f 100%);
+    border-radius: 999px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Updated positioning for the Line */
+.ActiveNavLink::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    background-color: #6cc41f;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Updated positioning for the Dot */
+.ActiveNavLink::after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 12px;
+    height: 12px;
+    background-color: #6cc41f;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

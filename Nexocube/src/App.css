@@ -1,0 +1,88 @@
+.btnGradient {
+    background: linear-gradient(180deg,
+            #8fdc2a 0%,
+            #b7f23a 45%,
+            #9be82f 70%,
+            #6cc41f 100%);
+    /* pill shape */
+}
+
+.ActiveCardBgGradient {
+    background: linear-gradient(180deg,
+            #8fdc2a 0%,
+            #b7f23a 45%,
+            #9be82f 70%,
+            #6cc41f 100%);
+    /* border-radius: 999px; */
+}
+
+.inActiveCardBg {
+    background: linear-gradient(174deg,
+            rgb(255, 255, 255) 0%,
+            rgb(242, 242, 242) 100%);
+    border: 1px solid rgb(222, 222, 222);
+
+
+}
+
+.cardSubtitle {
+    background: linear-gradient(174deg,
+            #ffffff 0%,
+            #d8d8d8 100%);
+}
+
+
+.FeatureSubtitle {
+    background: linear-gradient(182deg,
+            rgba(242, 242, 242, 1) 0%,
+            rgba(235, 232, 232, 1) 99%,
+            rgb(253, 253, 253) 100%,
+            rgb(235, 235, 235) 100%);
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 2px;
+}
+
+
+.tl {
+    top: 10px;
+    left: 10px;
+}
+
+.tr {
+    top: 10px;
+    right: 10px;
+}
+
+.bl {
+    bottom: 10px;
+    left: 10px;
+}
+
+.br {
+    bottom: 10px;
+    right: 10px;
+}
+
+.textGredient {
+    /* background: linear-gradient(90deg, #233c02, #7fb00c, #254701); */
+    background: linear-gradient(90deg, rgba(35, 60, 2, 1) 0%, rgba(127, 176, 12, 1) 50%, rgba(37, 71, 1, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.heroTextHeading {
+    background: linear-gradient(142deg, #334601 0%, #76a704 80%, #446002 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
