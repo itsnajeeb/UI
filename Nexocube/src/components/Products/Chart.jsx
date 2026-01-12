@@ -10,7 +10,7 @@ export default function Chart() {
     return (
         <Box
             sx={{
-                width: 320,
+                // width: 320,
                 paddingX:3,
                 paddingY:1,
                 borderRadius: 4,

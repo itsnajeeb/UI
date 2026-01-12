@@ -1,19 +1,21 @@
+@import './styles/color.css';
+
 .btnGradient {
     background: linear-gradient(180deg,
-            #8fdc2a 0%,
-            #b7f23a 45%,
-            #9be82f 70%,
-            #6cc41f 100%);
+            var(--bg-color-1) 25%,
+            var(--bg-color-2) 50%,
+            var(--bg-color-3) 100%
+    );
+    color: white;
     /* pill shape */
 }
 
 .ActiveCardBgGradient {
+    background: #6849f2;
     background: linear-gradient(180deg,
-            #8fdc2a 0%,
-            #b7f23a 45%,
-            #9be82f 70%,
-            #6cc41f 100%);
-    /* border-radius: 999px; */
+            #6849f2 0%,
+            #7716d9 50%,
+            #7b06f3 100%);
 }
 
 .inActiveCardBg {
@@ -71,7 +73,10 @@
 
 .textGredient {
     /* background: linear-gradient(90deg, #233c02, #7fb00c, #254701); */
-    background: linear-gradient(90deg, rgba(35, 60, 2, 1) 0%, rgba(127, 176, 12, 1) 50%, rgba(37, 71, 1, 1) 100%);
+    background: linear-gradient(90deg,
+            var(--text-color-1) 0%,
+            var(--text-color-2) 50%,
+            var(--text-color-3) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -80,7 +85,10 @@
 
 
 .heroTextHeading {
-    background: linear-gradient(142deg, #334601 0%, #76a704 80%, #446002 100%);
+    background: linear-gradient(90deg,
+            var(--text-color-1) 0%,
+            var(--text-color-2) 50%,
+            var(--text-color-3) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

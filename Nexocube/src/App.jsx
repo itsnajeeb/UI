@@ -8,6 +8,7 @@ import Product from './components/Products/Product'
 import WorkSmart from './components/WorkSmart/WorkSmart'
 import { Feedback } from './components/Feedback/Feedback'
 import Footer from './components/Footer/Footer'
+import './styles/color.css'
 const App = () => {
   return (
     <div className=''>

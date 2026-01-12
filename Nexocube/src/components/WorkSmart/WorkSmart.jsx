@@ -1,31 +1,55 @@
 import React from 'react'
 import '../../styles/WorkSmart.css'
-import { Sparkle, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
+
 const WorkSmart = () => {
   return (
-    <div className='relative h-[90vh]  w-full'>
-     <div className='container h-full w-full absolute bg-no-repeat bg-center bg-cover
-    flex flex-col py-20 items-center
-    '
-     style={{backgroundImage:"url('/image/bgImage.png')"}}>
+    // Changed to min-h-screen or min-h-[90vh] so content can expand on mobile
+    <section className='relative min-h-[80vh] lg:h-[90vh] w-full overflow-hidden flex items-center justify-center'>
+      
+      {/* Background Layer */}
+      <div 
+        className='absolute inset-0 bg-no-repeat bg-center bg-cover'
+        style={{
+            backgroundImage: "url('/image/bgImage.png')",
+            // Adding a light overlay if your image is too bright for the text
+            backgroundColor: 'rgba(255,255,255,0.1)' 
+        }}
+      />
 
-        <div className='container flex flex-col justify-center items-center gap-4'>
-            <p className='subTittle px-8 py-2 rounded-full text-dark-green font-medium flex items-center gap-2'> 
-                <span className='self-center' ><Sparkles size={15} /></span>
-                Intelligent Work Start here</p>
-            <h1 className='textGredient pb-2 text-5xl font-semibold'>Unlock a Smarter Way to Work</h1>
-            <p className='text-lg text-dark-green font-medium max-w-lg text-center'>Experience a refined AI Platform built for clarity, intelligence, and exceptional performance</p>
+      {/* Content Layer */}
+      <div className='relative z-10 container mx-auto px-6 flex flex-col items-center justify-center text-center py-20'>
+        
+        {/* Badge */}
+        <div className='flex flex-col justify-center items-center gap-4 md:gap-6'>
+            <p className='subTittle px-6 md:px-8 py-2 rounded-full text-(--text-color-1) font-medium flex items-center gap-2 text-sm md:text-base bg-white/50 backdrop-blur-sm border border-gray-200/50 shadow-sm'> 
+                <span className='self-center'><Sparkles size={16} /></span>
+                Intelligent Work Starts Here
+            </p>
+            
+            {/* Heading - Responsive text sizes */}
+            <h1 className='textGredient pb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold max-w-4xl leading-tight'>
+              Unlock a Smarter Way to Work
+            </h1>
+            
+            {/* Description */}
+            <p className='text-base md:text-lg lg:text-xl text-dark-green font-medium max-w-xl md:max-w-2xl opacity-90'>
+              Experience a refined AI Platform built for clarity, intelligence, and exceptional performance.
+            </p>
         </div>
-        <div className='mt-8 flex  gap-8 btnContainer'>
-            <button className='active text-lg px-11 py-4 cursor-pointer rounded-full font-medium text-dark-green'>
+
+        {/* Buttons - Stack on mobile, side-by-side on desktop */}
+        <div className='mt-10 flex flex-col sm:flex-row gap-4 lg:gap-8 w-full sm:w-auto px-4 sm:px-0'>
+            <button className='active text-lg px-10 py-4 cursor-pointer rounded-full font-medium text-(--text-white) transition-transform hover:scale-105 active:scale-95 shadow-lg whitespace-nowrap btnGradient'>
                 Get Started 
             </button>  
-             <button className=' px-11 text-lg py-4 cursor-pointer rounded-full text-gray-500 bg-gray-300/40 border-2 border-gray-400/20 opacity-100'>
+            <button className='text-lg px-10 py-4 cursor-pointer rounded-full text-gray-600 bg-white/40 border border-gray-400/30 backdrop-blur-md transition-all hover:bg-white/60 whitespace-nowrap'>
                 Book a Demo 
             </button>
         </div>
-    </div>
-    </div>
+
+      </div>
+    </section>
   )
 }
 
