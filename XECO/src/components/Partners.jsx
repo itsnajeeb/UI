@@ -28,6 +28,7 @@ function Partners() {
         <h1 className="text-base text-white font-bold text-center ">OUR TOP PARTNER</h1>
         <div className="bg-primary-color w-2 h-2 self-center rounded-full"></div>
       </div>
+      
       <div className="bg-gray-800/15 border-t-2 border-b-2 border-gray-300/50 h-32 relative overflow-hidden">
         <Slider {...settings}>
           {[brand_img01, brand_img02, brand_img03, brand_img04, brand_img05, brand_img06, brand_img07].map(

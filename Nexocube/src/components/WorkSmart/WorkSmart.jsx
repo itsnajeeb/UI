@@ -2,17 +2,14 @@ import React from 'react'
 import '../../styles/WorkSmart.css'
 import { Sparkles } from 'lucide-react'
 
-const WorkSmart = () => {
+const Services = () => {
   return (
-    // Changed to min-h-screen or min-h-[90vh] so content can expand on mobile
-    <section className='relative min-h-[80vh] lg:h-[90vh] w-full overflow-hidden flex items-center justify-center'>
+    <section className='relative mt-20 min-h-[80vh] lg:h-[90vh] w-full overflow-hidden flex items-center justify-center'>
       
-      {/* Background Layer */}
       <div 
         className='absolute inset-0 bg-no-repeat bg-center bg-cover'
         style={{
-            backgroundImage: "url('/image/bgImage.png')",
-            // Adding a light overlay if your image is too bright for the text
+            backgroundImage: "url('/image/hero.gif')",
             backgroundColor: 'rgba(255,255,255,0.1)' 
         }}
       />
@@ -28,12 +25,12 @@ const WorkSmart = () => {
             </p>
             
             {/* Heading - Responsive text sizes */}
-            <h1 className='textGredient pb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold max-w-4xl leading-tight'>
+            <h1 className=' pb-2 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold max-w-4xl leading-tight'>
               Unlock a Smarter Way to Work
             </h1>
             
             {/* Description */}
-            <p className='text-base md:text-lg lg:text-xl text-dark-green font-medium max-w-xl md:max-w-2xl opacity-90'>
+            <p className='text-base md:text-lg lg:text-xl text-dark-green font-medium max-w-xl md:max-w-2xl opacity-90 text-white'>
               Experience a refined AI Platform built for clarity, intelligence, and exceptional performance.
             </p>
         </div>
@@ -43,7 +40,7 @@ const WorkSmart = () => {
             <button className='active text-lg px-10 py-4 cursor-pointer rounded-full font-medium text-(--text-white) transition-transform hover:scale-105 active:scale-95 shadow-lg whitespace-nowrap btnGradient'>
                 Get Started 
             </button>  
-            <button className='text-lg px-10 py-4 cursor-pointer rounded-full text-gray-600 bg-white/40 border border-gray-400/30 backdrop-blur-md transition-all hover:bg-white/60 whitespace-nowrap'>
+            <button className='text-lg px-10 py-4 cursor-pointer rounded-full text-white bg-white/40 border border-gray-400/30 backdrop-blur-md transition-all hover:bg-white/60 whitespace-nowrap'>
                 Book a Demo 
             </button>
         </div>
@@ -53,4 +50,4 @@ const WorkSmart = () => {
   )
 }
 
-export default WorkSmart
+export default Services

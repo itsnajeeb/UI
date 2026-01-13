@@ -1,36 +1,24 @@
 import React from 'react'
-import hero from "/image/9057765.jpg"
-import icon from "/image/icon/icon-4.png"
+// import hero from "/image/9057765.jpg"
+import hero from "/image/hero.png"
+// import hero from "/image/hero.jpg"
+import '../../styles/Hero.css'
 const Hero = () => {
-  return (
-    <div className='relative top-0 flex min-h-screen space-x-14 flex-col lg:flex-row'>
+    return (
+        <div className='relative top-0 flex  w-full flex-col h-full  '>
 
-        <div className='h-[70vh] lg:h-screen w-full lg:w-[60%] '>
-            <img src={hero} alt="Hero bg" className='h-full object-bottom object-cover w-full' />
-        </div>
-
-        <div className='flex justify-center  gap-4 flex-col w-full  lg:w-[40%]  items-center lg:items-start '>
-            <div className='w-7 h-7'>
-                <img src={icon} alt="" />
+            <div className=' w-[80%] mt-30  mx-auto'>
+                <img src={hero} alt="Hero bg" className='h-full  object-cover w-full' />
             </div>
-            <div className='self-center '>
-                <h1 className='text-6xl text-center font-semibold heroTextHeading md:text-7xl lg:text-left'>Precision AI,
-                    Designed to 
-                    Elevate Your
-                    Workflow
+
+            <div className=' heroRightContent w-fit flex justify-center flex-col gap-5'>
+                <h1 className='lg:text-6xl text-4xl w-fit hero text-black text-center font-semibold  leading-20  '>Building Wealth Through  Community & Performance
                 </h1>
+                <button className='btnGradient px-12 py-3 font-medium rounded-full mx-auto text-lg cursor-pointer transition-all duration-300 hover:scale-110'>Login</button>
             </div>
-            <div className=''>
-                <p className='font-medium text-base  text-center lg:text-left text-(--text-gray-1)'>
-                    A refined system of intelligent components that analyze, organize, and automate your work faster, clearer and effortuseully
-                </p>
-            </div>
-            <div>
-                <button className='btnGradient rounded-full px-6 py-3 cursor-pointer font-semibold text-base'>Experience the Platform</button>
-            </div>
+
         </div>
-    </div>
-  )
+    )
 }
 
 export default Hero

@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className='gap-2 flex items-center'>
           <img src={logo} alt="logo" className='w-7 h-7 object-cover' />
-          <h1 className='text-2xl font-bold  text-(--text-white)'>Nexocube</h1>
+          <h1 className='text-2xl font-bold  text-black'>Nexocube</h1>
         </div>
 
         {/* Desktop Navigation */}

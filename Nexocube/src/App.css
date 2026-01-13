@@ -42,34 +42,6 @@
             rgb(235, 235, 235) 100%);
 }
 
-.dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 2px;
-}
-
-
-.tl {
-    top: 10px;
-    left: 10px;
-}
-
-.tr {
-    top: 10px;
-    right: 10px;
-}
-
-.bl {
-    bottom: 10px;
-    left: 10px;
-}
-
-.br {
-    bottom: 10px;
-    right: 10px;
-}
 
 .textGredient {
     /* background: linear-gradient(90deg, #233c02, #7fb00c, #254701); */
@@ -80,7 +52,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    /* color: transparent; */
+    background-color: blue;
 }
 
 
@@ -93,4 +66,30 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+
+.slick-slider {
+    overflow: hidden;
+    height: auto !important;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: stretch;
+}
+
+
+.slick-slide>div {
+    /* border: 1px solid black; */
+
+    width: 300px !important;
+    /* width: 220px; */
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
 }
