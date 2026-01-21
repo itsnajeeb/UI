@@ -1,0 +1,36 @@
+@import url('bootstrap-icons/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&display=swap');
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-geom {
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+}
+.font-judson {
+  font-family: "Judson", serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.whiteBgGradient{
+   background: linear-gradient(90deg, rgb(81, 81, 81) 0%, rgba(250, 250, 250, 1) 50%, rgb(89, 89, 89) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.descriptionGradient{
+   background: linear-gradient(90deg, rgb(111, 111, 111) 0%, rgb(114, 114, 114) 50%, rgb(100, 100, 100) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

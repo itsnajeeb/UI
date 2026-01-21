@@ -1,0 +1,51 @@
+.navbar-box {
+  position: relative;
+  width: 110px;
+  height: 35px;
+  padding: 2px;
+  /* background: linear-gradient(90deg, #be980c, #836703); */
+
+}
+
+.navbar-box-content {
+  color: #f8ce2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+
+  /* clip-path: polygon(
+    0% 0%,
+    calc(100% - 12px) 0%,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0% calc(100% - 12px)
+  ); */
+}
+
+.navbar-box-content .navItem {
+  width: 200px;
+  height: 150px !important;
+
+}
+
+
+.navContainer .middleSection h1 {
+  letter-spacing: 2px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  /* letter-spacing: 6px; */
+
+  /* Inside color */
+  color: #000;
+
+  /* White border */
+  -webkit-text-stroke: 0.5px #fff;
+
+  /* No glow / no shadow */
+  text-shadow: none;
+}

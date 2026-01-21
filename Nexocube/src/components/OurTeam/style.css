@@ -1,0 +1,42 @@
+.team-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.left ul li {
+  margin-bottom: 8px;
+}
+
+.middle img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.right button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.right button.active {
+  background: #eaffc7;
+  border-color: #b4f000;
+}

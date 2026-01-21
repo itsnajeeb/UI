@@ -4,7 +4,7 @@ import icon2 from '/image/icon/icon-6.png'
 import icon3 from '/image/icon/icon-7.png'
 import icon4 from '/image/icon/icon-8.png'
 import BottomDesigned from "./BottomDesigned";
-
+import './Feature.css'
 const cards = [
   {
     id: 1,
@@ -40,14 +40,15 @@ export default function Features() {
   const [activeId, setActiveId] = useState(2);
 
   return (
-    <div className="flex flex-col items-center md:mt-20 mt-28 px-6  ">
+    <div className="flex flex-col items-center md:mt-20 mt-28 px-6 our-facility ">
       {/* Header Section */}
-      <div className="mb-10  flex flex-col justify-center items-center gap-2 text-center">
+      <div className="mb-8 lg:mb-2  flex flex-col justify-center items-center gap-2 text-center">
 
-        <div className="FeatureSubtitle  rounded-xl flex justify-center items-center py-4 px-8 ">
-          <h1 className="text-3xl  md:text-4xl textGredient font-bold   rounded-xl pb-1   ">
-            Our 4-Stream Income Model
+        <div className=" heading-section rounded-xl flex flex-col justify-center items-center py-4  ">
+          <h1 className="text-3xl  md:text-4xl  lg:text-5xl textGredient font-bold   rounded-xl pb-5   ">
+            A New Layer of Intelligence
           </h1>
+          <p className="">Each AI Capability works independently and seamlessly together to support your entire workflow.</p>
         </div>
 
       </div>
@@ -68,7 +69,7 @@ export default function Features() {
             <div className="flex flex-col items-center h-full">
               <div
                 className="mb-6 w-14  h-14 rounded-lg flex items-center justify-center cardSubtitle" >
-                <div className=" w-fit self-center text-xl font-semibold  rounded-full flex items-center justify-center  uppercase tracking-wider text-(--text-color-1)">
+                <div className=" w-fit self-center text-xl font-semibold  rounded-full flex items-center justify-center  uppercase tracking-wider sub-title">
                   {card.subtitle}
                 </div>
               </div>

@@ -1,0 +1,37 @@
+.advantageContainer {
+    background-image: url('/public/websiteimg/advantageBg.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.advantageContainer .header .paraGradient {
+    background: linear-gradient(90deg, rgb(67, 67, 67) 0%, rgba(250, 250, 250, 1) 50%, rgb(65, 65, 65) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+.advantageContainer .header .headingGradient {
+    background: linear-gradient(90deg, rgb(67, 67, 67) 0%, rgba(250, 250, 250, 1) 50%, rgb(65, 65, 65) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.advantageContainer .content .leftSideBox {
+    background-image: url('/public/websiteimg/advatageBox.png');
+    height: 150px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+
+}

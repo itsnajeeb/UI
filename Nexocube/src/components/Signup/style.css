@@ -1,0 +1,64 @@
+.signup-content .input-container .signup-info {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+
+.signup-content .input-container .signup-info .input-box label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+
+.signup-content .input-container .signup-info .input-box input {
+    width: 100%;
+    border: 2px solid gray;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+.signup-content .button {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.signup-content .button button {
+
+    background: linear-gradient(180deg,
+            #b2f15f 25%,
+            #94D146 50%,
+            #5b9909 100%);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0px auto;
+    color: rgb(2, 8, 3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.signup-content .button button:hover {
+    transform: translateY(-2px) scale(1.1);
+
+}
+
+.signup-content .button p {
+    color: gray;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.signup-content .button .login-link {
+    color: blue !important;
+}

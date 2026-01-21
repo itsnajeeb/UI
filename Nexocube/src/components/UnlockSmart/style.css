@@ -1,0 +1,38 @@
+.unlockContainer {
+    background: url('/public/image/unlockBg.png');
+    height: 100vh;
+    object-fit: top cover;
+    object-position: top center;
+}
+
+.gradientBtn {
+    background: linear-gradient(180deg,
+            #b2f15f 25%,
+            #94D146 50%,
+            #5b9909 100%);
+
+}
+
+.unlockContainer .text-section h1 {
+    background: linear-gradient(to left,
+            #1f3d1f 0%,
+            #6fae4f 45%,
+            #8bcf63 50%,
+            #6fae4f 55%,
+            #1f3d1f 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btnContainer .active {
+    background: #d5fa7f;
+    background: linear-gradient(0deg, rgba(213, 250, 127, 1) 0%, rgba(140, 196, 10, 1) 100%);
+}
+
+.container .subTittle {
+    background-color: #fff;
+    background: linear-gradient(174deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    
+}

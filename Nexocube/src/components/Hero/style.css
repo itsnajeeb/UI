@@ -1,0 +1,19 @@
+.text-section h1 {
+  background: linear-gradient(
+    to bottom,
+    #1f3d1f 0%,
+    #6fae4f 45%,
+    #8bcf63 50%,
+    #6fae4f 55%,
+    #1f3d1f 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-section p{
+    color: rgb(117, 125, 115);
+    font-weight: 500;
+}

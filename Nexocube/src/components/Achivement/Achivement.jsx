@@ -23,7 +23,7 @@ const Achivement = () => {
 
     ]
     return (
-        <div className='relative px-20 flex justify-between'>
+        <div className='relative px-5 md:px-10 lg:px-20 mt-20 mb-20 flex justify-between flex-wrap gap-5'>
             {
                 data.map((item, idx) => (
                     <div className='flex  items-center gap-4' key={idx}>

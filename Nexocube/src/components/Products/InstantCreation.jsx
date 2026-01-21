@@ -6,22 +6,22 @@ const InstantCreation = () => {
         <div className="w-full h-full flex flex-col items-center bg-white py-12  border-t lg:border-t-0 lg:border-l border-gray-300/80 cardContainer">
             <div className='flex flex-col gap-4  w-full '>
                 <div className='flex px-10 justify-between '>
-                    <h1 className='flex items-center gap-1  rounded-full px-3 py-2 text-xs border border-gray-400/90  inActiveCardBg'><span className="w-3 h-3 bg-(--bg-soft-dark) rounded-full flex items-center justify-center text-[8px] text-white" >✓</span>Summary Extracted</h1>
+                    <h1 className='flex items-center gap-1  rounded-full px-3 py-2 text-xs border border-gray-400/90  inActiveCardBg'><span className="w-3 h-3 bg-[#5b9c06c4] rounded-full flex items-center justify-center text-[8px] text-white" >✓</span>Summary Extracted</h1>
 
-                    <h1 className='flex items-center gap-1 text-xs px-3 py-2 rounded-full border border-gray-400/90  inActiveCardBg'><span className="w-3 h-3 bg-(--bg-soft-dark) rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Data Validated</h1>
+                    <h1 className='flex items-center gap-1 text-xs px-3 py-2 rounded-full border border-gray-400/90  inActiveCardBg'><span className="w-3 h-3 bg-[#5b9c06c4] rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Data Validated</h1>
                 </div>
                 <div className='flex justify-between px-5'>
-                    <h1 className='flex items-center gap-1 text-xs border border-gray-400/90  inActiveCardBg px-3 py-2 rounded-full'> <span className="w-3 h-3 bg-(--bg-soft-dark) rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Key Insights Identified</h1>
+                    <h1 className='flex items-center gap-1 text-xs border border-gray-400/90  inActiveCardBg px-3 py-2 rounded-full'> <span className="w-3 h-3 bg-[#5b9c06c4] rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Key Insights Identified</h1>
 
-                    <h1 className='flex items-center gap-1 text-xs border border-gray-400/90  inActiveCardBg px-3 py-2 rounded-full'> <span className="w-3 h-3 bg-(--bg-soft-dark) rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Next Actions Generated</h1>
+                    <h1 className='flex items-center gap-1 text-xs border border-gray-400/90  inActiveCardBg px-3 py-2 rounded-full'> <span className="w-3 h-3 bg-[#5b9c06c4] rounded-full flex items-center justify-center text-[8px] text-white">✓</span> Next Actions Generated</h1>
                 </div>
             </div>
 
-            <div className="relative flex items-center justify-center w-full aspect-square max-w-100 px-6 md:px-10 ">
+            <div className="instant-creation relative flex items-center justify-center w-full aspect-square max-w-100 px-6 md:px-10 ">
                 {/* Visual Backgrounds */}
                 <div className="absolute w-[90%] h-[90%] rounded-full bg-[radial-gradient(circle,rgba(220,252,140,0.6)_0%,transparent_70%)] animate-pulse"></div>
-                <div className="absolute w-[70%] h-[70%] rounded-full bg-[var(--bg-soft-dark)]"></div>
-                <div className="absolute w-[85%] h-[85%] rounded-full bg-[var(--bg-soft)]"></div>
+                <div className="absolute w-[70%] h-[70%] rounded-full bg-[#5b9c06c4]"></div>
+                <div className="absolute w-[85%] h-[85%] rounded-full bg-[#5b9c0657]"></div>
 
                 {/* Floating Card */}
                 <div className="relative z-10 w-full max-w-60 rounded-2xl bg-white shadow-2xl p-5 border border-gray-100">

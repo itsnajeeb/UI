@@ -1,69 +1,84 @@
 import React, { useState } from 'react'
 import { FaCamera, FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
-import footerImage from '/image/footerImage.png'
+
 import logo from '/image/logo.png'
+import footerImage from '/image/footerImage.png'
+import './style.css'
 const Footer = () => {
     // const [isHover, setHover] = useState(false)
     return (
-        <>
-            <div className='flex justify-between mt-20 h-full '>
-                <div className='w-full mx-10 grid  grid-cols-[1fr_1fr_1fr]  border-t border-b h-[250px] '>
+        <div className='flex justify-between h-full'>
+            <div className=' w-full  relative'>
+                <div className='   footer-left flex justify-between px-10 flex-wrap '>
+                    <div className='flex gap-4 flex-col  flex-1' >
+                        <div className='flex gap-4  '>
+                            <img src={logo} alt="" className='w-10 h-10' />
+                            <h1 className='text-2xl font-bold'>Nexocube</h1>
+                        </div>
 
-                    <div className='flex gap-2  justify-center items-center border-r h-full w-full'>
-                        <img src={logo} alt="" className='w-12 h-12 ' />
-                        <h1 className='text-4xl font-semibold self-center'>Nexocube</h1>
-                    </div>
-                    <div className=' flex justify-center flex-col border-r items-center '>
-                        <h1 className='text-base mb-2 font-semibold uppercase'>Subscribe to our news letter</h1>
-                        <div className='relative   w-full sm:max-w-95'>
+                        <div className='relative  max-w-[350px]'>
+                            <input type="text" className=' bg-gray-100/80 outline-none py-4 px-8 rounded-full font-medium relative w-fit' placeholder='Enter Your Email ' />
+                            <button className='btnGradient px-5 py-4 rounded-full absolute right-4'>Get Started</button>
+                        </div>
 
-                            <input type="text" placeholder='Enter Your Email'
-                                className='border-2 border-gray-400/70  w-full outline-none px-4 py-2 rounded-full placeholder:text-gray-400 lg:px-6 lg:py-3 ' />
-
-                            <button className='absolute font-semibold btnGradient px-4 right-0 py-2.5 cursor-pointer rounded-full text-gray-600/90 lg:py-3.5 lg:px-6'>Get Started</button>
+                        <div className='flex mt-5 gap-2 '>
+                            <span className='bg-gray-400/30 p-4 rounded-xl hover:bg-gray-400/50 cursor-pointer'><FaFacebookF /></span>
+                            <span className='bg-gray-400/30 p-4 rounded-xl hover:bg-gray-400/50 cursor-pointer'><FaLinkedin /></span>
+                            <span className='bg-gray-400/30 p-4 rounded-xl hover:bg-gray-400/50 cursor-pointer'><FaTwitter /></span>
+                            <span className='bg-gray-400/30 p-4 rounded-xl hover:bg-gray-400/50 cursor-pointer'><FaCamera /></span>
                         </div>
                     </div>
-                    <div className='flex gap-4 justify-center items-center '>
-                        <HoverIcon IconComponent={FaFacebookF} defaultColor="#8d29f1" hoverColor="#fff" />
-
-                        <HoverIcon IconComponent={FaTwitter} defaultColor="#8d29f1" hoverColor="#fff" />
-
-                        <HoverIcon IconComponent={FaLinkedin} defaultColor="#8d29f1" hoverColor="#fff" />
-
-                        <HoverIcon IconComponent={FaCamera} defaultColor="#8d29f1" hoverColor="#fff" />
-
+                    <div className='navLink flex-1'>
+                        <h4 className='navLink-title font-medium text-lg'>Solutions</h4>
+                        <ul>
+                            <li>Operations Teams</li>
+                            <li>Business Analysts</li>
+                            <li>Creators & Writers</li>
+                            <li>Project Manager</li>
+                        </ul>
                     </div>
 
-
+                    <div className='navLink pr-10'>
+                        <h4 className='navLink-title font-medium text-lg'>Solutions</h4>
+                        <ul>
+                            <li>Operations Teams</li>
+                            <li>Business Analysts</li>
+                            <li>Creators & Writers</li>
+                            <li>Project Manager</li>
+                        </ul>
+                    </div>
 
                 </div>
 
-            </div >
-            <div className='my-4 text-dark-green font-medium text-sm lg:text-base text-center'>
-                Copyright&copy; 2025 Nexocube. All rights reserved.
+                <div className='  absolute w-full  '>
+                    <div className=' mb-1 h-px bg-gray-400/80 mx-5 lg:mx-10 mt-7'>
+                    </div>
+
+                    <div className='flex  justify-between px-5  my-2 text-dark-green  bottom-0 font-medium text-sm lg:text-base text-center flex-col gap-5 lg:px-20 lg:gap-0'>
+                       
+                        <div className='flex gap-10 justify-between w-full'>
+                            <a href="#">Privacy plicy</a>
+                            <a href="#">Terms of Use</a>
+                        </div>
+
+                         <div>
+                            Copyright&copy; 2025 Nexocube. All rights reserved.
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
 
-        </>
+            <div>
+                <img src={footerImage} alt="" className='w-100 hidden lg:block' />
+            </div>
+
+        </div>
 
 
     )
 }
 
 export default Footer
-
-const HoverIcon = ({ IconComponent, defaultColor, hoverColor }) => {
-    const [isHovered, setIsHovered] = useState(false);
-
-    return (
-        <span className='bg-gray-400/20 p-4 h-fit rounded-lg cursor-pointer  hover:bg-(--bg-color-3) transition-all duration-300 text-black'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
-            <IconComponent
-                size={20}
-                color={isHovered ? hoverColor : defaultColor}
-                style={{ cursor: 'pointer', transition: 'color 0.3s' }}
-            />
-        </span>
-    );
-};

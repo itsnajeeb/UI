@@ -1,0 +1,102 @@
+@import '../styles/color.css';
+
+.bgImage {
+    height: 600px;
+    background-image: url("/websiteimg/certificationBg.png");
+    background-repeat: no-repeat;
+    /* width: 1400px; */
+
+
+    /* IMPORTANT PART */
+    background-size: contain;
+    background-position: top right;
+
+    /* optional */
+    background-color: #000;
+    position: relative;
+}
+
+.whiteGredient {
+    background: linear-gradient(90deg, rgba(128, 128, 128, 1) 0%, rgba(252, 252, 251) 50%, rgb(128, 128, 128, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.para {
+    color: rgb(208, 208, 208);
+    max-width: 280px;
+    display: flex;
+    height: 100%;
+
+}
+.certifictionHeader .content .para .leftBorder{
+    width: 12px;
+    background-color: #f59e0b;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.description {
+    max-width: 300px;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.rightWrapper {
+    width: 350px;
+    height: 120px;
+}
+
+.rightWrapper .rightBox .heading {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+
+}
+
+.rightWrapper .rightBox .desc {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: rgb(121, 121, 121, 0.8);
+}
+
+.rightBox {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.squareBoxContainer {
+    border: 1px solid #4e4e4e;
+    padding: 3px;
+    border-radius: 8px;
+
+}
+
+.squareBox {
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-dark-color);
+    border-radius: 8px;
+}
+
+.certificationBtn .btn {
+    background:
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(135deg, #facc15, #895b0c, #311804) border-box;
+          border: 2px solid transparent;
+    color: var(--primary-text-color);
+
+}
+
+.certificationBtn .btn:hover{
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+    cursor: pointer;
+    color: black;
+}

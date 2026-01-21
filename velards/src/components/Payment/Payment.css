@@ -1,0 +1,58 @@
+.paymentContainer {
+    background: url('/public/websiteimg/paymentBg.png');
+    height: 400px;
+}
+
+.paymentContainer .content {}
+
+.paymentContainer .content .leftSideContent .heading {
+    background: linear-gradient(90deg, rgb(121, 121, 121) 0%, rgba(250, 250, 250, 1) 50%, rgb(125, 125, 125) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.paymentContainer .content .leftSideContent .descriptionDiv {}
+
+.paymentContainer .content .leftSideContent .descriptionDiv>div {
+    width: 8px;
+    height: 100%;
+    background-color: #be980c;
+    border-radius: 10px;
+}
+
+.paymentContainer .content .leftSideContent .subtitle {
+    background: linear-gradient(90deg, rgb(182, 182, 182) 0%, rgba(250, 250, 250, 1) 50%, rgb(179, 179, 179) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.paymentContainer .content .leftSideContent .descGradient {
+    background: linear-gradient(90deg, rgb(182, 182, 182) 0%, rgba(250, 250, 250, 1) 50%, rgb(179, 179, 179) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.paymentContainer .content .paymentBoxCard {
+    background: url('/public/websiteimg/paymentBox.png');
+    width: 250px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+
+.paymentContainer .content .paymentBoxCard .paymentBoxItem>div {
+    background-color: #c3c3c3;
+    
+}
+
+.paymentContainer .content .paymentBoxCard:hover .paymentBoxItem>div {
+    background-color: #eebf4e;
+    border-radius: 50%;
+}
+
+.paymentContainer .content .paymentBoxCard:hover {
+    color: #eebf4e;
+}

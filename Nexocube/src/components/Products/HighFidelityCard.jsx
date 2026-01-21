@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Product.css'
+import './style.css'
 import logoBlack from '/image/logoBlack.png'
 import document1 from '/image/document1.png'
 import document2 from '/image/document2.png'

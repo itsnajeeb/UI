@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logo from '/image/logo.png';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react'; 
-import '../../styles/Navbar.css';
+import './style.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +24,14 @@ const Navbar = () => {
 }, []);
 
   return (
-    <nav className={`px-6 md:px-5 py-4 md:py-3  fixed top-3 transition-all duration-300 z-100 w-full 
+    <nav className={`px-6 md:px-5 py-4 md:py-3  fixed top-3 transition-all duration-300 z-100 w-full
     ${scrolled ? 'navContainer' : 'bg-transparent'}`}>
       <div className='flex justify-between items-center mx-auto gap-4'>
 
         {/* Logo Section */}
-        <div className='gap-2 flex items-center'>
+        <div className='gap-2 flex items-center logo-section'>
           <img src={logo} alt="logo" className='w-7 h-7 object-cover' />
-          <h1 className='text-2xl font-bold  text-black'>Nexocube</h1>
+          <h1 className='text-2xl font-bold  web-title'>Nexocube</h1>
         </div>
 
         {/* Desktop Navigation */}
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <NavLink
                   to={`/${id}`}
                   className={({ isActive }) =>
-                    `relative px-3 py-2 transition-colors duration-300 block ${isActive ? "text-white font-semibold" : "text-gray-500 hover:text-black"
+                    `relative px-3 py-2 transition-colors duration-300 block ${isActive ? "text-black font-semibold" : "text-gray-500 hover:text-black"
                     }`
                   }
                 >
@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Action Button & Mobile Toggle */}
         <div className='flex items-center gap-2'>
           <button className='hidden lg:block btnGradient rounded-full md:px-5 lg:px-8 px-6  py-2 cursor-pointer transition-all duration-300 hover:scale-105'>
-            Get Started
+            <Link to={'/login'}>Get Started</Link>
           </button>
 
           {/* Hamburger Menu Toggle */}
@@ -104,7 +104,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <button className='w-full btnGradient rounded-full px-8 py-3 mt-2'>
+            <button className='w-full btnGradient rounded-full px-8 mt-2'>
               Get Started
             </button>
           </motion.div>

@@ -1,0 +1,59 @@
+
+.ActiveNavLink {
+    background: linear-gradient(90deg,
+            #b2f15f 45%,
+            #94D146 70%,
+            #5b9909 100%);
+    border-radius: 999px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navContainer {
+    top: 0;
+    background:
+        linear-gradient(180deg,
+            #94D146 0%,
+            #94D146 100%);
+}
+
+/* Updated positioning for the Line */
+.ActiveNavLink::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    background-color: #94D146;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Updated positioning for the Dot */
+.ActiveNavLink::after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 12px;
+    height: 12px;
+    background-color: #94D146;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.navContainer .logo-section .web-title{
+    color: white !important;
+
+}
+.btnGradient {
+    background: linear-gradient(180deg,
+            #b2f15f 25%,
+            #94D146 50%,
+            #5b9909 100%
+    );
+    color: black;
+    /* pill shape */
+}
+

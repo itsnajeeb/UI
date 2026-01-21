@@ -1,0 +1,18 @@
+  .feedback-content h2 {
+      background: linear-gradient(to left,
+              #1f3d1f 0%,
+              #6fae4f 45%,
+              #8bcf63 50%,
+              #6fae4f 55%,
+              #1f3d1f 100%) ;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  }
+
+  .subTittle {
+    background-color: #fff;
+    background: linear-gradient(174deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    
+}
