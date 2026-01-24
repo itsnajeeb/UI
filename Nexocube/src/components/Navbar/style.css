@@ -1,25 +1,120 @@
-
-.ActiveNavLink {
-    background: linear-gradient(90deg,
-            #b2f15f 45%,
-            #94D146 70%,
-            #5b9909 100%);
-    border-radius: 999px;
-    position: absolute;
+/* --- Base Navbar Styles --- */
+.navbar-main {
+    position: fixed;
+    top: 12px;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    z-index: 100;
 }
 
+.nav-transparent {
+    background: transparent;
+}
 
 .navContainer {
     top: 0;
-    background:
-        linear-gradient(180deg,
-            #94D146 0%,
-            #94D146 100%);
+    background: linear-gradient(180deg, #94D146 0%, #94D146 100%);
+    padding: 8px 24px;
 }
 
-/* Updated positioning for the Line */
+.nav-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+/* --- Logo Section --- */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-section .logo-img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.web-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.navContainer .web-title {
+    color: white !important;
+}
+
+/* --- Desktop Nav --- */
+.desktop-nav-container {
+    display: none; /* Hidden on mobile */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 8px 48px;
+    border-radius: 999px;
+}
+
+@media (min-width: 768px) {
+    .desktop-nav-container {
+        display: block;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    color: #6b7280; /* Gray 500 */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.active-text {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.nav-label {
+    position: relative;
+    z-index: 10;
+}
+
+/* --- Active indicator (The Pill, Dot, and Line) --- */
+.ActiveNavLink {
+    background: linear-gradient(90deg, #b2f15f 45%, #94D146 70%, #5b9909 100%);
+    border-radius: 999px;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 .ActiveNavLink::before {
     content: "";
     position: absolute;
@@ -31,7 +126,6 @@
     transform: translateY(-50%);
 }
 
-/* Updated positioning for the Dot */
 .ActiveNavLink::after {
     content: "";
     position: absolute;
@@ -43,17 +137,87 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.navContainer .logo-section .web-title{
-    color: white !important;
 
-}
+/* --- Buttons --- */
 .btnGradient {
-    background: linear-gradient(180deg,
-            #b2f15f 25%,
-            #94D146 50%,
-            #5b9909 100%
-    );
+    background: linear-gradient(180deg, #b2f15f 25%, #94D146 50%, #5b9909 100%);
     color: black;
-    /* pill shape */
+    border: none;
+    border-radius: 999px;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
+.btnGradient:hover {
+    transform: scale(1.05);
+}
+
+.desktop-only-btn {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .desktop-only-btn {
+        display: block;
+    }
+}
+
+/* --- Mobile Menu --- */
+.mobile-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    .mobile-toggle {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 24px;
+    right: 24px;
+    background: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 50;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mobile-nav-link {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.active-mobile {
+    color: #2563eb; /* Blue-600 */
+}
+
+.w-full-btn {
+    width: 100%;
+    margin-top: 8px;
+}

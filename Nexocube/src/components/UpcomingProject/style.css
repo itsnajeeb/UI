@@ -1,26 +1,81 @@
 
 
-.slick-slider {
-    overflow: hidden;
-    height: auto !important;
+
+
+
+
+
+
+/* --- Container & Title --- */
+.upcoming-container {
+    padding: 10px 0;
+    width: 100%;
 }
 
-.slick-list {
-    overflow: hidden;
+.upcoming-title {
+    font-size: 1.875rem; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.slick-track {
-    display: flex !important;
-    align-items: stretch;
+/* --- Slider Spacing --- */
+.slider-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+@media (min-width: 1024px) {
+    .slider-wrapper {
+        margin-left: 80px; 
+        margin-right: 80px;
+    }
+}
 
-.slick-slide>div {
-    /* border: 1px solid black; */
+/* --- Slide Card Styling --- */
+.slide-item {
+    padding: 0 8px; 
+}
 
-    width: 300px !important;
-    /* width: 220px; */
+.slide-card {
+    height: 128px; 
+    display: flex !important; 
+    align-items: center;
+    justify-content: center;
+    background-color: #111827; 
+    padding: 0 56px; 
+    opacity: 0.9;
+    border-radius: 6px; 
+    transition: all 0.4s ease; 
+}
+
+.slide-card:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.slide-img {
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* --- React Slick Specific Overrides --- */
+.custom-slider .slick-track {
     display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+    align-items: center;
+    gap: 20px; 
 }
+
+.custom-slider .slick-slide {
+    height: inherit;
+}
+
+
+
+
+
+
+

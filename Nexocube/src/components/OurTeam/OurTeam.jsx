@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Settings, BarChart3, PenTool, ClipboardList } from 'lucide-react';
+import team1 from '/public/image/team-1.png'
+import team2 from '/public/image/team-2.png'
+import team3 from '/public/image/team-3.png'
+import './style.css';
 
 const tabData = [
   {
@@ -14,7 +18,7 @@ const tabData = [
       "Reduce human error with intelligent checks",
       "Enable faster coordination across departments"
     ],
-    image: "https://illustrations.popsy.co/lime/remote-work.svg" // Replace with your lime/green 3D asset
+    image: team1
   },
   {
     id: 1,
@@ -27,7 +31,7 @@ const tabData = [
       "Identify trends with AI-driven insights",
       "Integrate with existing data stacks"
     ],
-    image: "https://illustrations.popsy.co/lime/data-analysis.svg"
+    image: team2
   },
   {
     id: 2,
@@ -40,7 +44,7 @@ const tabData = [
       "Stakeholder alignment tools",
       "Impact analysis reporting"
     ],
-    image: "https://illustrations.popsy.co/lime/designer.svg"
+    image: team3
   },
   {
     id: 3,
@@ -53,7 +57,7 @@ const tabData = [
       "Approval workflow automation",
       "Multi-channel distribution tracking"
     ],
-    image: "https://illustrations.popsy.co/lime/creative-work.svg"
+    image: team1
   }
 ];
 
@@ -61,11 +65,11 @@ const OurTeam = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="max-w-8xl mx-auto p-6 min-h-[600px] flex items-center justify-center">
-      <div className="bg-white rounded-3xl  justify-between  px-10 overflow-hidden w-full flex flex-col md:flex-row min-h-[500px]">
+    <div className="team-container">
+      <div className="team-card">
         
         {/* LEFT SIDE: CONTENT */}
-        <div className="flex-1 max-w-[500px]  p-10 lg:p-16 flex flex-col justify-center">
+        <div className="team-content-area">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -74,19 +78,19 @@ const OurTeam = () => {
               exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.4 }}
             >
-              <div className="w-12 h-12 bg-lime-400 rounded-xl flex items-center justify-center text-white mb-6">
+              <div className="content-icon-box">
                 {tabData[activeTab].icon}
               </div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-4">
+              <h2 className="content-title">
                 {tabData[activeTab].title}
               </h2>
-              <p className="text-slate-500 text-lg mb-8 leading-relaxed">
+              <p className="content-desc">
                 {tabData[activeTab].description}
               </p>
-              <ul className="space-y-3">
+              <ul className="feature-list">
                 {tabData[activeTab].features.map((feature, index) => (
-                  <li key={index} className="flex items-center text-slate-600">
-                    <span className="w-1.5 h-1.5 bg-lime-500 rounded-full mr-3" />
+                  <li key={index} className="feature-item">
+                    <span className="dot" />
                     {feature}
                   </li>
                 ))}
@@ -96,41 +100,34 @@ const OurTeam = () => {
         </div>
 
         {/* MIDDLE: IMAGE */}
-        <div className=" max-w-[500px]  bg-slate-50 flex items-center justify-center p-8 relative overflow-hidden">
+        <div className="team-image-area">
           <AnimatePresence mode="wait">
             <motion.img
               key={activeTab}
               src={tabData[activeTab].image}
               alt="Feature Illustration"
-              className="w-full max-w-[400px] object-contain relative z-10"
+              className="feature-illustration"
               initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               exit={{ opacity: 0, scale: 1.1 }}
               transition={{ duration: 0.5, type: "spring" }}
             />
           </AnimatePresence>
-          {/* Decorative background circle */}
-          <div className="absolute w-64 h-64 bg-lime-100 rounded-full -bottom-10 -right-10 blur-3xl opacity-50" />
+          <div className="decorative-circle" />
         </div>
 
-
-
         {/* RIGHT SIDE: TAB NAVIGATION */}
-        <div className="w-full md:w-90 border-l   border-gray-100 p-6 flex flex-col justify-center gap-4 bg-white">
+        <div className="team-tabs-sidebar">
           {tabData.map((tab, index) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(index)}
-              className={`flex items-center cursor-pointer gap-4 p-4 rounded-2xl transition-all duration-300 text-left ${
-                activeTab === index 
-                ? 'bg-lime-400 text-white shadow-lg shadow-lime-200 translate-x-[-8px]' 
-                : 'bg-white text-slate-500 hover:bg-slate-50 border border-gray-100'
-              }`}
+              className={`tab-btn ${activeTab === index ? 'tab-active' : 'tab-inactive'}`}
             >
-              <div className={`p-2 rounded-lg ${activeTab === index ? 'bg-white/20' : 'bg-slate-100'}`}>
+              <div className="tab-icon-wrapper">
                 {tab.icon}
               </div>
-              <span className="font-semibold text-sm lg:text-base leading-tight">
+              <span className="tab-label">
                 {tab.title}
               </span>
             </button>

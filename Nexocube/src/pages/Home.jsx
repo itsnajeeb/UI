@@ -4,10 +4,11 @@ import Achivement from "../components/Achivement/Achivement";
 import UpcomingProject from "../components/UpcomingProject/UpcomingProject";
 import Features from "../components/Features/Features";
 import OurTeam from "../components/OurTeam/OurTeam";
-import Roadmap from "../components/Products/Product";
 import UnlockSmart from "../components/UnlockSmart/UnlockSmart";
 import Feedback from "../components/Feedback/Feedback";
 import Footer from "../components/Footer/Footer";
+import RoadToSuccess from "../components/RoadToSuccess/RoadToSuccess";
+import Product from "../components/Products/Product";
 
 const Home = () => {
   return (
@@ -19,8 +20,9 @@ const Home = () => {
       <Achivement />
       <UpcomingProject />
       <Features />
+      <RoadToSuccess/>
       <OurTeam />
-      <Roadmap />
+      <Product />
       <UnlockSmart />
       <Feedback />
       <Footer />

@@ -2,6 +2,8 @@ import React from 'react'
 import icon1 from '/image/icon/icon-1.png'
 import icon2 from '/image/icon/icon-2.png'
 import icon3 from '/image/icon/icon-3.png'
+import './style.css'
+
 const Achivement = () => {
     const data = [
         {
@@ -19,26 +21,23 @@ const Achivement = () => {
             title: "Instant Creation",
             description: "Create content and idea in seconds."
         },
-
-
     ]
+
     return (
-        <div className='relative px-5 md:px-10 lg:px-20 mt-20 mb-20 flex justify-between flex-wrap gap-5'>
-            {
-                data.map((item, idx) => (
-                    <div className='flex  items-center gap-4' key={idx}>
-                        <div className=' bg-gray-200/80 p-3 rounded-md '>
-                            <img src={item.icon} alt="" className='w-7 h-7' />
-                        </div>
-                        <div className='-space-y-1'>
-                            <h1 className='text- text-lg font-semibold'>{item.title}</h1>
-                            <p className='text-sm font-normal'>{item.description}</p>
-                        </div>
+        <div className='achievement-container'>
+            {data.map((item, idx) => (
+                <div className='achievement-card' key={idx}>
+                    <div className='achievement-icon-box'>
+                        <img src={item.icon} alt={item.title} className='achievement-icon' />
                     </div>
-                ))
-            }
+                    <div className='achievement-text-content'>
+                        <h1 className='achievement-title'>{item.title}</h1>
+                        <p className='achievement-desc'>{item.description}</p>
+                    </div>
+                </div>
+            ))}
         </div>
     )
 }
 
-export default Achivement
+export default Achivement;

@@ -1,38 +1,115 @@
-.unlockContainer {
-    background: url('/public/image/unlockBg.png');
+/* --- Unlock Section Container --- */
+.unlock-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     height: 100vh;
-    object-fit: top cover;
-    object-position: top center;
+    margin-top: 80px;
+    background-image: url('/public/image/unlockBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.gradientBtn {
-    background: linear-gradient(180deg,
-            #b2f15f 25%,
-            #94D146 50%,
-            #5b9909 100%);
-
+/* --- Text Content Section --- */
+.unlock-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    max-width: 1024px;
+    gap: 20px;
+    z-index: 2;
 }
 
-.unlockContainer .text-section h1 {
-    background: linear-gradient(to left,
+@media (min-width: 1024px) {
+    .unlock-content {
+        margin-top: 120px;
+    }
+}
+
+.unlock-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(90deg,
             #1f3d1f 0%,
             #6fae4f 45%,
             #8bcf63 50%,
-            #6fae4f 55%,
-            #1f3d1f 100%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            #6fae4f 55%);
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.btnContainer .active {
-    background: #d5fa7f;
-    background: linear-gradient(0deg, rgba(213, 250, 127, 1) 0%, rgba(140, 196, 10, 1) 100%);
+@media (min-width: 1024px) {
+    .unlock-title {
+        font-size: 4.5rem;
+    }
 }
 
-.container .subTittle {
-    background-color: #fff;
-    background: linear-gradient(174deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    
+.unlock-description {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
 }
+
+@media (min-width: 1024px) {
+    .unlock-description {
+        font-size: 1.125rem;
+    }
+}
+
+/* --- Action Buttons --- */
+.unlock-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.unlock-actions .activeBtn {
+    background: linear-gradient(180deg, #b2f15f 25%, #94D146 50%, #5b9909 100%);
+    border-radius: 999px;
+    border: none;
+    color: black;
+}
+
+@media (min-width: 1024px) {
+    .unlock-actions {
+        flex-direction: row;
+        margin-top: 80px;
+        /* lg:mt-20 */
+    }
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 16px 32px;
+    /* py-4 px-8 */
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    /* bg-gray-200 */
+    color: #374151;
+}
+
+/* Note: .gradientBtn should be defined in your global CSS as previously established */

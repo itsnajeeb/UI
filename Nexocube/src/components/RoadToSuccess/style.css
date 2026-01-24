@@ -1,0 +1,121 @@
+/* --- Roadmap Container --- */
+.roadmap-section {
+    margin-top: 80px; /* mt-20 */
+}
+
+.roadmap-header {
+    text-align: center;
+}
+
+.roadmap-main-title {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 700;
+    line-height: 3.5rem; /* leading-14 */
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .roadmap-main-title {
+        font-size: 4.5rem; /* text-7xl */
+        line-height: 4rem; /* leading-16 */
+    }
+}
+
+/* The Green Underline */
+.roadmap-underline {
+    margin: 8px auto 0;
+    height: 4px; /* h-1 */
+    width: 200px; /* Small default width */
+    border-radius: 999px;
+}
+
+@media (min-width: 1024px) {
+    .roadmap-underline {
+        width: 500px; /* lg:w-125 */
+    }
+}
+
+/* --- The Grid System --- */
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack on mobile */
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0 40px; /* px-10 */
+}
+
+@media (min-width: 1024px) {
+    .roadmap-grid {
+        /* lg:grid-cols-[1fr_1.2fr_350px] */
+        grid-template-columns: 1fr 1.2fr 350px; 
+        margin-top: 80px;
+        padding: 0 80px; /* lg:px-20 */
+        align-items: center;
+    }
+}
+
+/* --- Text/List Styles --- */
+.success-title {
+    font-weight: 700;
+    font-size: 1.5rem; /* text-2xl */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .success-title {
+        font-size: 1.875rem; /* text-3xl */
+    }
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.roadmap-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px; /* gap-1 */
+}
+
+.list-dot {
+    margin-top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #94D146; /* Assuming your theme green */
+    flex-shrink: 0;
+}
+
+.item-text {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.6;
+}
+
+.font-bold-label {
+    font-weight: 500;
+}
+
+/* --- Image Handling --- */
+.roadmap-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.roadmap-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (min-width: 1024px) {
+    .roadmap-img {
+        height: 65vh; /* lg:h-[65vh] */
+    }
+}

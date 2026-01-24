@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import quotes from '/public/image/icon/quote.png'
-import './style.css'
+import quotes from '/public/image/icon/quote.png';
+import './style.css';
+
 const testimonials = [
   {
     id: 1,
@@ -17,8 +18,7 @@ const testimonials = [
     author: "Sofia Lorenza",
     role: "Project Manager",
     avatar: "https://i.pravatar.cc/150?u=sofia"
-  },
-  // Add more testimonials here to see the slider in action
+  }
 ];
 
 const Feedback = () => {
@@ -33,41 +33,34 @@ const Feedback = () => {
   };
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto bg-white font-sans">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <section className="feedback-section">
+      <div className="feedback-container">
         
-        {/* LEFT COLUMN: Header & Nav */}
-        <div className="lg:col-span-4 space-y-8 feedback-content">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100">
-            <Quote className="w-4 h-4 text-lime-600 fill-lime-600" />
-            <span className="text-sm font-medium text-gray-600">User Stories</span>
+        {/* LEFT COLUMN */}
+        <div className="feedback-sidebar">
+          <div className="feedback-badge">
+            <Quote className="badge-icon" />
+            <span className="badge-text">User Stories</span>
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-bold  leading-tight">
+          <h2 className="feedback-heading">
             What Teams <br /> Are Saying
           </h2>
 
-          <div className="flex gap-4 pt-4">
-            <button 
-              onClick={prevSlide}
-              className="p-4 rounded-2xl cursor-pointer bg-gray-50 text-gray-400 hover:bg-lime-50 hover:text-lime-600 transition-colors border border-gray-100"
-            >
+          <div className="feedback-nav">
+            <button onClick={prevSlide} className="nav-btn">
               <ChevronLeft size={24} />
             </button>
-            <button 
-              onClick={nextSlide}
-              className="p-4 rounded-2xl cursor-pointer bg-gray-50 text-gray-400 hover:bg-lime-50 hover:text-lime-600 transition-colors border border-gray-100"
-            >
+            <button onClick={nextSlide} className="nav-btn">
               <ChevronRight size={24} />
             </button>
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Testimonials Grid */}
-        <div className="lg:col-span-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* RIGHT COLUMN */}
+        <div className="feedback-main">
+          <div className="testimonial-grid">
             <AnimatePresence mode="wait">
-              {/* Displaying two at a time, or based on index */}
               {[0, 1].map((offset) => {
                 const item = testimonials[(currentIndex + offset) % testimonials.length];
                 return (
@@ -77,25 +70,25 @@ const Feedback = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.4, delay: offset * 0.1 }}
-                    className="space-y-6"
+                    className="testimonial-card"
                   >
-                    <div className="text-lime-400">
-                      <img src={quotes} alt="quotes" className='w-10' />
+                    <div className="quote-icon-wrapper">
+                      <img src={quotes} alt="quotes" className='quote-img' />
                     </div>
                     
-                    <p className="text-gray-500 text-lg leading-relaxed min-h-[140px]">
+                    <p className="testimonial-content">
                       {item.content}
                     </p>
 
-                    <div className="flex items-center gap-4 pt-2">
+                    <div className="author-info">
                       <img 
                         src={item.avatar} 
                         alt={item.author} 
-                        className="w-12 h-12 rounded-full object-cover grayscale"
+                        className="author-avatar"
                       />
-                      <div>
-                        <h4 className="font-bold text-gray-800">{item.author}</h4>
-                        <p className="text-sm text-gray-400">{item.role}</p>
+                      <div className="author-details">
+                        <h4 className="author-name">{item.author}</h4>
+                        <p className="author-role">{item.role}</p>
                       </div>
                     </div>
                   </motion.div>
