@@ -1,108 +1,124 @@
 @import '../styles/color.css';
 
+/* Container for spacing replacement of mt-20 */
+.power-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 80px;
+}
 
 .zigZagBarContainer {
   display: flex;
   background: var(--bg-gray-color);
-  position: absolute;
   width: 100%;
-
   position: relative;
   overflow: hidden;
   z-index: 99;
-  /* transform: rotate(5deg); */
   transform: skewY(1deg);
   transform-origin: right center;
 }
 
 .zigZagBar {
   width: 100%;
-  height: 120px;
-  padding: 00px 120px;
-
+  height: 110px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around; /* Changed for better mobile centering */
   align-items: center;
+  padding: 0 20px;
+}
 
+.zigzagBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .zigzagBox h1 {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 30px;
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 1.2rem; /* Mobile font size */
 }
 
-.zigzagBox .icon {
-  font-size: 10px;
+.zigzagBox .subtext {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(209, 213, 219, 0.9);
+  text-align: center;
 }
 
-
-/* ===== TOP BORDER ===== */
-.zigZagBar::before {
+/* Borders logic remains same */
+.zigZagBar::before, .zigZagBar::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 10px;
-
-  background: repeating-linear-gradient(-45deg,
-      #2b2b2b 0px,
-      #2b2b2b 10px,
-      #1a1a1a 10px,
-      #1a1a1a 20px);
+  background: repeating-linear-gradient(-45deg, #2b2b2b 0px, #2b2b2b 10px, #1a1a1a 10px, #1a1a1a 20px);
 }
-
-/* ===== BOTTOM BORDER ===== */
-.zigZagBar::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-
-  background: repeating-linear-gradient(-45deg,
-      #2b2b2b 0px,
-      #2b2b2b 10px,
-      #1a1a1a 10px,
-      #1a1a1a 20px);
-}
+.zigZagBar::before { top: 0; }
+.zigZagBar::after { bottom: 0; }
 
 .stripeWrapper {
   position: absolute;
   width: 100%;
-  background: #a37208;
   background: linear-gradient(90deg, rgba(163, 114, 8, 1) 0%, rgba(235, 209, 12, 1) 50%, rgba(209, 182, 6, 1) 100%);
   height: 120px;
   z-index: 0;
   transform: skewY(-5deg);
   transform-origin: right center;
+  overflow: hidden;
 }
 
 .powerStripe {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center for mobile */
   align-items: center;
   height: 100%;
-}
-
-.powerStripe .icon {
-  font-size: 25px;
-  margin-right: 10px;
-  -webkit-text-stroke: 1px #2e2e2e;
+  padding: 0 20px;
 }
 
 .powerStripe h1 {
   color: transparent;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px; /* Mobile font size */
   display: flex;
   align-items: center;
   gap: 5px;
-  -webkit-text-stroke: 2px #2e2e2e;
+  -webkit-text-stroke: 1px #2e2e2e;
   transform: skew(5deg);
+  white-space: nowrap;
+}
+
+/* ====== RESPONSIVE MEDIA QUERIES  ====== */
+
+/* Mobile view: Hide extra items */
+@media (max-width: 768px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
+/* Desktop view: Larger fonts and show all items */
+@media (min-width: 769px) {
+  .zigZagBar {
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+  
+  .zigzagBox h1 {
+    font-size: 1.5rem;
+  }
+
+  .powerStripe {
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  .powerStripe h1 {
+    font-size: 40px;
+    -webkit-text-stroke: 2px #2e2e2e;
+  }
 }

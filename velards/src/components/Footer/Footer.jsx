@@ -3,62 +3,72 @@ import './Footer.css'
 import footerBg from '/public/websiteimg/footerCenterBg.png'
 import footerLeft from '/public/websiteimg/footerLeftSideImg.png'
 import button from '/public/websiteimg/button.png'
+
 const Footer = () => {
     return (
-        <div className='footerContainer mb-5'>
-            <div className='footerContent flex justify-center relative  w-fit mx-auto h-[250px] '>
-                <img src={footerBg} alt="" />
+        <footer className='footer-container'>
+            {/* Top Section with Background Graphics */}
+            <div className='footer-banner'>
+                <img src={footerBg} alt="background" className='bg-graphic' />
 
-                <div className='contentSection absolute w-full grid grid-cols-3  h-full  gap-10 '>
-                    <div className=' relative  flex justify-end items-center pr-5'>
-                        <img src={footerLeft} alt="" className='w-62' />
-                        <h1 className='absolute bottom-12 left-5 text-center w-full text-black font-semibold text-xl  '>ID 1918228181</h1>
-                    </div>
-
-                    <div className='middleSection h-full  relative pt-8 '>
-                        <h1 className='heading text-[40px] font-bold  h-full '>Join to building the future</h1>
-                        <div className='flex gap-5  absolute bottom-10  '>
-                            <div className='relative  w-fit flex cursor-pointer'>
-                                <img src={button} alt="" className='w-25 ' />
-                                <p className='absolute  text-center w-full self-center font-medium text-xs'>News</p>
-                            </div>
-                            <div className='relative  w-fit flex cursor-pointer'>
-                                <img src={button} alt="" className='w-25 ' />
-                                <p className='absolute  text-center w-full self-center font-medium text-xs'>Group</p>
-                            </div>
-                            <div className='relative  w-fit flex cursor-pointer'>
-                                <img src={button} alt="" className='w-25 ' />
-                                <p className='absolute  text-center w-full self-center font-medium text-xs'>Support</p>
-                            </div>
-
+                <div className='footer-grid'>
+                    {/* Left: ID Image Section */}
+                    <div className='footer-id-column'>
+                        <div className='id-wrapper'>
+                            <img src={footerLeft} alt="ID card" className='id-img' />
+                            <h1 className='id-text'>ID 1918228181</h1>
                         </div>
                     </div>
 
-                    <div className='  h-full flex justify-center items-center rightSideDesc'>
-                        <p>Our Company is officially registered in the registery of companies of the United Kingdom. as evidenced</p>
+                    {/* Middle: Join Section */}
+                    <div className='footer-join-column'>
+                        <h1 className='footer-main-heading'>Join to building the future</h1>
+                        <div className='footer-btn-group'>
+                            <div className='custom-footer-btn'>
+                                <img src={button} alt="btn" />
+                                <p>News <span className='icon'><i class="bi bi-send"></i></span></p>
+                            </div>
+                            <div className='custom-footer-btn'>
+                                <img src={button} alt="btn" />
+                                <p>Group <span className='icon'><i class="bi bi-send"></i></span></p>
+                            </div>
+                            <div className='custom-footer-btn'>
+                                <img src={button} alt="btn" />
+                                <p>Support <span className='icon'><i class="bi bi-send"></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right: Text Description */}
+                    <div className='footer-desc-column'>
+                        <p className='footer-desc-text'>Our Company is officially registered in the registry of companies of the United Kingdom. as evidenced</p>
                     </div>
                 </div>
             </div>
 
-            <div className='  flex w-[1100px] px-8 mx-auto pt-8 pb-5 justify-between'>
-                <p className='text-gray-400/50 text-sm'><a href="#" className='underline'>Terms and Partnership agreement</a></p>
-                <p className='text-gray-400/50 text-sm'>Copyright @2025 All Right Reserved</p>
-                <div className='flex gap-5'>
-                    <div className='relative  w-fit flex cursor-pointer'>
-                        <img src={button} alt="" className='w-25 ' />
-                        <p className='absolute  text-center w-full self-center font-medium text-xs'>Eng</p>
+            {/* Bottom Section: Legal and Links */}
+            <div className='footer-bottom-bar'>
+                <div className='bottom-links'>
+                    <a href="#" className='legal-link'>Terms and Partnership agreement</a>
+                    <span className='copyright'>Copyright @2025 All Right Reserved</span>
+                </div>
+
+                <div className='bottom-btn-group'>
+                    <div className='custom-footer-btn small-btn'>
+                        <img src={button} alt="btn" />
+                        <p>Eng <span className='icon'><i class="bi bi-send"></i></span></p>
                     </div>
-                    <div className='relative  w-fit flex cursor-pointer'>
-                        <img src={button} alt="" className='w-25 ' />
-                        <p className='absolute  text-center w-full self-center font-medium text-xs'>Sign in</p>
+                    <div className='custom-footer-btn small-btn'>
+                        <img src={button} alt="btn" />
+                        <p>Sign in <span className='icon'><i class="bi bi-send"></i></span></p>
                     </div>
-                    <div className='relative  w-fit flex cursor-pointer'>
-                        <img src={button} alt="" className='w-25 ' />
-                        <p className='absolute  text-center w-full self-center font-medium text-xs'>Sign up</p>
+                    <div className='custom-footer-btn small-btn'>
+                        <img src={button} alt="btn" />
+                        <p>Sign up <span className='icon'><i class="bi bi-send"></i></span></p>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

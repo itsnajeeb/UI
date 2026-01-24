@@ -6,85 +6,50 @@ import icon14 from '/public/icons/icon-14.png'
 import icon15 from '/public/icons/icon-15.png'
 import icon16 from '/public/icons/icon-16.png'
 import icon17 from '/public/icons/icon-17.png'
+
 const Payment = () => {
+    // Array to map through items (cleaner than repeating divs)
+    const paymentMethods = [
+        { name: 'bitcoin', icon: icon12, rotate: true },
+        { name: 'Tron', icon: icon13 },
+        { name: 'Tether', icon: icon14 },
+        { name: 'litecoin', icon: icon15 },
+        { name: 'Ripple', icon: icon16 },
+        { name: 'Dash', icon: icon17 },
+    ];
+
     return (
-        <div className='paymentContainer mt-40'>
-            <div className='content px-36 py-10 flex   '>
-                <div className='leftSideContent w-[30%] space-y-4  self-center h-full'>
-                    <p className='subtitle font-medium pl-1 text-2xl'>WE WORK WITH</p>
-                    <h1 className='heading text-6xl font-bold pb-2'>Payment <br /> Services</h1>
-                    <div className='descriptionDiv  flex  h-22 gap-3 justify-center items-center '>
-                        <div />
-                        <p className='descGradient font-semibold pr-10'>Our is Officially registered in the registery of companies of the united Kingdom, as evidenced</p>
+        <div className='paymentContainer'>
+            <div className='payment-content'>
+                
+                {/* Left Side: Headings */}
+                <div className='leftSideContent'>
+                    <p className='subtitle'>WE WORK WITH</p>
+                    <h1 className='heading'>Payment <br /> Services</h1>
+                    <div className='description-wrapper'>
+                        <div className='accent-line' />
+                        <p className='descGradient'>
+                            Our company is officially registered in the registry of companies of the United Kingdom, as evidenced.
+                        </p>
                     </div>
                 </div>
 
-                <div className=' w-[70%]  flex justify-center  items-center'>
-                    <div className='flex  flex-wrap  justify-center gap-5'>
-                        <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3'>
-                                <div className='w-10 h-10  rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon12} alt="" className='  rotate-10 h-full w-full' />
+                {/* Right Side: Grid of Cards */}
+                <div className='rightSideGrid'>
+                    <div className='cards-wrapper'>
+                        {paymentMethods.map((item, index) => (
+                            <div key={index} className='paymentBoxCard'>
+                                <div className='paymentBoxItem'>
+                                    <div className='icon-circle'>
+                                        <img src={item.icon} alt={item.name} className={item.rotate ? 'rotate-10' : ''} />
+                                    </div>
+                                    <h1 className='payment-name'>{item.name}</h1>
                                 </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>bitcoin</h1>
                             </div>
-                        </div>
-
-                        <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3'>
-                                <div className='w-10 h-10 rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon13} alt="" className=' w-full h-full ' />
-                                </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>Tron</h1>
-                            </div>
-                        </div>
-
-                         <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3'>
-                                <div className='w-10 h-10 rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon14} alt="" className=' w-full h-full ' />
-                                </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>Tether</h1>
-                            </div>
-                        </div>
-
-                         <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3 cursor-pointer'>
-                                <div className='w-10 h-10 rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon15} alt="" className=' w-full h-full ' />
-                                </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>litecoin</h1>
-                            </div>
-                        </div>
-
-                         <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3'>
-                                <div className='w-10 h-10 rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon16} alt="" className=' w-full h-full ' />
-                                </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>Ripple</h1>
-                            </div>
-                        </div>
-
-                         <div className='paymentBoxCard  w-full relative flex justify-center items-center cursor-pointer'>
-                            {/* <img src={paymentBox} alt="" className='w-50' /> */}
-                            <div className='paymentBoxItem flex absolute justify-center items-center gap-3'>
-                                <div className='w-10 h-10 rounded-full flex justify-center items-center p-2 '>
-                                    <img src={icon17} alt="" className=' w-full h-full ' />
-                                </div>
-                                <h1 className='font-bold text-3xl  leading-0 italic '>Dash</h1>
-                            </div>
-                        </div>
-
-                        
-
+                        ))}
                     </div>
                 </div>
+
             </div>
         </div>
     )

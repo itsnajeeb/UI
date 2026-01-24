@@ -1,37 +1,204 @@
+@import '../styles/color.css';
+
 .advantageContainer {
     background-image: url('/public/websiteimg/advantageBg.png');
-    height: 600px;
+    min-height: 800px;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 10px 0;
 }
 
-.advantageContainer .header .paraGradient {
-    background: linear-gradient(90deg, rgb(67, 67, 67) 0%, rgba(250, 250, 250, 1) 50%, rgb(65, 65, 65) 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    font-size: 20px;
+/* Header Styles */
+.advantage-header {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.advantageContainer .header .headingGradient {
-    background: linear-gradient(90deg, rgb(67, 67, 67) 0%, rgba(250, 250, 250, 1) 50%, rgb(65, 65, 65) 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+.paraGradient {
+    background: linear-gradient(90deg, #434343 0%, #fafafa 50%, #414141 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.advantageContainer .content .leftSideBox {
+.headingGradient {
+    background: linear-gradient(90deg, #434343 0%, #fafafa 50%, #414141 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* Content Layout */
+.advantage-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 120px; 
+    width: 280px;
+}
+
+/* Box Visuals */
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.advantage-box-visual {
     background-image: url('/public/websiteimg/advatageBox.png');
     height: 150px;
     width: 250px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
+.floating-icon {
+    width: 160px;
+    position: absolute;
+    top: -30px;
+}
+
+.step-number {
+    position: absolute;
+    bottom: 5px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.number-right { right: -10px; }
+.number-left { left: -10px; }
+
+.whiteBgGradient {
+    background: linear-gradient(180deg, #ffffff 0%, #a1a1a1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.advantage-text h1 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.descriptionGradient {
+    color: rgba(156, 163, 175, 0.8);
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+.staggered-left { margin-left: 60px; }
+.staggered-right { margin-right: 60px; }
+
+/* Center Section */
+.center-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    z-index: 10;
+}
+
+.main-gfx {
+    width: 100%;
+    max-width: 450px;
+}
+
+.get-started-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-bg {
+    width: 200px;
+}
+
+.btn-text {
+    position: absolute;
+    color: #000;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ======= RESPONSIVE (Mobile & Tablet) ======= */
+
+@media (max-width: 1100px) {
+    .advantage-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .side-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .staggered-left, .staggered-right {
+        margin: 0;
+    }
+
+    .center-visual {
+        order: -1; 
+    }
+}
+
+@media (max-width: 600px) {
+    .headingGradient {
+        font-size: 45px;
+    }
+    
+    .side-column {
+        flex-direction: column;
+    }
+
+    .advantageContainer {
+        padding-top: 40px;
+    }
 }

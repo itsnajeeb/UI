@@ -1,165 +1,305 @@
-.webSubTitle {
-    background-color: #ebf0f2;
-    background-color: linear-gradient(90deg, rgb(227, 227, 227)0%, rgb(225, 225, 225) 50%, rgb(72, 71, 71) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-color: #ebf0f2;
+/* Layout Wrapper */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Stacked for mobile: image on top or bottom */
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
 }
 
-.gredientText {
-    background: #ebf0f2;
-    background: linear-gradient(90deg, rgb(227, 227, 227) 0%, rgb(255, 255, 255) 50%, rgb(72, 71, 71) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-color: #ebf0f2;
-}
-
-.colorGredientText {
-    background-color: #be980c;
-    background: linear-gradient(90deg, rgb(152, 120, 4) 0%, rgb(124, 98, 4) 50%, rgb(131, 103, 3) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-color: #836703;
-}
-
-
-.outlineBorder {
-    /* font-weight: 600; */
-    /* color: transparent; */
-    -webkit-text-stroke: 1.5px #f4d76c;
-}
-
-
-.badge {
-    position: relative;
-    display: inline-flex;
-    padding: 25px 30px;
-    width: 250px;
-}
-
-
-.badge-border {
-    position: absolute;
-    inset: 0;
+.hero-left {
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
-
-.badge-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-family: Inter, sans-serif;
-}
-
-.badge .icon {
-    width: 35px;
-    height: 35px;
-    position: absolute;
+.hero-right {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -10px;
-    top: 35%;
-    background-color: #2e2e2e;
-    border-radius: 50%;
 }
 
-.badge .icon i {
-    position: absolute;
-    font-size: 20px;
-    font-weight: 800;
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    /* Limits size on mobile */
+    height: auto;
 }
 
-.badge-content strong {
-    display: block;
-    font-size: 25px;
-    color: #f5c46b;
+/* Subtitle and Headings */
+.subtitle-container {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.webSubTitle {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    /* Smaller for mobile */
+    letter-spacing: 2px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #e3e3e3 0%, #e1e1e1 50%, #484747 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-spacing: 4px;
+}
+
+.hero-headings {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hero-wrapper .hero-left .main-heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+.hero-headings .sub-heading {
+    font-size: 1.5rem;
+    /* Scaled down */
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+/* Profit Row */
+.profit-row {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.profit-row .profit-value-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profit-row .profit-value-group .profit-unit-box {
+    width: 80px;
+}
+
+.profit-row .profit-value-group .percent-symbol {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.profit-row .profit-value-group .profit-label {
+    font-size: 18px;
+}
+
+.profit-number {
+    font-size: 5rem;
+    /* Scaled down from 9rem */
+    font-weight: bold;
     line-height: 0.8;
+    font-family: "Manrope", sans-serif;
 }
 
-.getStartedInfo .icon {
-    margin-right: 8px;
+/* CTA and Info Section */
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    /* Stacked for mobile */
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.getStartedInfo .icon i {
-    color: #f1bd00;
+.cta-container .cta-wrap {
+    position: relative;
+}
+
+.cta-container .cta-wrap .cta-tag {
+
+    position: relative;
+    top: 10px;
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 4px;
+    z-index: 99;
+    transform: rotate(-8deg);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cta-container .cta-wrap .cta-button-inner {
+    position: relative;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.cta-container .cta-wrap .cta-text-overlay {
+    position: absolute;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 8px;
+}
+
+.cta-container .getStartedInfo {
     font-size: 14px;
-}
-.cta-wrap{
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+    color: rgb(178, 178, 178);
 }
 
-/* floating label */
-.cta-tag{
-  background: #fff;
-  color: #000;
-  font-size: 12px;
-  padding: 6px 12px;
-  border-radius: 5px;
-  margin-bottom: -10px;
-  z-index: 2;
-  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+.badge {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* button wrapper */
-.cta-btn{
-  position: relative;
-  width: 260px;
-  height: 64px;
-  cursor: pointer;
+.profit-row .badge .badge-content .days-count {
+    color: #f4d76c;
+    font-size: 25px;
 }
 
-/* svg bg */
-.cta-bg{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.badge-content span,
+strong {
+    display: block;
 }
 
-/* center text */
-.cta-text{
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
-  z-index: 1;
+.badge-content {
+    position: absolute;
+    /* top: 40%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    height: 100%;
 }
 
-/* right icon */
-.cta-icon{
-  position: absolute;
-  right: 22px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
+.badge .icon {
+    position: absolute;
+    top: 27%;
+    left: 15px;
+    font-size: 20px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-#btnGradient stop:first-child {
-    stop-color: #f5c46b;
+.badge-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 
-#btnGradient stop:last-child {
-    stop-color: #f1bd00;
+/* =========== DESKTOP STYLES (Keep your original sizes)  =========== */
+@media (min-width: 1024px) {
+    .hero-wrapper {
+        flex-direction: row;
+        /* Side by side */
+        padding: 0px 40px;
+        align-items: stretch;
+    }
+
+    .hero-left {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .hero-right {
+        width: 50%;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* Original Desktop Font Sizes */
+    .hero-wrapper .hero-left .main-heading {
+        font-size: 13rem;
+        letter-spacing: 4px;
+    }
+
+    .hero-headings .sub-heading {
+        font-size: 3.5rem;
+        margin-left: 15px;
+        letter-spacing: 5px;
+    }
+
+    .webSubTitle {
+        font-size: 0.9rem;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+    }
+
+    .subtitle-container {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .hero-headings {
+        text-align: left;
+    }
+
+    .profit-row {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .profit-number {
+        font-size: 9rem;
+    }
+
+    .cta-container {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
 }
 
+/* Helpers for Gradient/Stroke */
+.gredientText {
+    background: linear-gradient(90deg, #e3e3e3 0%, #ffffff 50%, #484747 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-@media (min-width: 577px) and (max-width: 768px) {
-  body {
-    /* background: blue; */
-  }
+.colorGredientText {
+    background: linear-gradient(90deg, #987804 0%, #7c6204 50%, #836703 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.outlineBorder {
+    -webkit-text-stroke: 1.5px #f4d76c;
 }
