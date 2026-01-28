@@ -1,5 +1,5 @@
 import React from 'react'
-import { Advantage, Certification, Footer, Hero, Investment, Navbar, Partnership, Payment, PowerPiggyBank } from '../components'
+import { Advantage, CertiTemp, Footer, Hero, Investment, Navbar, Partnership, Payment, PowerPiggyBank } from '../components'
 export const Home = () => {
     return (
         <div>
@@ -9,7 +9,7 @@ export const Home = () => {
             <div className='mt-40'>
                 <Investment />
             </div>
-            <Certification />
+            <CertiTemp />
             <Advantage />
             <Payment />
             <Partnership />
