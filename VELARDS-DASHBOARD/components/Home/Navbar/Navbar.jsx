@@ -30,7 +30,7 @@ export const Navbar = () => {
 
                 {/* RIGHT SIDE (DESKTOP) */}
                 <div className='nav-desktop-group right-group'>
-                    <NavButton label="EN" />
+                    <Link to='/dashboard'> <NavButton label="EN" /></Link>
                     <Link to='/signup'> <NavButton label="Sign In" /></Link>
                     <Link to='/login'>  <NavButton label="Login" /></Link>
 
