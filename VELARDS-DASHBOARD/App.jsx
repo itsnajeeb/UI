@@ -4,7 +4,7 @@ import { DashboardLayout } from './layouts'
 import { Dashboard, Home, MyDeposit, RoiIncomePage, DirectIncomePage, MatchingIncomePage, RewardIncomePage, WithdrawalPage, WithdrawalHistoryPage, DepositeHistory, MyReferralPage, MyTeamPage, SupportPage } from './pages'
 import './index.css'
 import Login from './components/Home/Login/Login'
-import Singup from './components/Home/signup/signup'
+import Singup from './components/Home/Signup/Signup'
 export default function App() {
 
   const handleLogout = () => {
