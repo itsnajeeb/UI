@@ -8,7 +8,7 @@ import {
   ArrowLeftRight,
   Headphones,
   BanknoteArrowDown,
-  BanknoteArrowUp 
+  BanknoteArrowUp
 } from 'lucide-react';
 import { SidebarItem } from './SidebarItem';
 
@@ -20,15 +20,16 @@ export const Sidebar = ({ activePage = 'dashboard', onNavigate }) => {
     { id: 'matching-income', icon: Wallet, label: 'Matching Income' },
     { id: 'reward-income', icon: Users, label: 'Reward Income' },
     { id: 'withdrawal', icon: BanknoteArrowDown, label: 'Withdrawal' },
+    { id: 'my-team', icon: Users, label: 'My Team' },
     { id: 'my-deposit', icon: BanknoteArrowUp, label: 'My Deposit' },
     { id: 'my-referral', icon: ArrowLeftRight, label: 'My Referral' },
-    { id: 'my-team', icon: Users, label: 'My Team' },
+    { id: 'my-profile', icon: Users, label: 'My Profile' },
     { id: 'support', icon: Headphones, label: 'Support' },
   ];
 
   return (
     <aside className="hidden md:flex w-[110px] h-full flex-col items-center py-10 relative overflow-visible">
-      
+
       {/* Sidebar background slope shape */}
       <div
         className="absolute inset-0 bg-[#0a0a0a] z-0"

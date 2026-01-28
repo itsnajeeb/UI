@@ -2,7 +2,7 @@ import React from 'react'
 import { Advantage, CertiTemp, Footer, Hero, Investment, Navbar, Partnership, Payment, PowerPiggyBank } from '../components'
 export const Home = () => {
     return (
-        <div>
+        <>
             < Navbar />
             <Hero />
             <PowerPiggyBank />
@@ -14,8 +14,7 @@ export const Home = () => {
             <Payment />
             <Partnership />
             <Footer />
-
-        </div>
+        </>
 
     )
 }

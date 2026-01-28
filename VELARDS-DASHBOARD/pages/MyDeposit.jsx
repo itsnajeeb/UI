@@ -3,11 +3,7 @@ import {
     MyDeposits
 } from '../components';
 export const MyDeposit = () => {
-    return (
-        <div className="max-w-[1600px] mx-auto space-y-12 pb-12 ">
-           <MyDeposits/>
-        </div>
-    );
+    return <MyDeposits />
 };
 
 export default MyDeposit;

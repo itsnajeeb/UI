@@ -1,10 +1,27 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { DashboardLayout } from './layouts'
-import { Dashboard, Home, MyDeposit, RoiIncomePage, DirectIncomePage, MatchingIncomePage, RewardIncomePage, WithdrawalPage, WithdrawalHistoryPage, DepositeHistory, MyReferralPage, MyTeamPage, SupportPage } from './pages'
+import {
+  Dashboard,
+  Home,
+  MyDeposit,
+  RoiIncomePage,
+  DirectIncomePage,
+  MatchingIncomePage,
+  RewardIncomePage,
+  WithdrawalPage,
+  WithdrawalHistoryPage,
+  DepositeHistory,
+  MyReferralPage,
+  MyTeamPage,
+  ProfilePage,
+  SupportPage
+} from './pages'
 import './index.css'
 import Login from './components/Home/Login/Login'
 import Singup from './components/Home/Signup/Signup'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 export default function App() {
 
   const handleLogout = () => {
@@ -32,9 +49,10 @@ export default function App() {
         <Route path="reward-income" element={<RewardIncomePage />} />
         <Route path="withdrawal" element={<WithdrawalPage />} />
         <Route path="withdrawal-history" element={<WithdrawalHistoryPage />} />
-        <Route path="my-referral" element={<MyReferralPage/>} />
-        <Route path="my-team" element={<MyTeamPage/>} />
-        <Route path="support" element={<SupportPage/>} />
+        <Route path="my-referral" element={<MyReferralPage />} />
+        <Route path="my-team" element={<MyTeamPage />} />
+        <Route path="my-profile" element={<ProfilePage />} />
+        <Route path="support" element={<SupportPage />} />
         <Route path="*" element={<Navigate to="/dashboard" />} />
 
       </Route>

@@ -20,13 +20,14 @@ export { Withdrawal } from './Dashboard/Withdrawal/Withdrawal'
 export { WithdrawalHistory } from './Dashboard/Withdrawal/WithdrawalHistory'
 export { MyReferral } from './Dashboard/MyReferral/MyReferral'
 export { MyTeam } from './Dashboard/MyTeam/MyTeam'
+export { Profile } from './Dashboard/Profile/Profile'
 export { Support } from './Dashboard/Support/Support'
 
 
 
 // HOME PAGE Export 
 export { Advantage } from './Home/Advantage/Advantage'
-export { CertiTemp  } from './Home/Certi-temp/Certi-temp'
+export { CertiTemp } from './Home/Certi-temp/Certi-temp'
 export { Footer } from './Home/Footer/Footer'
 export { Hero } from './Home/Hero/Hero'
 export { Investment } from './Home/Investment/Investment'
