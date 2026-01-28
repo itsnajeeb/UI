@@ -94,4 +94,4 @@ export const Certification = () => {
     )
 }
 
-export default Certification
+// export default Certification

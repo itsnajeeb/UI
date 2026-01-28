@@ -9,7 +9,6 @@ export { StatisticsSection } from './Dashboard/StatisticsSection/StatisticsSecti
 export { PromoCard } from './Dashboard/PromoCard/PromoCard';
 
 
-// For Deposits
 export { MyDeposits } from './Dashboard/Deposits/MyDeposits/MyDeposits'
 export { DepositHistory } from './Dashboard/Deposits/DepositHistory/DepositHistory'
 
@@ -23,11 +22,11 @@ export { MyReferral } from './Dashboard/MyReferral/MyReferral'
 export { MyTeam } from './Dashboard/MyTeam/MyTeam'
 export { Support } from './Dashboard/Support/Support'
 
-
+ 
 
 // HOME PAGE Export 
-export { Advantage } from './Home/Advatange/Advantage'
-export { Certification } from './Home/Certification/Certi-temp'
+export { Advantage } from './Home/Advantage/Advantage'
+export { Certification } from './Home/Certification/Certification'
 export { Footer } from './Home/Footer/Footer'
 export { Hero } from './Home/Hero/Hero'
 export { Investment } from './Home/Investment/Investment'

@@ -5,7 +5,7 @@ import footerLeft from '/public/websiteimg/footerLeftSideImg.png'
 import button from '/public/websiteimg/button.png'
 
 export const Footer = () => {
-    return (
+    return ( 
         <footer className='footer-container'>
             {/* Top Section with Background Graphics */}
             <div className='footer-banner'>
