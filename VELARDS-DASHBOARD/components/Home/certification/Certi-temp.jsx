@@ -4,7 +4,7 @@ import centerBox from '/websiteimg/centerImage.png'
 import icon3 from '/websiteimg/icon-3.png'
 import A4 from '/websiteimg/A4.png'
 import buttonBg from '/websiteimg/buttonBg.png'
-import './certification.css'
+import './Certification.css'
 
 export const Certification = () => {
     return (

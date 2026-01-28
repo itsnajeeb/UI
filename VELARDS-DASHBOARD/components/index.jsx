@@ -27,7 +27,7 @@ export { Support } from './Dashboard/Support/Support'
 
 // HOME PAGE Export 
 export { Advantage } from './Home/Advatange/Advantage'
-export { Certification } from './Home/Certification/Certification'
+export { Certification } from './Home/Certification/Certi-temp'
 export { Footer } from './Home/Footer/Footer'
 export { Hero } from './Home/Hero/Hero'
 export { Investment } from './Home/Investment/Investment'
