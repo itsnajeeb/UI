@@ -1,0 +1,144 @@
+.signup-container {
+    /* Use the generated image here */
+    background: url('/websiteimg/loginBg.png');
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+
+}
+
+.signup-content {
+    background-color: rgba(55, 59, 47, 0.4);
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    align-self: center;
+    padding: 20px 35px;
+    margin-left: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.signup-content .header-tab {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.signup-content .header-tab .signup,
+.signup h5 {
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    border: 3px solid rgb(133, 103, 3);
+    border-radius: 10px;
+    /* padding: 5px 15px; */
+    color: #f9eb8b;
+    font-weight: 500;
+}
+
+.signup-content .header-tab  h5:hover {
+    background-color: #f9eb8b;
+    color: black;
+}
+
+
+.signup-container .signup-content .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.signup-container .signup-content .input-container .input-box {
+    width: 100%;
+}
+
+.signup-container .signup-content .input-container .input-box .forgot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-container .signup-content .input-container .input-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+    font-weight: 600;
+}
+
+.signup-container .signup-content .input-container .input-box .forgot-lable {
+    text-align: right;
+    cursor: pointer;
+    color: rgb(118, 118, 248);
+
+}
+
+.signup-container .signup-content .input-container .input-box .forgot-lable:hover {
+    text-align: right;
+    cursor: pointer;
+    color: rgb(96, 96, 246);
+}
+
+
+.signup-container .signup-content .input-container .input-box input {
+    width: 100%;
+    border: 1.5px solid #f9eb8b;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(36, 36, 36);
+
+}
+
+.btn-content {
+    position: relative;
+}
+
+.btn-content img {
+    width: 80%;
+    height: 60px;
+    margin: 0px auto;
+    cursor: pointer;
+    transition: transform 0.2s ;
+}
+
+.btn-content img:hover {
+    transform: scale(1.05);
+}
+
+.btn-content button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .signup-container {
+        justify-content: center;
+        /* Center the form on mobile */
+        padding-left: 0;
+        background-position: 70% center;
+        /* Shifts the image to show the crypto art better on small screens */
+    }
+}

@@ -1,0 +1,274 @@
+@import '../styles/color.css';
+
+.partnership-wrapper {
+    background: url('/public/websiteimg/partnershipBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 900px;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.partnership-main-content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Header */
+.partnership-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partnership-header h4 {
+    background: linear-gradient(90deg, #4e4d4d 0%, #fafafa 50%, #4e4e4e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.partnership-header h1 {
+    background: linear-gradient(90deg, #4e4d4d 0%, #fafafa 50%, #4e4e4e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Layout Grid */
+.partnership-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Rank Selector */
+.rank-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rank-btn {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.rank-btn:hover { transform: scale(1.05); }
+
+.rank-btn p {
+    position: absolute;
+    color: #be980c;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Center Stats */
+.stats-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.turnover-box {
+    width: 400px;
+    background-color: white;
+    height: 80px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-left { position: absolute; left: -40px; width: 80px; top: -10px; }
+.icon-right { position: absolute; right: 10px; width: 80px; }
+
+.turnover-text h3 { color: #6b7280; font-size: 1.1rem; text-transform: uppercase; }
+.turnover-text p { color: #374151; font-weight: 800; font-size: 1.3rem; }
+
+.income-arc-container {
+    width: 100%;
+    text-align: center;
+}
+
+.income-arc {
+    width: 250px;
+    height: 125px;
+    border: 15px solid #e5e5e5;
+    border-top: none;
+    border-radius: 0 0 150px 150px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.income-arc h2 { font-size: 1.1rem; font-weight: 500; }
+.income-arc h2 span { color: #f5c56b; font-weight: 700; }
+
+.levels-row { display: flex; gap: 15px; justify-content: center; }
+
+.level-circle {
+    width: 90px;
+    height: 90px;
+    border: 8px solid #bdbdbd;
+    border-radius: 50%;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-circle strong { font-size: 1.4rem; color: #fff; }
+.level-circle small { color: #aaa; font-size: 0.8rem; }
+
+/* Right Info Card */
+.partnership-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-box-bg {
+    position: relative;
+    width: 350px;
+}
+.info-box-bg img{
+    height: 250px;
+    width: 350px;
+}
+.info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+    line-height: 25px;
+}
+
+.cta-section { margin-top: 20px; }
+.cta-heading { font-size: 1.2rem; margin-bottom: 15px; }
+
+.become-partner-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.become-partner-btn span {
+    position: absolute;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.partnership-footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.partnership-footer h1{
+    font-size: 25px !important;
+    font-weight: 500;
+}
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.partnership-footer .footer-logo-section img{
+    width: 80px;
+}
+
+.footer-logo-section h1 { color: #e5e5e5; letter-spacing: 3px; font-size: 2rem; }
+
+.footer-nav {
+    flex: 1;
+    height: fit-content;
+    align-self: center;
+    margin: 0px 0px 0px 30px;
+    border-top: 2px solid rgba(189, 189, 189, 0.2);
+    border-bottom: 2px solid rgba(189, 189, 189, 0.2);
+    padding: 15px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list li { color: #bdbdbd; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+.nav-list li:hover { color: #f5c56b; }
+.star-sep { font-size: 0.7rem; color: #444; }
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1024px) {
+    .partnership-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rank-selector {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .partnership-footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .partnership-footer .footer-nav{
+        width: 100%;
+        margin: 0px 30px;
+    }
+
+    .partnership-header h1 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+    .turnover-box { width: 100%; max-width: 320px; }
+    .icon-left { display: none; }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .star-sep { display: none; }
+}

@@ -1,0 +1,251 @@
+body{
+  background-color: black;
+  color: #fff;
+}
+.dashboard-root {
+  /* background-image: url('./assets/bg.jpg');
+  background-size: 238px;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed; */
+  background-color: #050505;
+  color: #fff;
+}
+
+/* Cut co rner button with transparent background */
+.button-cut-border {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 10px 16px;
+  isolation: isolate;
+}
+
+.button-cut-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(234, 179, 8, 0.4);
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 12px) 0%,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0% calc(100% - 12px)
+  );
+  z-index: -2;
+}
+
+.button-cut-border::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: #050505;
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 11px) 0%,
+    100% 11px,
+    100% 100%,
+    11px 100%,
+    0% calc(100% - 11px)
+  );
+  z-index: -1;
+}
+
+.button-cut-border:hover::before {
+  background: rgba(234, 179, 8, 0.6);
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Dynamic Slope Border Utility */
+.cut-slope-dynamic {
+  --cut-size: 20px;
+  --border-width: 2px;
+  --border-color: rgba(234, 179, 8, 0.6);
+  --bg-color: #0a0a0a;
+  
+  position: relative;
+  background: transparent;
+  border: none;
+  isolation: isolate;
+}
+
+.cut-slope-dynamic::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--border-color);
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - var(--cut-size)) 0%,
+    100% var(--cut-size),
+    100% calc(100% - var(--cut-size)),
+    calc(100% - var(--cut-size)) 100%,
+    0% 100%
+  );
+  z-index: -2;
+}
+
+.cut-slope-dynamic::after {
+  content: '';
+  position: absolute;
+  inset: var(--border-width);
+  background: var(--bg-color);
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - calc(var(--cut-size) - var(--border-width))) 0%,
+    100% calc(var(--cut-size) - var(--border-width)),
+    100% calc(100% - calc(var(--cut-size) - var(--border-width))),
+    calc(100% - calc(var(--cut-size) - var(--border-width))) 100%,
+    0% 100%
+  );
+  z-index: -1;
+}
+
+/* Hexagon/Chamfered border for "Principal return" button */
+.button-hexagon-border {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 8px 24px;
+  isolation: isolate;
+  color: #fbbf24;
+}
+
+.button-hexagon-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(234, 179, 8, 0.4);
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0% 50%);
+  z-index: -2;
+}
+
+.button-hexagon-border::after {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  background: #0a0a0a;
+  clip-path: polygon(11px 0%, calc(100% - 11px) 0%, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0% 50%);
+  z-index: -1;
+}
+
+/* Current Rate Hex Shape */
+.rate-hex-container {
+  position: relative;
+  padding: 2px;
+  background: rgba(234, 179, 8, 0.2);
+  clip-path: polygon(15px 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0% 50%);
+}
+
+.rate-hex-inner {
+  background: #0a0a0a;
+  padding: 20px;
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+}
+
+/* Tab cutout shape */
+.tab-cutout {
+  clip-path: polygon(
+    8px 0%, 
+    calc(100% - 8px) 0%, 
+    100% 8px, 
+    100% calc(100% - 8px), 
+    calc(100% - 8px) 100%, 
+    8px 100%, 
+    0% calc(100% - 8px), 
+    0% 8px
+  );
+}
+
+/* Concave Stat Card with smoother transition */
+.stat-card-concave {
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D1D1D1 100%);
+  color: #000;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Concave sides using complex polygon */
+  clip-path: polygon(
+    0% 0%, 100% 0%, 
+    100% 10%, 96% 25%, 95% 50%, 96% 75%, 100% 90%, 
+    100% 100%, 0% 100%, 
+    0% 90%, 4% 75%, 5% 50%, 4% 25%, 0% 10%
+  );
+}
+
+/* Button cut theme for main CTA (Dual Corner Cut) */
+.button-cut-theme {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 15px) 0%,
+    100% 15px,
+    100% 100%,
+    15px 100%,
+    0% calc(100% - 15px)
+  );
+  border-radius: 0 !important;
+}
+
+/* Referral/Inviter Cut Style */
+.input-cut-style {
+  position: relative;
+  isolation: isolate;
+}
+
+.input-cut-style::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(234, 179, 8, 0.3);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    15px 100%,
+    0% calc(100% - 15px)
+  );
+  z-index: -2;
+}
+
+.input-cut-style::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: #0a0a0a;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    14px 100%,
+    0% calc(100% - 14px)
+  );
+  z-index: -1;
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+.table-wrapper .table-card{
+  border: 2px solid #fbbe248d;
+  border-radius: 8px;
+}
