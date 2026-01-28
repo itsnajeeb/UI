@@ -1,7 +1,8 @@
 import React from 'react'
 import './style.css'
 import buttonBg from '/websiteimg/buttonBg.png'
-const Singup = () => {
+
+export const Signup = () => {
     return (
         <div className='signup-container'>
             <div className="signup-content">
@@ -40,4 +41,4 @@ const Singup = () => {
     )
 }
 
-export default Singup
+export default Signup

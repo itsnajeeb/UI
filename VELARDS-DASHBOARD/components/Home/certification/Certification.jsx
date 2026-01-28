@@ -6,7 +6,7 @@ import A4 from '/websiteimg/A4.png'
 import buttonBg from '/websiteimg/buttonBg.png'
 import './certification.css'
 
-const Certification = () => {
+export const Certification = () => {
     return (
         <div className='certification-section'>
             <div className='certification-content'>

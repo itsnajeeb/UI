@@ -7,7 +7,7 @@ import image03 from '/public/websiteimg/img3.png'
 import image04 from '/public/websiteimg/img4.png'
 import buttonBg from '/public/websiteimg/buttonBg.png'
 
-const Advantage = () => {
+export const Advantage = () => {
     return (
         <div className='advantageContainer'>
             <div className='advantage-header'>

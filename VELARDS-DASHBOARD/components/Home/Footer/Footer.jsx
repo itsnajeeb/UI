@@ -4,7 +4,7 @@ import footerBg from '/public/websiteimg/footerCenterBg.png'
 import footerLeft from '/public/websiteimg/footerLeftSideImg.png'
 import button from '/public/websiteimg/button.png'
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className='footer-container'>
             {/* Top Section with Background Graphics */}

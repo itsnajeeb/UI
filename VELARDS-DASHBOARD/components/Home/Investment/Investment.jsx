@@ -18,7 +18,7 @@ import vipIcon from '/icons/icon-21.png'
 import buttonBg from '/websiteimg/buttonBg.png'
 import './Investment.css'
 
-const Investment = () => {
+export const Investment = () => {
     return (
         <div className='investmentContainer'>
             <div className='header'>

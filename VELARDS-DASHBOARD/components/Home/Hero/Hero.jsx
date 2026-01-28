@@ -4,7 +4,7 @@ import buttonBg from '/websiteimg/buttonBg.png'
 import badge from '/websiteimg/heroBoxImg.png'
 import './Hero.css'
 
-const Hero = () => {
+export const Hero = () => {
     return (
         <section className='hero-wrapper'>
 

@@ -7,7 +7,7 @@ import icon15 from '/public/icons/icon-15.png'
 import icon16 from '/public/icons/icon-16.png'
 import icon17 from '/public/icons/icon-17.png'
 
-const Payment = () => {
+export const Payment = () => {
     // Array to map through items (cleaner than repeating divs)
     const paymentMethods = [
         { name: 'bitcoin', icon: icon12, rotate: true },

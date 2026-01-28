@@ -23,3 +23,16 @@ export { MyReferral } from './Dashboard/MyReferral/MyReferral'
 export { MyTeam } from './Dashboard/MyTeam/MyTeam'
 export { Support } from './Dashboard/Support/Support'
 
+
+
+// HOME PAGE Export 
+export { Advantage } from './Home/Advatange/Advantage'
+export { Certification } from './Home/Certification/Certification'
+export { Footer } from './Home/Footer/Footer'
+export { Hero } from './Home/Hero/Hero'
+export { Investment } from './Home/Investment/Investment'
+export { Login } from './Home/Login/Login'
+export { Navbar } from './Home/Navbar/Navbar'
+export { Partnership } from './Home/Partnership/Partnership'
+export { Payment } from './Home/Payment/Payment'
+export { PowerPiggyBank } from './Home/PowerPiggyBank/PowerPiggyBank'

@@ -5,7 +5,7 @@ import middleImage from '/public/websiteimg/navMiddle.png'
 import bottomLogo from '/public/websiteimg/logo.png'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+export const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     return (

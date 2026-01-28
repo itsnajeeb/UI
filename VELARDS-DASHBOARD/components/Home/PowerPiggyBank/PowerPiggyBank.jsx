@@ -1,7 +1,7 @@
 import React from 'react'
 import './PowerPiggyBank.css'
 
-const PowerPiggyBank = () => {
+export const PowerPiggyBank = () => {
     return (
         <div className='power-container'>
             <div className='zigZagBarContainer'>
