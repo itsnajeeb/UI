@@ -1,0 +1,146 @@
+.dashboard-section {
+    width: 60%;
+    height: 300px;
+    background: url('/dashboardimg/dashboard-img-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-section .left-section {
+    padding: 20px 0px 0px 50px;
+
+}
+
+.dashboard-section .left-section .subtitle-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.dashboard-section .left-section .subtitle-section .description-section {
+    display: grid;
+}
+
+.dashboard-section .left-section .subtitle-section .description-section p {
+    font-size: 13px;
+    background: linear-gradient(90deg, #8e8e8e 0%, #ffffff 50%, #656565 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.dashboard-section .left-section .subtitle-section .box-arrow {
+    width: 270px;
+    position: relative;
+    width: fit-content;
+}
+
+.dashboard-section .left-section .subtitle-section .btn-section {
+    position: relative;
+    width: fit-content;
+    margin: 20px auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.left-section .subtitle-section .btn-section:hover {
+    transform: scale(1.15);
+}
+
+.dashboard-section .left-section .subtitle-section .btn-section img {
+    width: 170px;
+}
+
+.dashboard-section .left-section .subtitle-section .btn-section .btn-title {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+.dashboard-section .left-section .subtitle-section .box-arrow h2 {
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    color: #f4d76c;
+}
+
+.dashboard-section .heading-section {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.dashboard-section .heading-section h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #987804 0%, #7c6204 50%, #836703 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* line-height: 4rem; */
+    position: relative;
+}
+
+.heading-section .outline-border {
+    -webkit-text-stroke: 1.5px #f4d76c;
+}
+
+.heading-section .percentage {
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+}
+
+.dashboard-section .heading-section .profit-title {
+    width: 70px;
+    align-self: center;
+    margin-top: -10px;
+    background: linear-gradient(90deg, #8e8e8e 0%, #ffffff 50%, #656565 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dashboard-section .right-section {
+    position: absolute;
+    right: -10px;
+    height: 320px;
+}
+
+.dashboard-section .right-section img{
+    width: 300px;
+    height: 100%;
+}
+
+.dashboard-section .right-section h1 {
+    position: absolute;
+    transform: translateX(15%);
+    font-size: 2rem;
+    bottom: -10px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #8e8e8e 0%, #ffffff 50%, #656565 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
