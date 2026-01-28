@@ -6,7 +6,7 @@ import A4 from '/websiteimg/A4.png'
 import buttonBg from '/websiteimg/buttonBg.png'
 import './Certification.css'
 
-export const Certification = () => {
+export const CertiTemp = () => {
     return (
         <div className='certification-section'>
             <div className='certification-content'>
@@ -94,4 +94,4 @@ export const Certification = () => {
     )
 }
 
-// export default Certification
+export default CertiTemp
