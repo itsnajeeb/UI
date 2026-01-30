@@ -1,0 +1,91 @@
+@media (min-width: 1024px) {
+
+    /* Stats Grid */
+    .stats-grid {
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        column-gap: 48px;
+    }
+
+    .stats-grid .stats-card {
+        background-color: rgba(15, 15, 15, 0.8);
+        border: 1.5px solid #454545;
+        display: flex;
+        border-radius: 8px;
+        padding: 0px 10px;
+        justify-content: space-between !important;
+    }
+
+    .stats-grid .stats-card .stats-box {
+        display: flex;
+        gap: 15px;
+    }
+
+    .stats-grid .stats-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats-grid .stats-img img {
+        width: 80px !important;
+        height: auto;
+    }
+
+
+    .payment-section {
+        width: 230px;
+        position: relative;
+    }
+
+    .payment-section img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .payment-section .content-section {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment-section .content-section h1 {
+        font-weight: 600;
+        font-size: 15px;
+        
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(51, 50, 50);
+        width: 100%;
+    }
+
+    .payment-section .content-section .amount {
+        font-size: 23px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .payment-section .content-section .badge {
+        background-color: rgb(192, 192, 192);
+        width: fit-content;
+        color: black;
+        margin: 0px auto;
+        padding: 0px 5px;
+        border-radius: 4px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+

@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import './StatisticsSection.css';
-import AllPayments from './TabsSection/AllPayments';
-import icon1 from '/icons/icon-23.png'
-import icon2 from '/icons/icon-24.png'
-import icon3 from '/icons/icon-26.png'
-import icon4 from '/icons/icon-25.png'
+import IncomeSummary from './TabsSection/IncomeSummary/IncomeSummary';
+import Referral from './TabsSection/Referral/Referral';
+import Team from './TabsSection/Team/Team';
+import Business from './TabsSection/Business/Business';
+import Rank from './TabsSection/Rank/Rank';
 const tabs = [
-    'All Payments',
-    'Bitcoin',
-    'Ethereum',
-    'Ripple',
-    'Perfect Money',
-    'Tron'
+    'Income Summery',
+    'Referral',
+    'Team',
+    'Business',
+    'Rank',
 ];
 
 export const StatisticsSection = () => {
-    const [activeTab, setActiveTab] = useState('All Payments');
+  
+    const [activeTab, setActiveTab] = useState('Income Summery');
+    const callTab = () => {
+        switch (activeTab) {
+            case 'Income Summery':
+                return <IncomeSummary  />
 
+            case 'Referral':
+                return <Referral />
+
+            case 'Team':
+                return <Team />
+            case 'Business':
+                return <Business />
+            case 'Rank':
+                return <Rank />
+            default:
+                <IncomeSummary />
+        }
+    }
     return (
         <div className="statistics-section  ">
 
@@ -39,32 +56,11 @@ export const StatisticsSection = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="stats-grid">
-                <div className='stats-card'>
-                    <div className='stats-img'>
-                        <img src={icon1} alt="" />
-                    </div>
-                    <div className="stats-box">
-                        <AllPayments title="Active Deposit" amount ="0.0004876" currency="BTC" />
-                        <AllPayments title="Total Paid" amount ="0.0004876" currency="BTC"/>
-                    </div>
-                    <div className='stats-img'>
-                        <img src={icon2} alt="" />
-                    </div>
-                </div>
-                <div className='stats-card'>
-                    <div className='stats-img'>
-                        <img src={icon3} alt="" />
-                    </div>
-                    <div className="stats-box">
-                        <AllPayments title="Total Earned" amount ="0.0004876" currency="BTC"/>
-                        <AllPayments title="Partner Bonuses" amount ="0.0004876" currency="BTC"/>
-                    </div>
-                    <div className='stats-img'>
-                        <img src={icon4} alt="" />
-                    </div>
-                </div>
-            </div>
+            {
+
+                callTab()
+            }
+          
 
         </div>
     );

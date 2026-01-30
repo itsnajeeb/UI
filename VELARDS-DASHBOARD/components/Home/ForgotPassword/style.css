@@ -1,0 +1,112 @@
+.forgot-container {
+    background: url('/websiteimg/loginBg.png');
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    position: relative;
+}
+
+.forgot-container .forgot-content {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 40px;
+    border-radius: 8px;
+}
+
+.forgot-content .header-section  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.forgot-content .header-section .header-description h1{
+    color: rgba(61, 61, 61, 0.904);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.forgot-content .header-section .header-description p{
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+    color: rgba(61, 61, 61, 0.904);
+
+}
+
+.forgot-content .header-section .logo img {
+    width: 120px;
+}
+
+
+.forgot-content .input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.forgot-content .input-box label{
+    color: #e6c805;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.forgot-content .input-box input::placeholder{
+    color: rgba(59, 59, 59, 0.823);
+}
+.forgot-content .input-box input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(117, 116, 116, 0.356);
+}
+
+.forgot-content .bottom-section{
+    display: flex;
+    flex-direction: column;
+}
+.forgot-content .bottom-section .btn-content{
+    position: relative;
+}
+.forgot-content .bottom-section .btn-content img{
+    width: 180px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.forgot-content .bottom-section .btn-content .btn-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    color: black;
+}
+
+.forgot-content .bottom-section .login-section{
+    color: rgba(0, 0, 0, 0.405);
+}
+
+.forgot-content .bottom-section .login-section p{
+    font-size: 15px;
+    text-align: center;
+}
+.forgot-content .bottom-section .login-section .link{color: blue; font-size: 16px;}
+

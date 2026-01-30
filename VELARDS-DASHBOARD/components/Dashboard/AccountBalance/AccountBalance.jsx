@@ -29,7 +29,7 @@ export const AccountBalance = () => {
   return (
     <div className="account-balance">
       <div className="account-header">
-        <h2 className="account-title">Account balance</h2>
+        <h2 className="account-title">Live Rate</h2>
 
         <button className="wallet-btn">
           Set Wallets <ArrowRight size={12} />

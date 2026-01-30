@@ -1,12 +1,10 @@
 .promo-card-section {
     position: relative;
-    height: auto;
-    flex: 1;
+    height: 400px;
 }
 
 .promo-bg-card {
     width: 320px;
-    height: 350px;
     position: relative;
 }
 
@@ -16,7 +14,6 @@
     display: flex;
     width: 100%;
     height: 100%;
-
 }
 
 .promo-header {
@@ -67,19 +64,6 @@
     height: 100%;
 }
 
-
-.current-rate .rate-title {
-    font-size: 16px;
-    font-weight: 500;
-    background-color: black;
-    position: absolute;
-    top: -10px;
-    padding: 0px 15px;
-    margin: 0px auto;
-    z-index: 1;
-    border: 2px solid #8e8e8e;
-    border-radius: 20px;
-}
 
 .current-rate .current-rate-content .middle-info {
     position: absolute;

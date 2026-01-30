@@ -28,9 +28,9 @@ export const PowerPiggyBank = () => {
 
             <div className='stripeWrapper'>
                 <div className='powerStripe'>
-                    <h1 className='stripe-title'><span className='icon'><i className="bi bi-star"></i></span> Power Piggybank</h1>
-                    <h1 className='stripe-title mobile-hide'><span className='icon'><i className="bi bi-star"></i></span> Power piggybank</h1>
-                    <h1 className='stripe-title mobile-hide'><span className='icon'><i className="bi bi-star"></i></span> Power piggybank</h1>
+                    <h1 className='stripe-title'><span className='icon'><i className="bi bi-star"></i></span> Alphafx</h1>
+                    <h1 className='stripe-title mobile-hide'><span className='icon'><i className="bi bi-star"></i></span> Alphafx</h1>
+                    <h1 className='stripe-title mobile-hide'><span className='icon'><i className="bi bi-star"></i></span> Alphafx</h1>
                 </div>
             </div>
         </div>

@@ -10,14 +10,15 @@ export const Header = () => {
     const ref = useRef(null);
 
     const options = [
-        "Profile",
-        "USDT Transaction",
-        "ROI Income",
-        "My Referral",
-        "Support",
-        "Wallet",
-        "Settings",
-        "Logout",
+        "Fresh Organic",
+        "Nutt & Seeds",
+        "Fresh Tomatoes",
+        "Superfoods & Grains",
+        "Frozen Foods",
+        "Bread & Cookies",
+        "Fresh Fruits",
+        "Vegitables & Spices",
+        "Beverages",
     ];
     // outside click close
     useEffect(() => {
@@ -42,7 +43,7 @@ export const Header = () => {
                         {/* Select box */}
                         <div className="select-box" onClick={() => setOpen(!open)}>
                             <span>{value}</span>
-                            <span className={`arrow ${open ? "rotate" : ""}`}>▾</span>
+                            <span className={`arrow ${open ? "rotate" : ""}`}><i class="bi bi-caret-down"></i></span>
                         </div>
 
                         {/* Dropdown */}
@@ -63,9 +64,10 @@ export const Header = () => {
                         )}
                     </div>
                 </div>
+
                 <div className='help-section'>
                     <span className='icon'><i class="bi bi-headphones"></i></span>
-                    <div>
+                    <div className='help-info'>
                         <h4>Call Us free</h4>
                         <h5>+91 9102938928</h5>
                     </div>

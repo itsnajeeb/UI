@@ -5,7 +5,6 @@ import {
   StatisticsSection,
   PromoCard,
   HeroSection,
-  ReferralSection
 } from '../components';
 export const Dashboard = () => {
   return (
@@ -22,7 +21,6 @@ export const Dashboard = () => {
         {/* Left Column: Week Limit, Inviter, Referral */}
         <div className="flex-1 h-full">
           <WeekLimitCard />
-          <ReferralSection />
         </div>
 
         {/* Middle: Statistics Section */}

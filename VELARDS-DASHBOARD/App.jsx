@@ -18,9 +18,8 @@ import {
   SupportPage
 } from './pages'
 import './index.css'
-import Login from './components/Home/Login/Login'
-import Singup from './components/Home/Signup/Signup'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { ForgotPassword, Login, Signup } from './components'
 
 export default function App() {
 
@@ -34,7 +33,8 @@ export default function App() {
       {/* HOME PAGE */}
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Singup />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
 
       {/* DASHBOARD LAYOUT */}
       <Route path='/' element={<DashboardLayout onLogout={handleLogout} />}>

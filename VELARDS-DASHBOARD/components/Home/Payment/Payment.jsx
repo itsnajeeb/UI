@@ -29,7 +29,7 @@ export const Payment = () => {
                     <div className='description-wrapper'>
                         <div className='accent-line' />
                         <p className='descGradient'>
-                            Our company is officially registered in the registry of companies of the United Kingdom, as evidenced.
+                            We live and breathe the markets. Since 2001, we've educated traders to help them learn about the markets
                         </p>
                     </div>
                 </div>

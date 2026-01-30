@@ -23,6 +23,24 @@
     padding: 0px 25px;
 }
 
+.dashboard-section .left-section .subtitle-section .fastrack-time-section .time-over {
+    color: red;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+}
+
+.dashboard-section .left-section .subtitle-section .fastrack-time-section .fastrack-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dashboard-section .left-section .subtitle-section .fastrack-time-section .timer {
+    color: #f4d76c;
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+
+
 .dashboard-section .left-section .subtitle-section .description-section {
     display: grid;
 }
@@ -42,34 +60,31 @@
     width: fit-content;
 }
 
-.dashboard-section .left-section .subtitle-section .btn-section {
-    position: relative;
-    width: fit-content;
-    margin: 20px auto;
-    cursor: pointer;
+.dashboard-section .left-section .fastrack-time-section {
+    padding: 10px 20px;
+    border-radius: 6px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    margin-top: 1rem;
+    border: 3px dotted #f4d76c;
+}
+
+
+.dashboard-section .left-section .fastrack-time-section .fastrack-title {
+    background: linear-gradient(90deg, #8e8e8e 0%, #ffffff 50%, #656565 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .left-section .subtitle-section .btn-section:hover {
     transform: scale(1.15);
 }
 
-.dashboard-section .left-section .subtitle-section .btn-section img {
-    width: 170px;
-}
 
-.dashboard-section .left-section .subtitle-section .btn-section .btn-title {
-    position: absolute;
-    width: fit-content;
-    display: flex;
-    gap: 10px;
-    font-weight: 600;
-    color: black;
-    font-size: 14px;
-}
+
 
 .dashboard-section .left-section .subtitle-section .box-arrow h2 {
     font-weight: 600;
@@ -122,25 +137,108 @@
     font-size: 16px;
 }
 
-.dashboard-section .right-section {
-    position: absolute;
-    right: -10px;
-    height: 320px;
-}
-
-.dashboard-section .right-section img{
+.dashboard-section .right-section .statistic {
+    position: relative;
     width: 300px;
-    height: 100%;
+    height: 300px;
 }
 
-.dashboard-section .right-section h1 {
+.dashboard-section .statistic .ring {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     position: absolute;
-    transform: translateX(15%);
-    font-size: 2rem;
-    bottom: -10px;
-    font-weight: 500;
-    background: linear-gradient(90deg, #8e8e8e 0%, #ffffff 50%, #656565 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    inset: 0;
+    margin: auto;
 }
+
+.dashboard-section .statistic .ring::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(#7CFF6B 0deg 120deg,
+            #F7FF6B 120deg 240deg,
+            #D86BFF 240deg 360deg);
+    mask: radial-gradient(farthest-side,
+            transparent calc(100% - 20px),
+            #000 0);
+}
+
+.dashboard-section .statistic .center-ring {
+    width: 170px;
+    height: 170px;
+    background: #0f1713;
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-section .statistic .center-content h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f4d76c;
+    text-align: center;
+}
+
+.dashboard-section .statistic .center-content p {
+    color: #F7FF6B;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+/* Info Cards */
+.dashboard-section .statistic .card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 12px 16px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.dashboard-section .statistic .card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.dashboard-section .statistic .card p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.dashboard-section .statistic .card.top-left {
+    left: -10px;
+    top: 40px;
+}
+
+.dashboard-section .statistic .card.top-right {
+    right: -20px;
+    top: 40px;
+}
+
+.dashboard-section .statistic .card.bottom-left {
+    bottom: 0px;
+    left: 40px;
+    transform: translateX(-50%);
+}
+
+.dashboard-section .statistic .card.bottom-right {
+    bottom: 0px;
+    right: -60px;
+    transform: translateX(-50%);
+}
+
+
+
+

@@ -5,6 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  background-color: #6c6c6c;
+  font-family: "League Spartan", sans-serif;
+
+}
 
 .league-spartan-font{
   font-family: "League Spartan", sans-serif;

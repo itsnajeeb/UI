@@ -1,8 +1,8 @@
 import React from 'react'
 import './Footer.css'
 import footerBg from '/public/websiteimg/footerCenterBg.png'
-import footerLeft from '/public/websiteimg/footerLeftSideImg.png'
 import button from '/public/websiteimg/button.png'
+import logo from '/public/websiteimg/logo.png'
 
 export const Footer = () => {
     return ( 
@@ -15,8 +15,7 @@ export const Footer = () => {
                     {/* Left: ID Image Section */}
                     <div className='footer-id-column'>
                         <div className='id-wrapper'>
-                            <img src={footerLeft} alt="ID card" className='id-img' />
-                            <h1 className='id-text'>ID 1918228181</h1>
+                            <img src={logo} alt="ID card" className='id-img' />
                         </div>
                     </div>
 
@@ -41,17 +40,17 @@ export const Footer = () => {
 
                     {/* Right: Text Description */}
                     <div className='footer-desc-column'>
-                        <p className='footer-desc-text'>Our Company is officially registered in the registry of companies of the United Kingdom. as evidenced</p>
+                        <p className='footer-desc-text'>We live and breathe the markets. Since 2001, we've educated traders to help them learn about the markets</p>
                     </div>
                 </div>
             </div>
 
             {/* Bottom Section: Legal and Links */}
             <div className='footer-bottom-bar'>
-                <div className='bottom-links'>
+                {/* <div className='bottom-links'>
                     <a href="#" className='legal-link'>Terms and Partnership agreement</a>
                     <span className='copyright'>Copyright @2025 All Right Reserved</span>
-                </div>
+                </div> */}
 
                 <div className='bottom-btn-group'>
                     <div className='custom-footer-btn small-btn'>

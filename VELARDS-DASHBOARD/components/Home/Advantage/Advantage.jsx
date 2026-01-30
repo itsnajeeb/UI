@@ -6,6 +6,7 @@ import image02 from '/public/websiteimg/img2.png'
 import image03 from '/public/websiteimg/img3.png'
 import image04 from '/public/websiteimg/img4.png'
 import buttonBg from '/public/websiteimg/buttonBg.png'
+import { Link } from 'react-router-dom'
 
 export const Advantage = () => {
     return (
@@ -24,8 +25,8 @@ export const Advantage = () => {
                             <h4 className='step-number number-right'>01</h4>
                         </div>
                         <div className='advantage-text'>
-                            <h1 className='whiteBgGradient'>Trusted and Insured</h1>
-                            <p className='descriptionGradient'>Our Company is officially registered in the registry of companies of the United</p>
+                            <h1 className='whiteBgGradient'>Forex</h1>
+                            <p className='descriptionGradient'>Trade major FX pairs with spreads as low as 0.0 and low</p>
                         </div>
                     </div>
 
@@ -35,20 +36,22 @@ export const Advantage = () => {
                             <h4 className='step-number number-left'>03</h4>
                         </div>
                         <div className='advantage-text'>
-                            <h1 className='whiteBgGradient'>Trusted and Insured</h1>
-                            <p className='descriptionGradient'>Our Company is officially registered in the registry of companies of the United</p>
+                            <h1 className='whiteBgGradient'>Experience real rewards</h1>
+                            <p className='descriptionGradient'>Watch your money work for you as you receive interest payments on your balance along with generous deposit bonuses.</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Center Image */}
-                <div className='center-visual'>
-                    <img src={advantagesImage} alt="Main Advantage" className='main-gfx'/>
-                    <button className='get-started-btn'>
-                        <img src={buttonBg} alt="button" className='btn-bg' />
-                        <span className='btn-text'>Get Started <i className="bi bi-fingerprint"></i></span>
-                    </button>
-                </div>
+                <Link to={'/login'}>
+                    <div className='center-visual'>
+                        <img src={advantagesImage} alt="Main Advantage" className='main-gfx' />
+                        <button className='get-started-btn'>
+                            <img src={buttonBg} alt="button" className='btn-bg' />
+                            <span className='btn-text'>Get Started <i className="bi bi-fingerprint"></i></span>
+                        </button>
+                    </div>
+                </Link>
 
                 {/* Right Side Group */}
                 <div className='side-column right-column'>
@@ -58,8 +61,8 @@ export const Advantage = () => {
                             <h4 className='step-number number-left'>02</h4>
                         </div>
                         <div className='advantage-text'>
-                            <h1 className='whiteBgGradient'>Trusted and Insured</h1>
-                            <p className='descriptionGradient'>Our Company is officially registered in the registry of companies of the United</p>
+                            <h1 className='whiteBgGradient'>Gold, Oil & Commodities</h1>
+                            <p className='descriptionGradient'>Trade oil and gold spreads from just 0.04pts plus many</p>
                         </div>
                     </div>
 
@@ -69,8 +72,8 @@ export const Advantage = () => {
                             <h4 className='step-number number-right'>04</h4>
                         </div>
                         <div className='advantage-text'>
-                            <h1 className='whiteBgGradient'>Trusted and Insured</h1>
-                            <p className='descriptionGradient'>Our Company is officially registered in the registry of companies of the United</p>
+                            <h1 className='whiteBgGradient'>Cryptos </h1>
+                            <p className='descriptionGradient'>Trade leading cryptos without a 3rd-party wallet or exchange.</p>
                         </div>
                     </div>
                 </div>

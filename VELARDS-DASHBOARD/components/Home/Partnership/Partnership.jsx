@@ -5,7 +5,7 @@ import icon1 from '/public/icons/icon-18.png';
 import icon2 from '/public/icons/icon-19.png';
 import boxImage from '/public/websiteimg/centerImage.png';
 import buttonBg from '/public/websiteimg/buttonBg.png';
-import logo from '/public/websiteimg/bottomLogo.png';
+import logo from '/public/websiteimg/logo.png';
 
 export const Partnership = () => {
     const ranks = [1, 2, 3, 4, 5, 6];
@@ -47,7 +47,7 @@ export const Partnership = () => {
                             </div>
 
                             <div className="levels-row">
-                                {[ {p: '10%', l: 1}, {p: '6%', l: 2}, {p: '3%', l: 3} ].map((item, i) => (
+                                {[ {p: '5%', l: 1}, {p: '1.25%', l: 2}, {p: '1.25%', l: 3} ].map((item, i) => (
                                     <div className="level-item" key={i}>
                                         <div className="level-circle">
                                             <strong>{item.p}</strong>
@@ -64,8 +64,8 @@ export const Partnership = () => {
                         <div className='info-box-bg'>
                             <img src={boxImage} alt="box" />
                             <p className='info-text'>
-                                Our company is officially registered in the registry of companies of the United Kingdom, 
-                                as evidenced by the relevant records and available certificate. which guara ntees the officiality of all activities of Worldh ourly. the United Kingdom.
+                                We live and breathe the markets. Since 2001, we've educated traders to help them learn about the markets <br />
+                                We have over 20 years of experience in providing innovative products and helping traders around the world achieve their goals.
                             </p>
                         </div>
                         
@@ -83,7 +83,7 @@ export const Partnership = () => {
                 <footer className='partnership-footer'>
                     <div className='footer-logo-section'>
                         <img src={logo} alt="logo" />
-                        <h1>CASTALT</h1>
+                        <h1>ALPHAFX</h1>
                     </div>
 
                     <nav className='footer-nav'>

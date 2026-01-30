@@ -30,7 +30,7 @@ export const Investment = () => {
                 <div className='investment-box'>
                     <img src={investmentArrow} alt="" />
                     <div className='investment-plan-content'>
-                        <h3>Standard Plan</h3>
+                        <h3>Basic Plan</h3>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ export const Investment = () => {
                     <img src={investmentArrow} alt="" />
                     <div className='investment-plan-content'>
                         <img src={vipIcon} alt="" />
-                        <h3>VIP Plan</h3>
+                        <h3>Classic Plan</h3>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ export const Investment = () => {
 
             <div className='profitbar'>
                 <p className='profitLeft'>Profit Per day</p>
-                <h1 className='profit-percentage'>3.1 - 3.55 <span className='percentage'>%</span></h1>
+                <h1 className='profit-percentage'>7 - 9 <span className='percentage'>%</span></h1>
                 <div className='profitRight'>
                     <div className='iconDiv'>
                         <span className='icon'><i className="bi bi-check"></i></span>
@@ -58,23 +58,23 @@ export const Investment = () => {
             <div className='investmentCardContainer'>
                 {/* 1st card */}
                 <div className='card'>
-                    <p className='card-header'><span className='star-icon'><i className="bi bi-star-fill"></i></span> Investment Conditions</p>
+                    <p className='card-header'><span className='star-icon'><i className="bi bi-star-fill"></i></span> Term & Condition</p>
                     <div className='card-body-row'>
                         <div className='cardImg-main'>
                             <img src={icon2} alt="Icon1" />
                         </div>
                         <div className='textBox'>
-                            <p className='textBoxTitle'>PERIOD</p>
-                            <h1 className='cardHeading'>14-16</h1>
+                            <p className='textBoxTitle'>Working 500 %</p>
+                            <h1 className='cardHeading'>Non Working 300%</h1>
                             <h2 className='sub-heading'>Business days</h2>
                         </div>
                     </div>
                     <div className="divider"></div>
                     <div className='card-body-row'>
                         <div className='textBox'>
-                            <p className='textBoxTitle'>PRINCIPAL RETURN</p>
-                            <h1 className='cardHeading '>14-16 <sup><i className="bi bi-info-circle"></i></sup></h1>
-                            <h2 className='sub-heading'>With 15% free </h2>
+                            <p className='textBoxTitle'>1 direct 3 level open</p>
+                            {/* <h1 className='cardHeading '>14-16 <sup><i className="bi bi-info-circle"></i></sup></h1> */}
+                            <h2 className='sub-heading'>Charge 5%  </h2>
                         </div>
                         <div className='cardImg-side'>
                             <img src={icon1} alt="Icon1" />

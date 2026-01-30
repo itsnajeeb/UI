@@ -14,7 +14,8 @@ export const Hero = () => {
                 {/* Subtitle */}
                 <div className='subtitle-container'>
                     <p className='webSubTitle'>
-                        Lorem ipsum is Simply Dummy text of the printing and typesetting
+                        TRADE ONLINE WITH Alphafx 
+                        YOUR LOYAL PARTNER
                     </p>
                 </div>
 
@@ -29,7 +30,7 @@ export const Hero = () => {
                     <div className='profit-main'>
                         <p className='from-text'>From</p>
                         <div className='profit-value-group'>
-                            <h1 className='profit-number outlineBorder colorGredientText'>3.2</h1>
+                            <h1 className='profit-number outlineBorder colorGredientText'>10</h1>
                             <div className='profit-unit-box'>
                                 <span className='percent-symbol outlineBorder colorGredientText'>%</span>
                                 <p className='profit-label'>Daily Profit</p>
@@ -44,8 +45,8 @@ export const Hero = () => {
                             <span className='icon'><i className='bi bi-clock-history'></i></span>
                             <div className='badge-content'>
                                 <span>For</span>
-                                <strong className='days-count'>14–17</strong>
-                                <span className='days-label'>Business days</span>
+                                <strong className='days-count'>100 - 10000</strong>
+                                <span className='days-label'>Investment </span>
                             </div>
                         </div>
                     </div>
@@ -54,7 +55,7 @@ export const Hero = () => {
                 {/* CTA Section */}
                 <div className='cta-container'>
                     <div className='cta-wrap'>
-                        <div className='cta-tag'>Principal return at any time!</div>
+                        <div className='cta-tag'>100% Cashback!</div>
                         <div className='cta-button-inner'>
                             <img src={buttonBg} alt='' className='cta-bg-image' />
                             <div className='cta-text-overlay'>
@@ -68,7 +69,7 @@ export const Hero = () => {
                     <div className='getStartedInfo'>
                         <p><i className='bi bi-caret-right-fill'></i> Daily accruals for 30 days</p>
                         <p><i className='bi bi-caret-right-fill'></i> Instant Withdrawals</p>
-                        <p><i className='bi bi-caret-right-fill'></i> Free token every day</p>
+                        <p><i className='bi bi-caret-right-fill'></i> Minimum Withdarawl $10</p>
                     </div>
                 </div>
             </div>

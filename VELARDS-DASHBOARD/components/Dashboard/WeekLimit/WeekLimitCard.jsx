@@ -4,32 +4,54 @@ import wallet from '/icons/icon-22.png'
 import './WeekLimitCard.css';
 
 
-export const WeekLimitCard= ()=>{
+export const WeekLimitCard = () => {
+  const weekLimitCardData = [
+    {
+      title: 'Total Income',
+      amount: '$450',
+    },
+
+    {
+      title: 'Total Withdrawal',
+      amount: '$450',
+    },
+
+    {
+      title: 'Net Balance',
+      amount: '$450',
+    },
+
+
+  ]
+
   return (
-    <div className="week-card ">
-      <div className="week-card-inner">
-        
-        {/* Wallet Icon */}
-          <div className="wallet-image">
-            <img src={wallet} alt="" className="wallet-icon"/>
+    <>
+      {
+        weekLimitCardData.map((data) => (
+
+
+          <div className="week-card ">
+            <div className="week-card-inner">
+              {/* Wallet Icon */}
+              <div className="wallet-image">
+                <img src={wallet} alt="" className="wallet-icon" />
+              </div>
+
+              {/* Content */}
+              <div className="week-content">
+                <div className="week-title">
+                  <span>{data.title}</span>
+                  <Info size={16} className="info-icon" />
+                </div>
+                <div className="week-amount">{data.amount}</div>
+              </div>
+            </div>
+
           </div>
+        ))
+      }
+    </>
 
-        {/* Content */}
-        <div className="week-content">
-          <div className="week-title">
-            <span>Total week limit</span>
-            <Info size={16} className="info-icon" />
-          </div>
-
-          <div className="week-amount">$450-600</div>
-
-          <div className="week-note">
-            Limit updates<br />every Monday at 00:00
-          </div>
-        </div>
-
-      </div>
-    </div>
   );
 };
 

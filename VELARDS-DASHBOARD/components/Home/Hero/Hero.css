@@ -103,7 +103,7 @@
 }
 
 .profit-number {
-    font-size: 5rem;
+    font-size: 5rem !important;
     /* Scaled down from 9rem */
     font-weight: bold;
     line-height: 0.8;

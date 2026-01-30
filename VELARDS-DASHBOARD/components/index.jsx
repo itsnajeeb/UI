@@ -1,10 +1,9 @@
 export { SidebarItem } from './SidebarItem';
 export { Sidebar } from './Sidebar';
-export { Header } from './Header';
+export { Header } from './Dashboard/Header/Herder';
 export { HeroSection } from './Dashboard/Hero/HeroSection';
 export { AccountBalance } from './Dashboard/AccountBalance/AccountBalance';
 export { WeekLimitCard } from './Dashboard/WeekLimit/WeekLimitCard';
-export { ReferralSection } from './Dashboard/ReferralSection/ReferralSection';
 export { StatisticsSection } from './Dashboard/StatisticsSection/StatisticsSection';
 export { PromoCard } from './Dashboard/PromoCard/PromoCard';
 
@@ -32,7 +31,9 @@ export { Footer } from './Home/Footer/Footer'
 export { Hero } from './Home/Hero/Hero'
 export { Investment } from './Home/Investment/Investment'
 export { Login } from './Home/Login/Login'
+export { Signup } from './Home/Signup/Signup'
 export { Navbar } from './Home/Navbar/Navbar'
 export { Partnership } from './Home/Partnership/Partnership'
 export { Payment } from './Home/Payment/Payment'
 export { PowerPiggyBank } from './Home/PowerPiggyBank/PowerPiggyBank'
+export { ForgotPassword } from './Home/ForgotPassword/ForgotPassword'
