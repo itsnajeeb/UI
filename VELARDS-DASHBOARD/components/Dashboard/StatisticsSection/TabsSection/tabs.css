@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
 
     /* Stats Grid */
     .stats-grid {
@@ -14,7 +14,7 @@
         background-color: rgba(15, 15, 15, 0.8);
         border: 1.5px solid #454545;
         display: flex;
-        border-radius: 8px;
+        border-radius: 8px; 
         padding: 0px 10px;
         justify-content: space-between !important;
     }
@@ -22,6 +22,7 @@
     .stats-grid .stats-card .stats-box {
         display: flex;
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     .stats-grid .stats-img {
@@ -51,29 +52,32 @@
         position: absolute;
         top: 50%;
         left: 50%;
-
+        height: 100%;
         transform: translate(-50%, -50%);
         color: black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
+        gap: 5px;
     }
 
     .payment-section .content-section h1 {
         font-weight: 600;
         font-size: 15px;
-        
         text-align: center;
         text-transform: uppercase;
         color: rgb(51, 50, 50);
         width: 100%;
+        margin: 0px;
+
     }
 
     .payment-section .content-section .amount {
         font-size: 23px;
         text-align: center;
         font-weight: 700;
+        margin: 0px;
     }
 
     .payment-section .content-section .badge {
@@ -81,11 +85,15 @@
         width: fit-content;
         color: black;
         margin: 0px auto;
-        padding: 0px 5px;
+        padding: 5px 10px;
         border-radius: 4px;
         font-size: 12px;
         text-align: center;
+        font-weight: 500;
+    }
+    .payment-section .content-section .leftRight {
+        text-align: center;
+        margin: 0px;
     }
 
-}
 

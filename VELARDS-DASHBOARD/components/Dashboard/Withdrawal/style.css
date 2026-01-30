@@ -22,7 +22,7 @@
 }
 
 .deposit-content .deposit-info-box {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 35px;
 }
@@ -84,6 +84,7 @@
     width: 100% !important;
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .button .btn {
@@ -112,4 +113,5 @@
     cursor: pointer;
     color: black;
     font-weight: 600;
+    margin: 0px;
 }

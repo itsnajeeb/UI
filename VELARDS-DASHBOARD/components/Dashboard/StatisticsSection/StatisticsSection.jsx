@@ -12,7 +12,7 @@ const tabs = [
     'Business',
     'Rank',
 ];
-
+ 
 export const StatisticsSection = () => {
   
     const [activeTab, setActiveTab] = useState('Income Summery');

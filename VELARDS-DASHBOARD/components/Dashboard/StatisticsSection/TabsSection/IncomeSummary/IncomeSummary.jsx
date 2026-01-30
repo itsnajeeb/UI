@@ -51,6 +51,7 @@ const IncomeSummary = ({ title, amount, currency }) => {
 
 
     ]
+    
     return (
 
         <>
@@ -61,7 +62,6 @@ const IncomeSummary = ({ title, amount, currency }) => {
                         <img src={icon1} alt="" />
                     </div>
                     <div className="stats-box">
-
                         <div className='payment-section'>
                             <img src={box} alt="" />
                             <div className='content-section'>

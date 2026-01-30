@@ -16,7 +16,7 @@ const Business = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Current Month</h1>
-                            <p>Left Business</p>
+                            <p className='leftRight'>Left Business</p>
                             <p className='amount'>140950</p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const Business = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Current Month</h1>
-                            <p>Right Business</p>
+                            <p className='leftRight'>Right Business</p>
                             <p className='amount'>0</p>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const Business = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Total </h1>
-                            <p>Left Business</p>
+                            <p className='leftRight'>Left Business</p>
                             <p className='amount'>652500</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Business = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Total </h1>
-                            <p>Right Business</p>
+                            <p className='leftRight'>Right Business</p>
                             <p className='amount'>0</p>
                         </div>
                     </div>

@@ -24,7 +24,8 @@ const Referral = ({ title, amount, currency }) => {
                     <div className='payment-section'>
                         <img src={box} alt="" />
                         <div className='content-section'>
-                            <h1>Active Referral <br />(Left/Right)</h1>
+                            <h1>Active Referral </h1>
+                            <p className='leftRight'>(Left/Right)</p>
                             <p className='amount'>1/</p>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ const Referral = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Inactive Referral</h1>
-                            <p> (Left/Right)</p>
+                            <p className='leftRight'> (Left/Right)</p>
                             <p className='amount'>0/</p>
                             {/* <p className='badge'>USDT</p> */}
                         </div>

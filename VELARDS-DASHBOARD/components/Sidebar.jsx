@@ -1,16 +1,10 @@
 import React from 'react';
 import {
-  LayoutGrid,
-  PlusCircle,
-  Clock,
-  Wallet,
-  Users,
-  ArrowLeftRight,
-  Headphones,
-  BanknoteArrowDown,
-  BanknoteArrowUp
+  LayoutGrid, PlusCircle, Clock, Wallet, Users,
+  ArrowLeftRight, Headphones, BanknoteArrowDown, BanknoteArrowUp
 } from 'lucide-react';
 import { SidebarItem } from './SidebarItem';
+import './Home/styles/style.css';
 
 export const Sidebar = ({ activePage = 'dashboard', onNavigate }) => {
   const navItems = [
@@ -28,19 +22,12 @@ export const Sidebar = ({ activePage = 'dashboard', onNavigate }) => {
   ];
 
   return (
-    <aside className="hidden md:flex w-[110px] h-full flex-col items-center py-10 relative overflow-visible">
-
+    <aside className="sidebar-container">
       {/* Sidebar background slope shape */}
-      <div
-        className="absolute inset-0 bg-[#0a0a0a] z-0"
-        style={{
-          clipPath:
-            'polygon(0% 0%, calc(100% - 60px) 0%, 100% 60px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0% 100%)'
-        }}
-      />
+      <div className="sidebar-bg-shape" />
 
-      {/* Right Edge Sloped Highlight */}
-      <div className="absolute top-0 right-0 w-full h-full pointer-events-none z-10">
+      {/* Right Edge Sloped Highlight (SVG) */}
+      <div className="sidebar-svg-overlay">
         <svg
           width="100%"
           height="100%"
@@ -60,10 +47,10 @@ export const Sidebar = ({ activePage = 'dashboard', onNavigate }) => {
       </div>
 
       {/* Sidebar glow */}
-      <div className="absolute top-0 right-0 w-[4px] h-full bg-linear-to-b from-yellow-500 via-transparent to-yellow-500 opacity-20 z-0"></div>
+      <div className="sidebar-glow-edge" />
 
       {/* Nav Items */}
-      <div className="flex-1 w-full flex flex-col overflow-y-auto scrollbar-hide pt-2">
+      <nav className="sidebar-nav">
         {navItems.map((item) => (
           <SidebarItem
             key={item.id}
@@ -73,7 +60,7 @@ export const Sidebar = ({ activePage = 'dashboard', onNavigate }) => {
             onClick={() => onNavigate && onNavigate(item.id)}
           />
         ))}
-      </div>
+      </nav>
     </aside>
   );
 };

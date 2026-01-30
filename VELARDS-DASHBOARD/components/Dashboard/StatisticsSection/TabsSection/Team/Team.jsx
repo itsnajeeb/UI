@@ -46,7 +46,7 @@ const Team = ({ title, amount, currency }) => {
                         <img src={box} alt="" />
                         <div className='content-section'>
                             <h1>Inactive Team</h1>
-                            <p>Left / Right</p>
+                            <p className='leftRight'>Left / Right</p>
                             <p className='amount'>464/285</p>
                         </div>
                     </div>

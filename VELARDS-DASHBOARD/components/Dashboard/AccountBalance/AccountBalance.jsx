@@ -25,7 +25,7 @@ const defaultBalances = [
   { icon: icon9, amount: 0.786736389 },
 ];
 
-export const AccountBalance = () => {
+export const AccountBalance = () =>  {
   return (
     <div className="account-balance">
       <div className="account-header">

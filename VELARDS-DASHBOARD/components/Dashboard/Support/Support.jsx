@@ -3,7 +3,7 @@ import { TableCell } from "@mui/material";
 import CustomTable from '../CommonComponents/CustomTable';
 import { queryData } from '../../../data/data';
 import buttonBg from '/dashboardimg/buttonBg.png'
-import './style.css'
+import './style.css' 
 export const Support = () => {
     const [rows] = useState(queryData);
     const referralColumns = [
@@ -27,7 +27,7 @@ export const Support = () => {
                 </div>
                 <div className='send-btn'>
                     <img src={buttonBg} alt="" />
-                    <p>Help Query</p>
+                    <p>Send Query</p>
                 </div>
             </div>
             <div className="table-wrapper">

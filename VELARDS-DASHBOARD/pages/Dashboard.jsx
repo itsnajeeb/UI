@@ -6,28 +6,33 @@ import {
   PromoCard,
   HeroSection,
 } from '../components';
+import './style.css'
 export const Dashboard = () => {
   return (
-    <div className="max-w-[1600px] mx-auto space-y-12 pb-12 ">
+    <div className="dashboard-page-container">
       {/* Top Row: Hero + Account Balance */}
-      <div className="flex gap-5">
+      <div className="dashboard-top-section">
         <HeroSection />
         <AccountBalance />
       </div>
 
 
       {/* Bottom Section */}
-      <div className="flex  justify-between ">
+      <div className="dashboard-bottom-section">
         {/* Left Column: Week Limit, Inviter, Referral */}
-        <div className="flex-1 h-full">
+        <div className="bottom-left">
           <WeekLimitCard />
         </div>
 
         {/* Middle: Statistics Section */}
-        <StatisticsSection />
+        <div className='bottom-middle'>
+          <StatisticsSection />
+        </div>
 
         {/* Right: Monday Promo Card */}
-        <PromoCard />
+        <div className='bottom-right '>
+          <PromoCard />
+        </div>
       </div>
     </div>
   );

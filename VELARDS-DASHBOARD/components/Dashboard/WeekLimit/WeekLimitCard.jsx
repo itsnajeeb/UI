@@ -8,7 +8,7 @@ export const WeekLimitCard = () => {
   const weekLimitCardData = [
     {
       title: 'Total Income',
-      amount: '$450',
+      amount: '$450', 
     },
 
     {
@@ -27,10 +27,9 @@ export const WeekLimitCard = () => {
   return (
     <>
       {
-        weekLimitCardData.map((data) => (
+        weekLimitCardData.map((data, idx) => (
 
-
-          <div className="week-card ">
+          <div className="week-card " key={idx}>
             <div className="week-card-inner">
               {/* Wallet Icon */}
               <div className="wallet-image">

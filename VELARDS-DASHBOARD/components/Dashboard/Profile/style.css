@@ -1,6 +1,3 @@
-.main-profile-container {
-    /* border: 1px solid red; */
-}
 
 
 .main-profile-container .heading {
@@ -8,18 +5,16 @@
 }
 
 .profile-tab-container {
-    background-color: linear-gradient(90deg,
-            rgba(194, 225, 20, 0.9) 25%,
-            rgba(129, 203, 17, 0.9) 50%,
-            rgba(243, 239, 17, 0.9) 100%, );
-
+    background: linear-gradient(90deg, rgba(194, 225, 20, 0.1) 25%, rgba(129, 203, 17, 0.1) 100%);
     border: 2px solid #515050;
     border-radius: 8px;
-    margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
     justify-content: space-between;
-    padding: 25px 40px;
-    margin-bottom: 40px;
+    padding: 15px 35px;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 
@@ -53,12 +48,13 @@
 
 .profile-info-show {
     border: 2px solid #515050;
-    padding: 20px 30px;
+    padding: 20px 15px;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-info-show .title {
@@ -66,19 +62,20 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: 600;
     border-bottom: 5px dotted #ebba07;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .profile-info-show .info-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     width: 100%;
-    gap: 40px;
-    padding: 2rem 2.5rem;
-
+    gap: 20px;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
 }
 
 .profile-info-show .info-container .info-tab {
@@ -86,8 +83,8 @@
     flex-direction: column;
     background-color: rgba(81, 81, 80, 0.489);
     box-shadow: rgba(250, 250, 3, 0.525) 0px 0px 0px 1.6px, rgb(81, 81, 80) 0px 0px 0px 1px inset;
-    padding: 25px 25px;
-    gap: 10px;
+    padding: 20px;
+    gap: 8px;
     border-radius: 10px;
 }
 
@@ -98,21 +95,34 @@
     color: #ebba07;
 }
 
+    /* Ensures padding doesn't break width */
+/* Inputs and Selects */
 .profile-info-show .info-container .info-tab input,
-select {
+.profile-info-show .info-container .info-tab select {
+    width: 100%;
+    box-sizing: border-box; 
     padding: 10px;
     color: rgb(235, 186, 7);
-    border: none;
     background-color: transparent;
     border: 2px solid rgba(235, 186, 7, 0.638);
     outline: none;
     font-size: 14px;
-    border-radius: 8px 10px;
-
+    border-radius: 8px;
 }
-.profile-info-show .info-container .info-tab select,option{
-    font-weight: 600;
-    background-color: #7e6304d5;
-    padding: 10px;
-    cursor: pointer;
+
+
+/* Tablet: 2 Columns */
+@media (min-width: 640px) {
+    .profile-info-show .info-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile-info-show .info-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
 }

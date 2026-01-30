@@ -1,19 +1,9 @@
 /* Main Wrapper */
 .statistics-section {
-  grid-column: span 12;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/* Large screens */
-@media (min-width: 1024px) {
-  .statistics-section {
-    grid-column: span 6;
-  }
-
-}
-
 
 /* Tabs Wrapper */
 .tabs-wrapper {
@@ -25,13 +15,10 @@
 }
 
 /* Hide scrollbar */
-.tabs-wrapper::-webkit-scrollbar {
-  display: none;
-}
+
 
 .tabs-wrapper {
   -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 /* Tabs Container */
