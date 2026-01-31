@@ -36,3 +36,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #f59e0b;
 }
+
+/* This class is used in multipel components like ROI Mathcing Direct Income etcc */
+.table-container{
+  padding: 1rem 2rem;
+}

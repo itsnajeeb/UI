@@ -14,8 +14,8 @@ export const Support = () => {
         { id: "adminreplay", label: "Admin Replay", sortable: true },
         { id: "adminreplaydate", label: "Admin Replay Date", sortable: true },
     ];
-    return (
-        <div className='support-section'>
+    return ( 
+        <div className='support-section table-container'>
             <div className='support-info'>
                 <h1 className='heading'>We are here for you...</h1>
                 <div className='support-field'>

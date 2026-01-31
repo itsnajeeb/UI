@@ -5,7 +5,7 @@ export const BalanceCard = ({ icon, amount }) => (
   <div className="balance-card ">
     <div className="balance-icon">
       <img src={icon} alt="" />
-    </div>
+    </div> 
 
     <div className="balance-info">
       <div className="balance-amount">{amount}</div>

@@ -29,8 +29,7 @@ export const Navbar = () => {
 
                 {/* RIGHT SIDE (DESKTOP) */}
                 <div className='nav-desktop-group right-group'>
-                    <Link to='/dashboard' className='link'> <NavButton label="Dashboard" /></Link>
-                    <Link to='/signup' className='link'> <NavButton label="Sign In" /></Link>
+                    <Link to='/signup' className='link'> <NavButton label="Sign Up" /></Link>
                     <Link to='/login' className='link'>  <NavButton label="Login" /></Link>
 
                 </div>
@@ -44,13 +43,12 @@ export const Navbar = () => {
             {/* MOBILE MENU */}
             {open && (
                 <div className='mobile-menu-overlay'>
-                    <Link to='/dashboard' className='link'> <NavButton label="Dashboad" /> </Link>
                     <NavButton label="News" />
                     <NavButton label="Group" />
                     <NavButton label="Support" />
                     <NavButton label="EN" />
-                    <NavButton label="Sign In" />
-                    <NavButton label="Sign Up" />
+                    <Link to='/login' className='link'><NavButton label="Sign In" /></Link>
+                    <Link to='/signup' className='link'><NavButton label="Sign Up" /></Link>
                 </div>
             )}
         </nav>

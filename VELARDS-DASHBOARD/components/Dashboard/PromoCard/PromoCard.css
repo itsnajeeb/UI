@@ -4,7 +4,7 @@
 
 .promo-card-section .promo-bg-card img {
     position: relative;
-    width: 300px;
+    width: 350px;
     /* height: 400px; */
 }
 
@@ -67,7 +67,8 @@
 
 .current-rate .current-rate-content .middle-info {
     position: absolute;
-    top: 0px;
+    top: 40%;
+    transform: translateY(-50%);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -101,7 +102,7 @@
 
 .promo-card-section .button {
     position: absolute;
-    bottom: -20px;
+    bottom: 15%;
     width: 100px;
     height: auto;
     left: 50%;

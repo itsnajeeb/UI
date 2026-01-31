@@ -18,7 +18,7 @@ export const MatchingIncome = () => {
     ];
     return (
 
-        <div className='deposit-history'>
+        <div className='deposit-history table-container'>
             <h1>Matching Income</h1>
             <div className="table-wrapper">
                 <div className="table-card ">

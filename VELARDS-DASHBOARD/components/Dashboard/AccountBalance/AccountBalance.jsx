@@ -33,7 +33,7 @@ export const AccountBalance = () =>  {
 
         <button className="wallet-btn">
           Set Wallets <ArrowRight size={12} />
-        </button>
+        </button> 
       </div>
 
       <div className="balance-grid">

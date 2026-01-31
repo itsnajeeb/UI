@@ -12,10 +12,10 @@
   justify-content: center;
   margin-bottom: 32px;
   max-width: 100%;
-  overflow-x: auto;
+  padding: 0px 1rem;
 }
 
-/* Hide scrollbar */
+/* Hide scrollbar */ 
  
 
 .tabs-wrapper {
@@ -24,9 +24,10 @@
 
 /* Tabs Container */
 .tabs-container {
-  display: inline-flex;
-  gap: 8px;
+  display: flex;
+  gap: 15px;
   padding: 4px;
+  overflow-x: auto;
 }
 
 /* Tab Button Base */
@@ -34,7 +35,7 @@
   padding: 8px 10px;
   font-size: 12px;
   height: 36px;
-  min-width: 70px;
+  min-width: 100px;
   border-radius: 8px;
   font-weight: 700;
   text-transform: uppercase;
@@ -50,7 +51,6 @@
       #fcd34d,
       #f59e0b);
   color: #000;
-  font-weight: 900;
   border: none;
 }
 

@@ -33,14 +33,14 @@
     }
 
     .stats-grid .stats-img img {
-        width: 80px !important;
+        width: 60px !important;
         height: auto;
     }
 
 
     .payment-section {
-        width: 230px;
         position: relative;
+        width: 220px;
     }
 
     .payment-section img {
@@ -58,9 +58,9 @@
         color: black;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 1.5rem;
-        gap: 5px;
+        gap: 3px;
     }
 
     .payment-section .content-section h1 {
@@ -86,11 +86,11 @@
         width: fit-content;
         color: black;
         margin: 0px auto;
-        padding: 5px 10px;
+        padding: 5px 6px;
         border-radius: 4px;
         font-size: 12px;
         text-align: center;
-        font-weight: 500;
+        font-weight: 700;
     }
     .payment-section .content-section .leftRight {
         text-align: center;

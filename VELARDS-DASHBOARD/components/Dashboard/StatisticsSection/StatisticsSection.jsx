@@ -35,7 +35,7 @@ export const StatisticsSection = () => {
         }
     }
     return (
-        <div className="statistics-section  ">
+        <div className="statistics-section  "> 
 
             {/* Tab Navigation */}
             <div className="tabs-wrapper">

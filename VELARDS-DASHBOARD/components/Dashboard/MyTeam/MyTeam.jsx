@@ -17,7 +17,7 @@ export const MyTeam = () => {
     ];
     return (
 
-        <div className='deposit-history'>
+        <div className='deposit-history table-container'>
             <h1>My Team</h1>
             <div className="table-wrapper">
                 <div className="table-card ">

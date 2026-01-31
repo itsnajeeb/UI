@@ -7,12 +7,13 @@ import './Hero.css'
 export const Hero = () => {
     return (
         <section className='hero-wrapper'>
-
+ 
             {/* LEFT CONTENT */}
             <div className='hero-left'>
 
                 {/* Subtitle */}
                 <div className='subtitle-container'>
+                    <div className='verticle-line'/>
                     <p className='webSubTitle'>
                         TRADE ONLINE WITH Alphafx 
                         YOUR LOYAL PARTNER

@@ -58,7 +58,7 @@ const IncomeSummary = ({ title, amount, currency }) => {
             <div className="stats-grid">
                 <div className="stats-card">
 
-                    <div className='stats-img'>
+                    <div className='stats-img'> 
                         <img src={icon1} alt="" />
                     </div>
                     <div className="stats-box">

@@ -19,7 +19,7 @@ export const MyReferral = () => {
     ];
     return (
 
-        <div className='deposit-history'>
+        <div className='deposit-history table-container'>
             <h1>My Referral</h1>
             <div className="table-wrapper">
                 <div className="table-card ">

@@ -23,12 +23,12 @@ export const Profile = () => {
   }
 
   return (
-    <div className='main-profile-container'>
+    <div className='main-profile-container table-container'>
       <h1 className='heading'>Your Profile Summery</h1>
       <div className='profile-tab-container'>
         <div className={`profile-tab ${activeTab === 'profileInfo' ? 'active-tab' : 'inActive-tab'}`}
           onClick={() => setActiveTab('profileInfo')}
-        >
+        > 
           <span className='icon'><i class="bi bi-person-fill"></i></span>
           <h1 className='tab-name'>Profile Info</h1>
         </div>

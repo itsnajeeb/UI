@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export const MyDeposits = () => {
   const navigate = useNavigate()
   return (
-    <div className='deposit-section'>
+    <div className='deposit-section table-container'>
       <h1 className='heading'>Your Deposits Details</h1>
       <div className="deposit-content">
         <h2>Minimum Deposit Balance : $100</h2>

@@ -3,7 +3,7 @@ import {  TableCell } from "@mui/material";
 import { formatWallet } from '../../../Utility/utils';
 import CustomTable from '../CommonComponents/CustomTable';
 import { RoiIncomeData } from '../../../data/data';
-import './style.css'
+import './style.css' 
 export const RoiIncome = () => {
 
     const [rows] = useState(RoiIncomeData);
@@ -19,7 +19,7 @@ export const RoiIncome = () => {
     ];
     return (
 
-        <div className='deposit-history'>
+        <div className='deposit-history table-container'>
             <h1>ROI Income</h1>
             <div className="table-wrapper">
                 <div className="table-card ">

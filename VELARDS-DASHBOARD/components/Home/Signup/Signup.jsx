@@ -82,10 +82,12 @@ export const Signup = () => {
                     </div>
 
                     <div className='bottom-section'>
+                        <Link to={'/dashboard'}>
                         <div className="btn-content">
                             <img src={buttonBg} alt="" />
                             <p className='btn-title'>Access Platform</p>
                         </div>
+                        </Link>
 
                         <div className='login-section'>
                             <p>Already have an account? <Link className='link' to={'/login'}>Login</Link></p>

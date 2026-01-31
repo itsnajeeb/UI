@@ -19,7 +19,7 @@ export const WithdrawalHistory = () => {
     ];
     return (
 
-        <div className='deposit-history'>
+        <div className='deposit-history table-container'>
             <h1>Withdrawal History</h1>
             <div className="table-wrapper">
                 <div className="table-card ">
