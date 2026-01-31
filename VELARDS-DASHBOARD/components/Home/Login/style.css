@@ -2,7 +2,6 @@
     /* Use the generated image here */
     background: url('/websiteimg/loginBg.png');
     min-height: 100vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -16,18 +15,15 @@
     left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 10px;
-    width: 400px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: fit-content;
-    align-self: center;
     padding: 20px 35px;
-    margin-left: 100px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+    width: 100%;
+    max-width: 400px;
+    /* 🔥 important */
 }
 
 .login-container .header-section {
@@ -39,9 +35,8 @@
     margin-bottom: 1rem;
 }
 
-.login-container .header-section .logo {
-    width: 130px;
-
+.login-container .header-section .logo img {
+    width: 150px;
 }
 
 .login-container .header-section .header-description h1 {
@@ -85,7 +80,7 @@
 .login-container .login-content .input-container .input-box label {
     display: block;
     margin-bottom: 4px;
-    font-size: 14px;
+    font-size: 16px;
     color: #e6c805;
     font-weight: 600;
 }
@@ -100,9 +95,12 @@
     width: 100%;
     outline: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 15px 25px;
     color: rgb(54, 54, 54);
     background-color: rgba(124, 124, 124, 0.363);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .login-container .bottom-section {
@@ -115,13 +113,16 @@
 .login-container .bottom-section .btn-content {
     width: 350px !important;
     position: relative;
+    margin: 0px auto;
+    display: flex;
 
 }
 
 .login-container .bottom-section .btn-content img {
-    width: 250px;
-    height: 60px;
+    width: 180px;
+    height: 50px;
     margin: 0px auto;
+    cursor: pointer;
 }
 
 .login-container .bottom-section .btn-content .btn-title {
@@ -130,7 +131,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .login-container .bottom-section .login-section {
@@ -147,13 +148,41 @@
 }
 
 
-/* For mobile responsiveness */
+@media (max-width: 1024px) {
+    .login-content {
+        left: 50%;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+
     .login-container {
         justify-content: center;
-        /* Center the form on mobile */
-        padding-left: 0;
-        background-position: 70% center;
-        /* Shifts the image to show the crypto art better on small screens */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .login-content {
+        position: relative;  
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .header-description {
+        display: none;
+    }
+
+    .login-container .bottom-section .btn-content {
+        width: 100% !important;
+    }
+
+    .login-container .bottom-section .btn-content img {
+        width: 100%;
+        max-width: 220px;
     }
 }

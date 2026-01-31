@@ -1,5 +1,3 @@
-
-
 .signup-container {
     /* Use the generated image here */
     background: url('/websiteimg/loginBg.png');
@@ -21,7 +19,6 @@
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    /* width: 450px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,10 +26,10 @@
     height: fit-content;
     align-self: center;
     padding: 20px 35px;
-    margin-left: 100px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
         rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
         rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    max-width: 800px;
 }
 
 .signup-container .header-section {
@@ -44,9 +41,8 @@
     margin-bottom: 1rem;
 }
 
-.signup-content .header-section .logo {
-    width: 120px;
-
+.signup-content .header-section .logo img {
+    width: 180px;
 }
 
 .signup-content .header-section .header-description h1 {
@@ -69,8 +65,9 @@
 
 .signup-container .signup-content .input-container {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
 }
 
 .signup-container .signup-content .input-container .input-box {
@@ -99,9 +96,11 @@ select {
     border-radius: 5px;
     font-weight: 500;
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: rgb(54, 54, 54);
     background-color: rgba(124, 124, 124, 0.363);
+    border: none;
+    font-size: 15px;
 }
 
 .signup-content .input-container .input-box .mobile-no-div {
@@ -129,9 +128,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: rgba(124, 124, 124, 0.363);
-
 }
 
 .signup-container .bottom-section {
@@ -142,8 +139,7 @@ select {
 
 .signup-container .bottom-section .btn-content {
     position: relative;
-    width: 350px !important;
-
+    cursor: pointer;
 }
 
 .signup-container .bottom-section .btn-content img {
@@ -151,6 +147,9 @@ select {
     height: 60px;
     position: relative;
     margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-container .bottom-section .btn-content .btn-title {
@@ -160,6 +159,7 @@ select {
     transform: translate(-50%, -50%);
     font-weight: 500;
     color: black;
+    font-weight: 600;
 }
 
 
@@ -175,4 +175,51 @@ select {
 .signup-container .bottom-section .login-section .link {
     color: blue;
     font-size: 15px;
+}
+
+
+@media (max-width: 1024px) {
+    .signup-content {
+        left: 50%;
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .signup-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .signup-container {
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .signup-container .signup-content .input-container {
+        grid-template-columns: 1fr;
+    }
+
+    .signup-content .header-section .logo img {
+        width: 140px;
+    }
+
+    .signup-content .header-section .header-description p {
+        font-size: 14px !important;
+    }
+
+    .signup-container .bottom-section .btn-content img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
 }

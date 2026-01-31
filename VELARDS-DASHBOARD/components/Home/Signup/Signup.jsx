@@ -84,7 +84,7 @@ export const Signup = () => {
                     <div className='bottom-section'>
                         <div className="btn-content">
                             <img src={buttonBg} alt="" />
-                            <button className='btn-title'>Access Platform</button>
+                            <p className='btn-title'>Access Platform</p>
                         </div>
 
                         <div className='login-section'>

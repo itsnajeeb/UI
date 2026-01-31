@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 export const Login = () => {
     const [hidePassword, setHidePassword] = useState(false)
-    return (
+    return ( 
         <div className='login-container'>
             <div className="login-content">
                 <div className='header-section'>
@@ -41,7 +41,7 @@ export const Login = () => {
                     <div className='bottom-section'>
                         <div className="btn-content">
                             <img src={buttonBg} alt="" />
-                            <button className='btn-title'>Access Platform</button>
+                            <p className='btn-title'>Access Platform</p>
                         </div>
 
                         <div className='login-section'>
