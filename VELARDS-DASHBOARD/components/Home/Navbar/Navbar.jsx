@@ -24,15 +24,14 @@ export const Navbar = () => {
                     <div className='logo-stack'>
                         <img src={middleImage} alt="" className='bg-glow-img' />
                         <img src={bottomLogo} alt="" className='main-logo-icon' />
-                        <h1 className='logo-text'>VELARDS</h1>
                     </div>
                 </div>
 
                 {/* RIGHT SIDE (DESKTOP) */}
                 <div className='nav-desktop-group right-group'>
-                    <Link to='/dashboard'> <NavButton label="Dashboard" /></Link>
-                    <Link to='/signup'> <NavButton label="Sign In" /></Link>
-                    <Link to='/login'>  <NavButton label="Login" /></Link>
+                    <Link to='/dashboard' className='link'> <NavButton label="Dashboard" /></Link>
+                    <Link to='/signup' className='link'> <NavButton label="Sign In" /></Link>
+                    <Link to='/login' className='link'>  <NavButton label="Login" /></Link>
 
                 </div>
 

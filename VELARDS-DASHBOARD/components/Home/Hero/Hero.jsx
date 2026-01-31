@@ -17,12 +17,12 @@ export const Hero = () => {
                         TRADE ONLINE WITH Alphafx 
                         YOUR LOYAL PARTNER
                     </p>
-                </div>
+                </div> 
 
                 {/* Headings */}
                 <div className='hero-headings'>
-                    <h1 className='main-heading gredientText'>Extra</h1>
-                    <h3 className='sub-heading gredientText'>Investment power</h3>
+                    <h1 className='main-heading gredientText outlineBorder'>Extra</h1>
+                    <h3 className='sub-heading gredientText outlineBorder'>Investment power</h3>
                 </div>
 
                 {/* Profit Section */}
@@ -30,10 +30,10 @@ export const Hero = () => {
                     <div className='profit-main'>
                         <p className='from-text'>From</p>
                         <div className='profit-value-group'>
-                            <h1 className='profit-number outlineBorder colorGredientText'>10</h1>
+                            <h1 className='profit-number outlineBorder gredientText'>10</h1>
                             <div className='profit-unit-box'>
-                                <span className='percent-symbol outlineBorder colorGredientText'>%</span>
-                                <p className='profit-label'>Daily Profit</p>
+                                <span className='percent-symbol outlineBorder gredientText'>%</span>
+                                <p className='profit-label'>Daily <br />Profit</p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ export const Hero = () => {
                             <img src={buttonBg} alt='' className='cta-bg-image' />
                             <div className='cta-text-overlay'>
                                 <h1 className='cta-btn-title'>Get Started</h1>
-                                <span className='cta-btn-icon'><i className='bi bi-fingerprint'></i></span>
+                                 <span className='cta-btn-icon'><i className='bi bi-fingerprint'></i></span>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export const Hero = () => {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className='hero-right'>
+            <div className='hero-right border'>
                 <img src={hero} alt='hero-illustration' className='hero-img' />
             </div>
         </section>

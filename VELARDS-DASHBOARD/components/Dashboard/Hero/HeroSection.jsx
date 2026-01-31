@@ -1,6 +1,7 @@
 // HeroSection.jsx
 import React, { useEffect, useState } from 'react';
 import border from '/dashboardimg/dashboard-img-03.png';
+import bgImage from '/dashboardimg/dashboard-img-02.png';
 import './hero.css';
 
 export const HeroSection = () => {
@@ -35,7 +36,9 @@ export const HeroSection = () => {
 
     return (
         <section className='dashboard-section '>
-            
+
+            <img src={bgImage} alt="" />
+
             <div className='left-section'>
                 <div className='heading-section'>
                     <h1 className='outlineBorder colorGredientText'>  3.1 - 3.35</h1>

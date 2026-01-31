@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    height: fit-content;
 }
 
 .hero-right {
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 .hero-img {
@@ -40,7 +42,6 @@
 .webSubTitle {
     text-transform: uppercase;
     font-size: 0.75rem;
-    /* Smaller for mobile */
     letter-spacing: 2px;
     font-weight: 600;
     background: linear-gradient(90deg, #e3e3e3 0%, #e1e1e1 50%, #484747 100%);
@@ -50,27 +51,29 @@
     word-spacing: 4px;
 }
 
-.hero-headings {
+.hero-wrapper .hero-left .main-heading {
+    font-size: clamp(5rem, 5vw, 8rem);
+    ;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.9;
+    margin: 0px;
+    letter-spacing: 2px;
     text-align: center;
-    margin-top: 10px;
 }
 
-.hero-wrapper .hero-left .main-heading {
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 0.9;
-    letter-spacing: 2px;
-}
+
 
 .hero-headings .sub-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* Scaled down */
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: 2px;
     width: 100%;
+    margin: 0px;
+    text-align: center;
 }
 
 /* Profit Row */
@@ -82,6 +85,13 @@
     gap: 7px;
 }
 
+.hero-left .profit-row .from-text {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
 .profit-row .profit-value-group {
     display: flex;
     flex-direction: row;
@@ -90,65 +100,78 @@
 
 .profit-row .profit-value-group .profit-unit-box {
     width: 80px;
+    margin-top: -7px;
 }
 
 .profit-row .profit-value-group .percent-symbol {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .profit-row .profit-value-group .profit-label {
-    font-size: 18px;
+    font-size: 15px;
 }
 
-.profit-number {
-    font-size: 5rem !important;
-    /* Scaled down from 9rem */
+.profit-row .profit-number {
+    font-size: 5rem;
     font-weight: bold;
     line-height: 0.8;
     font-family: "Manrope", sans-serif;
 }
 
 /* CTA and Info Section */
-.cta-container {
+.hero-left .cta-container {
     display: flex;
-    flex-direction: column;
-    /* Stacked for mobile */
-    align-items: center;
-    gap: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
     margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
 }
 
-.cta-container .cta-wrap {
+.hero-left .cta-container .cta-wrap {
     position: relative;
 }
 
-.cta-container .cta-wrap .cta-tag {
-
+.hero-left .cta-container .cta-wrap .cta-tag {
     position: relative;
     top: 10px;
     background-color: #fff;
     color: black;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 18px;
     border-radius: 6px;
     text-align: center;
-    padding: 4px;
+    padding: 4px 20px;
+    margin: 0px auto;
     z-index: 99;
-    transform: rotate(-8deg);
+    width: fit-content;
+
+    transform: rotate(-7deg);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .cta-container .cta-wrap .cta-button-inner {
     position: relative;
-    width: 220px;
+    /* width: 220px; */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     cursor: pointer;
 }
+
+.cta-container .cta-wrap .cta-button-inner img {
+    width: 220px;
+}
+
+.cta-container .cta-button-inner .cta-btn-title {
+    font-size: 22px;
+}
+
 
 .cta-container .cta-wrap .cta-text-overlay {
     position: absolute;
@@ -163,6 +186,10 @@
 .cta-container .getStartedInfo {
     font-size: 14px;
     color: rgb(178, 178, 178);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .badge {
@@ -184,9 +211,20 @@ strong {
     display: block;
 }
 
-.badge-content {
+.profit-row .badge .badge-image {
+    position: relative;
+}
+
+.profit-row .badge .badge-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+}
+
+.profit-row .badge-content {
     position: absolute;
-    /* top: 40%; */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -198,7 +236,7 @@ strong {
     height: 100%;
 }
 
-.badge .icon {
+.profit-row .badge .icon {
     position: absolute;
     top: 27%;
     left: 15px;
@@ -212,11 +250,6 @@ strong {
     align-items: center;
 }
 
-.badge-image img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-}
 
 /* =========== DESKTOP STYLES (Keep your original sizes)  =========== */
 @media (min-width: 1024px) {
@@ -245,10 +278,11 @@ strong {
     .hero-wrapper .hero-left .main-heading {
         font-size: 10rem;
         letter-spacing: 4px;
+        text-align: center;
     }
 
     .hero-headings .sub-heading {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-left: 15px;
         letter-spacing: 5px;
     }
@@ -260,12 +294,12 @@ strong {
     }
 
     .subtitle-container {
-        text-align: left;
+        text-align: center;
         margin-left: 20px;
     }
 
     .hero-headings {
-        text-align: left;
+        text-align: center;
     }
 
     .profit-row {
@@ -282,24 +316,35 @@ strong {
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-start;
+        width: 100%;
+        gap: 1rem;
     }
 }
 
 /* Helpers for Gradient/Stroke */
 .gredientText {
-    background: linear-gradient(90deg, #e3e3e3 0%, #ffffff 50%, #484747 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.colorGredientText {
     background: linear-gradient(90deg, #987804 0%, #7c6204 50%, #836703 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+
 .outlineBorder {
     -webkit-text-stroke: 1.5px #f4d76c;
+}
+
+
+@media (max-width: 480px) {
+    .hero-left .profit-value-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-left .cta-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
 }

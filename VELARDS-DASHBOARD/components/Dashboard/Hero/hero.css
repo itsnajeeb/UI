@@ -1,27 +1,28 @@
 /* hero.css */
 .dashboard-section {
-    width: 60%;
-    background: url('/dashboardimg/dashboard-img-02.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 20px;
-    overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.dashboard-section img {
+    position: relative;
+    width: 100%;
 }
 
 /*  Left Side  */
 .left-section {
+    position: absolute;
+    top: 0;
     flex: 1;
     min-width: 300px;
-    padding: 20px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 0px 40px;
 }
 
 .heading-section {
@@ -102,10 +103,21 @@
     text-align: center;
 }
 
+.fastrack-time-section .fastrack-title{
+    color: #987804;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.fastrack-time-section .timer-display {
+    color: #f4d76c;
+    font-size: 15px;
+}
 /* Description Text */
-.description-section{
+.description-section {
     align-self: center;
 }
+
 .description-section p {
     font-size: 12px;
     color: #7d7d7dc5;
@@ -120,7 +132,7 @@
 .right-section {
     position: absolute;
     right: 0;
-    top: 5rem;
+    top: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,17 +223,37 @@
     .dashboard-section {
         width: 100%;
     }
+
+    .bottom-left {
+        left: 0%;
+        width: fit-content;
+    }
+
+    .bottom-right {
+        right: -5%;
+        width: fit-content;
+    }
+    .stat-card{
+        width: 100px !important;
+    }
 }
 
+
 @media (max-width: 768px) {
+    .dashboard-section img {
+        display: none;
+    }
+
     .dashboard-section {
         flex-direction: column;
-        height: auto;
+        /* height: auto; */
+        height: 100%;
         width: 100%;
         border-radius: 0;
     }
 
     .left-section {
+        position: relative;
         padding: 20px;
         align-items: center;
         text-align: center;
@@ -253,10 +285,12 @@
     }
 
     .bottom-left {
-        left: 10%;
+        left: 0%;
+        width: fit-content;
     }
 
     .bottom-right {
         right: -5%;
+        width: fit-content;
     }
 }

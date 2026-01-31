@@ -17,6 +17,11 @@
     gap: 20px;
 }
 
+.nav-desktop-group .link{
+    text-decoration: none;
+    
+}
+
 .right-group {
     justify-content: flex-end;
 }
@@ -43,16 +48,9 @@
 }
 
 .main-logo-icon {
-    width: 40px;
+    width: 80px;
 }
 
-.logo-text {
-    font-weight: bold;
-    font-size: 1rem;
-    color: white;
-    margin-top: 5px;
-    letter-spacing: 1px;
-}
 
 /* Navigation Button Components */
 .navbar-box {

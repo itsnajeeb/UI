@@ -6,9 +6,7 @@ export const Home = () => {
             < Navbar />
             <Hero />
             <PowerPiggyBank />
-            <div className='mt-40'>
                 <Investment />
-            </div>
             <CertiTemp />
             <Advantage />
             <Payment />

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 /* Tabs Wrapper */
@@ -15,7 +16,7 @@
 }
 
 /* Hide scrollbar */
-
+ 
 
 .tabs-wrapper {
   -ms-overflow-style: none;

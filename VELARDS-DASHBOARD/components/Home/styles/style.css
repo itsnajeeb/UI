@@ -1,22 +1,19 @@
-
-
 .sidebar-container {
-    display: none; 
+    display: flex;
     width: 110px;
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px; 
+    padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
+    left: 0;
+    top: 0;
     overflow: visible;
+    transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
-@media (min-width: 768px) {
-    .sidebar-container {
-        display: flex;
-    }
-}
 
 /* Background shape with Clip-Path */
 .sidebar-bg-shape {
@@ -24,14 +21,12 @@
     inset: 0;
     background-color: #0a0a0a;
     z-index: 0;
-    clip-path: polygon(
-        0% 0%, 
-        calc(100% - 60px) 0%, 
-        100% 60px, 
-        100% calc(100% - 60px), 
-        calc(100% - 60px) 100%, 
-        0% 100%
-    );
+    clip-path: polygon(0% 0%,
+            calc(100% - 60px) 0%,
+            100% 60px,
+            100% calc(100% - 60px),
+            calc(100% - 60px) 100%,
+            0% 100%);
 }
 
 .sidebar-svg-overlay {
@@ -64,8 +59,8 @@
     overflow-y: auto;
     padding-top: 8px;
     z-index: 5;
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .sidebar-nav::-webkit-scrollbar {
@@ -92,15 +87,15 @@
 }
 
 .icon-wrapper {
-    width: 3.5rem; 
+    width: 3.5rem;
     height: 3.5rem;
-    border-radius: 1rem; 
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.25rem; 
+    margin-bottom: 0.25rem;
     transition: all 0.3s ease;
-    border: 2px solid rgba(234, 179, 8, 0.5); 
+    border: 2px solid rgba(234, 179, 8, 0.5);
     background-color: #0a0a0a;
 }
 
@@ -131,11 +126,23 @@
 }
 
 .sidebar-item-btn.sidebar-active .sidebar-icon {
-    color: #000000; 
+    color: #000000;
 }
 
 .sidebar-item-btn.active .item-label {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 
+@media (max-width: 767px) {
+
+    .sidebar-container {
+        transform: translateX(-100%);
+        position: fixed;
+    }
+
+    .sidebar-container.sidebar-open {
+        transform: translateX(0);
+    }
+
+}

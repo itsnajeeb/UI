@@ -76,7 +76,6 @@
 
 .registration-btn {
     align-self: flex-start;
-    padding: 15px 10px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -86,22 +85,25 @@
     cursor: pointer;
 }
 
+.registration-btn img{
+    width: 200px;
+    height: 60px;
+}
+
 .registration-btn .btn-content {
     position: absolute;
     color: black;
     display: flex;
-    left: 50%;
+    left: 40%;
     top: 50%;
     gap: 10px;
     transform: translate(-50%, -50%);
-    width: 100%;
     display: flex ;
-    justify-content: center;
     align-items: center;
 }
 
 .registration-btn .btn-content .registration-icon img{
-    width: 25x !important;
+    width: 25px !important;
     height: 25px !important;
 }
 /* CENTER VISUAL */
@@ -130,11 +132,15 @@
     left: 48%;
     width: fit-content;
     transform: translate(-50%, -50%);
-
     margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bottom-action .link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 .show-cert-btn {
@@ -233,7 +239,7 @@
 .diamond-shape {
     width: 20px;
     height: 20px;
-    background-color: var(--primary-dark-color);
+    background-color: #facc15;
     border-radius: 5px;
 }
 

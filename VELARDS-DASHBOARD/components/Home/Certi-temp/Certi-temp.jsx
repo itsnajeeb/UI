@@ -26,17 +26,17 @@ export const CertiTemp = () => {
                         <p>We have over 20 years of experience in providing innovative products and helping traders around the world achieve their goals.</p>
                     </div>
 
-                    <button className=" registration-btn">
+                    <div className=" registration-btn">
                         <Link to={'/login'}>
                             <img src={buttonBg} alt="" />
                             <div className='btn-content'>
-                                Start Trading
+                               <p> Start Trading</p>
                                 <span className="registration-icon">
                                     <img src={dollerIcon} alt="icon" />
                                 </span>
                             </div>
                         </Link>
-                    </button>
+                    </div>
                 </div>
 
                 {/* Center: Certificate Illustration */}
@@ -89,7 +89,7 @@ export const CertiTemp = () => {
 
                 {/* Footer Action */}
                 <div className='bottom-action'>
-                    <Link to={'/signup'}>
+                    <Link to={'/signup'} className='link'>
                         <button className='show-cert-btn'>
                             Register Now
                             <span className='icon'><i className="bi bi-arrow-right-short"></i></span>

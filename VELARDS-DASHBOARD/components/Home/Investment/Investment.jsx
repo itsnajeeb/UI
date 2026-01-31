@@ -45,7 +45,7 @@ export const Investment = () => {
             </div>
 
             <div className='profitbar'>
-                <p className='profitLeft'>Profit Per day</p>
+                <p className='profitLeft'>Profit <br /> Per day</p>
                 <h1 className='profit-percentage'>7 - 9 <span className='percentage'>%</span></h1>
                 <div className='profitRight'>
                     <div className='iconDiv'>
@@ -63,17 +63,16 @@ export const Investment = () => {
                         <div className='cardImg-main'>
                             <img src={icon2} alt="Icon1" />
                         </div>
-                        <div className='textBox'>
-                            <p className='textBoxTitle'>Working 500 %</p>
-                            <h1 className='cardHeading'>Non Working 300%</h1>
+                        <div className='text-box'>
+                            <p className='text-box-title'>Working 500 %</p>
+                            <h1 className='card-heading'>Non Working 300%</h1>
                             <h2 className='sub-heading'>Business days</h2>
                         </div>
                     </div>
                     <div className="divider"></div>
                     <div className='card-body-row'>
-                        <div className='textBox'>
-                            <p className='textBoxTitle'>1 direct 3 level open</p>
-                            {/* <h1 className='cardHeading '>14-16 <sup><i className="bi bi-info-circle"></i></sup></h1> */}
+                        <div className='text-box'>
+                            <p className='text-box-title'>1 direct 3 level open</p>
                             <h2 className='sub-heading'>Charge 5%  </h2>
                         </div>
                         <div className='cardImg-side'>
@@ -95,10 +94,13 @@ export const Investment = () => {
                 </div>
 
                 {/* 3rd card */}
-                <div className='card depositeCard'>
+                <div className='card deposit-card '>
+
                     <p className='card-header'><span className='star-icon'><i className="bi bi-star-fill"></i></span> Deposit Amount limit</p>
                     <h2 className='limit-text'>0.001232-0.023432 BTC</h2>
+
                     <div className="divider"></div>
+
                     <div className='deposit-form'>
                         <div className='input-group'>
                             <p className='input-label'>Enter amount</p>
@@ -107,13 +109,13 @@ export const Investment = () => {
                                 <label>USDT</label>
                             </div>
                         </div>
-                        <button className="deposit-btn">
+                        <div className="deposit-btn">
                             <img src={buttonBg} alt="" />
                             <div className='btn-inner-content'>
                                 <p className='btn-title'>Create Deposit</p>
                                 <span className="btn-icon"><img src={dollerIcon} alt="" /></span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </div>
 

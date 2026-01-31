@@ -2,7 +2,7 @@
 .dashboard-page-container{
     max-width: 1600px;
     margin: 0px auto;
-    padding-bottom: 40px;
+    padding: 40px;
 }  
 .dashboard-top-section {
     display: flex;
@@ -13,8 +13,9 @@
     margin-top: 2rem;
     display: flex;
     width: 100%;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: space-between;
+    overflow-x: hidden;
     
 }
 

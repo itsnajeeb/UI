@@ -7,8 +7,9 @@
   color: #ffffff;
   font-family: sans-serif;
   overflow: hidden; 
+  justify-content: space-between;
+  align-items: flex-end;
   background-color: #050505;
-  gap: 1.5rem;
 }
 
 .main-viewport {

@@ -5,7 +5,7 @@ import buttonBg from '/dashboardimg/buttonBg.png'
 import icon from '/icons/icon-27.png'
 import { Link } from 'react-router-dom';
 import './PromoCard.css';
-export const PromoCard = () => {
+export const PromoCard = () =>  {
     return (
         <div className='promo-card-section'>
             <div className='promo-bg-card'>

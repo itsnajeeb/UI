@@ -1,4 +1,3 @@
-
 .investmentContainer {
     position: relative;
     min-height: 820px;
@@ -11,6 +10,7 @@
     background-size: cover;
     background-position: center;
     padding: 40px 0;
+    margin-top: 10rem;
 }
 
 /* Header Section */
@@ -41,12 +41,48 @@
 }
 
 /* Plan Selection Buttons */
-.plan-buttons-wrapper {
+.investmentContainer .plan-buttons-wrapper {
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.investmentContainer .plan-buttons-wrapper .investment-box {
+    width: 350px;
+    position: relative;
+}
+
+.investmentContainer .plan-buttons-wrapper .investment-box img {
+    width: 100%;
+}
+
+.investmentContainer .investment-plan-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+}
+
+.investmentContainer .investment-plan-content img {
+    width: 25px !important;
+}
+
+.investment-plan-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+
+
+}
+
 
 .button {
     position: relative;
@@ -168,6 +204,7 @@
     margin-bottom: 20px;
     background: linear-gradient(90deg, #808080 0%, #fcfcfb 50%, #808080 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -179,17 +216,37 @@
 /* Card Internal Layouts */
 
 .divider {
-    background-color: #bba503;
     height: 1.5px;
-    border-radius: 50%;
     width: 90%;
-
+    height: 1.5px;
+    background: linear-gradient(90deg,
+            rgba(187, 165, 3, 0.186) 0%,
+            rgba(187, 165, 3, 1) 50%,
+            rgba(209, 185, 4, 0.186) 100%
+            );
 }
 
 .card-body-row {
     display: flex;
     gap: 15px;
     margin: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+.card-body-row .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-body-row .text-box .text-box-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5b5be9;
+
+}.card-body-row .text-box .card-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #d7d7d7;
 }
 
 .cardImg-main img {
@@ -247,12 +304,14 @@
     margin-bottom: 15px;
 }
 
-.deposit-form {
+.deposit-card .deposit-form {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
+    margin-top: 2rem;
+    gap: 15px;
 }
+
 
 .input-label {
     text-align: center;
@@ -285,25 +344,27 @@
     color: #ffd97a;
 }
 
-.deposit-btn {
+.deposit-card .deposit-btn {
     position: relative;
-    margin: 0px auto;
+    margin: 20px auto;
+    background-color: none;
 }
 
-.deposit-btn img {
+.deposit-card .deposit-btn img {
     width: 160px;
     height: 50px;
     cursor: pointer;
 }
 
-.deposit-btn .btn-inner-content {
+.deposit-card .deposit-btn .btn-inner-content {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     gap: 5px;
@@ -311,7 +372,7 @@
     cursor: pointer;
 }
 
-.btn-icon img {
+.deposit-btn .btn-icon img {
     width: 20px;
     height: 20px;
     color: black;
@@ -368,32 +429,14 @@
     margin-top: 30px;
 }
 
-.investment-box {
-    width: 300px;
-    position: relative;
-}
-
-.investment-plan-content {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    gap: 10px;
-}
-
-.investment-plan-content h3 {
-    font-size: 18px;
-    font-weight: 500;
-
-}
 
 /* Responsive fixes */
 @media (max-width: 768px) {
     .plan-buttons-wrapper {
         flex-direction: column;
         align-items: center;
+        align-items: center;
+
     }
 
     .profitbar .profitLeft {
