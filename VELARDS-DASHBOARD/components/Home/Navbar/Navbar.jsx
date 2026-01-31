@@ -44,6 +44,7 @@ export const Navbar = () => {
             {/* MOBILE MENU */}
             {open && (
                 <div className='mobile-menu-overlay'>
+                    <Link to='/dashboard' className='link'> <NavButton label="Dashboad" /> </Link>
                     <NavButton label="News" />
                     <NavButton label="Group" />
                     <NavButton label="Support" />

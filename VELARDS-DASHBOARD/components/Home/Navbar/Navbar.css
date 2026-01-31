@@ -119,6 +119,10 @@
     padding: 20px 0;
 }
 
+.mobile-menu-overlay .link{
+    text-decoration: none;
+}
+
 /* =========  RESPONSIVE LOGIC ========= */
 
 @media (max-width: 1024px) {
