@@ -1,5 +1,6 @@
 .promo-card-section {
     position: relative;
+    overflow: hidden;
 }
 
 .promo-card-section .promo-bg-card img {

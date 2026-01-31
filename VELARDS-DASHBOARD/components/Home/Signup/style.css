@@ -140,10 +140,12 @@ select {
 .signup-container .bottom-section .btn-content {
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .signup-container .bottom-section .btn-content img {
-    width: 250px;
+    width: 180px;
     height: 60px;
     position: relative;
     margin: 0px auto;
@@ -155,11 +157,11 @@ select {
 .signup-container .bottom-section .btn-content .btn-title {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     font-weight: 500;
     color: black;
     font-weight: 600;
+    font-size: 18px;
 }
 
 

@@ -96,7 +96,9 @@ export const Investment = () => {
                 {/* 3rd card */}
                 <div className='card deposit-card '>
 
-                    <p className='card-header'><span className='star-icon'><i className="bi bi-star-fill"></i></span> Deposit Amount limit</p>
+                    <p className='card-header'>
+                        <span className='star-icon'><i className="bi bi-star-fill"></i></span>
+                        Deposit Amount limit</p>
                     <h2 className='limit-text'>0.001232-0.023432 BTC</h2>
 
                     <div className="divider"></div>

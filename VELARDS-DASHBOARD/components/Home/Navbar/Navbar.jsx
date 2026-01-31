@@ -42,7 +42,7 @@ export const Navbar = () => {
 
             {/* MOBILE MENU */}
             {open && (
-                <div className='mobile-menu-overlay'>
+                <div className={`mobile-menu-overlay ${open ? 'navbar-open' :'navbar-close'}`}>
                     <NavButton label="News" />
                     <NavButton label="Group" />
                     <NavButton label="Support" />
