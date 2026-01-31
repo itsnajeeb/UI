@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './style.css'
+import home1 from '/webimg/homeNavPage1.png';
+
 const Navbar = () => {
-    const [leftNavMenu, setLeftMenu] = useState(true);
+    const [leftNavMenu, setLeftMenu] = useState(false);
 
     const Allcategories = [
 
@@ -50,7 +52,7 @@ const Navbar = () => {
                         <span className="icon"><i className="bi bi-list"></i></span>
                         <h5> All Categories</h5>
                     </div>
-
+                    
                     <div className={`all-category ${leftNavMenu ? 'category-open' : 'category-close'}`}>
                         {Allcategories.map((category, index) => (
                             <div className='category' key={index}>
@@ -66,8 +68,50 @@ const Navbar = () => {
 
                 <div className='middle-container'>
                     <ul className='navbar-list'>
-                        <li className='nav-item'>Home <span className='icon'>+</span></li>
+                        <li className='nav-item'>Home
+                            <span className='icon'>+</span>
+                            <ul className='dropdown-menu'>
 
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+                                
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+                                
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+
+                            </ul>
+                        </li>
                         <li className='nav-item'>Shop <span className='icon'>+</span></li>
                         <li className='nav-item'>Blog <span className='icon'>+</span></li>
                         <li className='nav-item'>Pages <span className='icon'>+</span></li>
