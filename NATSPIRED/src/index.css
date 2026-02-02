@@ -1,16 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-body{
-  background-color: #6c6c6c;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #63a008 #1e1e1e;
+}
+
+body {
+  overflow-x: hidden;
   font-family: "League Spartan", sans-serif;
 
 }
 
-.league-spartan-font{
-  font-family: "League Spartan", sans-serif;
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 160, 8, 0.6);
+  border-radius: 10px;
+   border: 3px solid transparent;      /* 👈 makes thumb thinner */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 160, 8, 1);
 }

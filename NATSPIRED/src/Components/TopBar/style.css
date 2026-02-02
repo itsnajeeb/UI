@@ -1,18 +1,42 @@
-.topbar {
-    display: flex;
+.topbar-section {
     background-color: #f5f5f5;
+
+
+}
+
+.topbar {
+    max-width: 1100px;
+    display: flex;
     height: 60px;
     align-items: center;
-    justify-content: space-around;
+    margin: 0px auto;
+    justify-content: space-between;
 }
 
 .topbar .left-title {
+    /* width: 50%; */
+    align-content: center;
     font-size: 16px;
+    height: 100%;
     font-weight: 600;
     letter-spacing: 1px;
     word-spacing: 3px;
     color: #313131;
+
 }
+
+.topbar .navbar {
+    /* width: 50%; */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+}
+
+
 
 .topbar .navbar .nav-list .nav-item {
     list-style: none;
@@ -32,6 +56,13 @@
     cursor: pointer;
 }
 
+.topbar .navbar .nav-link .icon {
+    color: #63a008;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
 .topbar .navbar .nav-list .nav-item .nav-link p {
     font-weight: 600;
     font-size: 15px;
@@ -40,7 +71,7 @@
 
 .topbar .navbar .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: -10px;
     min-width: 180px;
     background-color: white;
@@ -54,7 +85,6 @@
         opacity 0.25s ease,
         transform 0.25s ease,
         visibility 0s linear 0.25s;
-    /* delay hide */
 }
 
 .topbar .dropdown:hover .dropdown-menu {
@@ -96,4 +126,20 @@
     background-color: rgb(222, 220, 218);
     cursor: pointer;
     transition: all 0.5s;
+}
+
+.topbar-section .login-section {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.topbar-section .vertical-line {
+    width: 1px;
+    background-color: #82828287;
+    height: 90%;
+}
+
+.topbar-section .login-section:hover {
+    color: #63a008;
 }

@@ -1,13 +1,16 @@
 import React from 'react'
-import { Header, TopBar } from './Components/Index'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Navbar from './Components/Navbar/Navbar';
+import { Carousel, FreshAndHealthy, FreshFruits, Header, Navbar, ShopByCategory, TopBar } from './Components/Index';
 const App = () => {
   return (
     <div>
-      <TopBar/>
-      <Header/>
-      <Navbar/>
+      <TopBar />
+      <Header />
+      <Navbar />
+      <Carousel />
+      <FreshFruits />
+      <ShopByCategory />
+      <FreshAndHealthy/>
     </div>
   )
 }

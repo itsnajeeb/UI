@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './style.css'
 import home1 from '/webimg/homeNavPage1.png';
+import shop from '/webimg/shopNavImg.jpg';
 
-const Navbar = () => {
+export const Navbar = () => {
     const [leftNavMenu, setLeftMenu] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const Allcategories = [
 
@@ -52,7 +54,7 @@ const Navbar = () => {
                         <span className="icon"><i className="bi bi-list"></i></span>
                         <h5> All Categories</h5>
                     </div>
-                    
+
                     <div className={`all-category ${leftNavMenu ? 'category-open' : 'category-close'}`}>
                         {Allcategories.map((category, index) => (
                             <div className='category' key={index}>
@@ -68,27 +70,14 @@ const Navbar = () => {
 
                 <div className='middle-container'>
                     <ul className='navbar-list'>
-                        <li className='nav-item'>Home
-                            <span className='icon'>+</span>
-                            <ul className='dropdown-menu'>
+                        <li className='nav-item '>
+                            <span className="nav-link ">
+                                Home
+                                <span className='icon'>+</span>
+                            </span>
+                            <ul className='dropdown-menu home-dropdown'>
 
-                                <li className='dropdown-item'>
-                                    <div className='home-nav-item'>
-                                        <img src={home1} alt="" />
-                                    </div>
-                                    <h5>Home <span className='home-nav-no'>01</span></h5>
-                                </li>
-
-                                
-                                <li className='dropdown-item'>
-                                    <div className='home-nav-item'>
-                                        <img src={home1} alt="" />
-                                    </div>
-                                    <h5>Home <span className='home-nav-no'>01</span></h5>
-                                </li>
-
-                                
-                                <li className='dropdown-item'>
+                                <li className=''>
                                     <div className='home-nav-item'>
                                         <img src={home1} alt="" />
                                     </div>
@@ -109,16 +98,187 @@ const Navbar = () => {
                                     <h5>Home <span className='home-nav-no'>01</span></h5>
                                 </li>
 
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
+
+                                <li className='dropdown-item'>
+                                    <div className='home-nav-item'>
+                                        <img src={home1} alt="" />
+                                    </div>
+                                    <h5>Home <span className='home-nav-no'>01</span></h5>
+                                </li>
 
                             </ul>
                         </li>
-                        <li className='nav-item'>Shop <span className='icon'>+</span></li>
-                        <li className='nav-item'>Blog <span className='icon'>+</span></li>
-                        <li className='nav-item'>Pages <span className='icon'>+</span></li>
-                        <li className='nav-item'>Contact <span className='icon'>+</span></li>
+                        <li className='nav-item '>
+                            <span className="nav-link ">
+                                Shop <span className='icon'>+</span>
+                            </span>
+                            <ul className='dropdown-menu shop-dropdown'>
+                                <li className=''>
+                                    <ul>
+                                        <li>Shop Pages</li>
+                                        <li className=''> <span className='dropdown-item'> Shop Grid 01</span></li>
+                                        <li className=''> <span className='dropdown-item'> Shop Grid 02</span></li>
+                                        <li className=''> <span className='dropdown-item'> Shop Grid 03</span></li>
+                                        <li className=''> <span className='dropdown-item'> Shop List</span></li>
+                                        <li className=''> <span className='dropdown-item'> My Account</span></li>
+                                    </ul>
+                                </li>
+                                <li className=''>
+                                    <ul>
+                                        <li > <span className='dropdown-item'> Product Details </span></li>
+                                        <li > <span className='dropdown-item'> Shop Details 01 </span></li>
+                                        <li > <span className='dropdown-item'> Shop Details 02 </span></li>
+                                        <li > <span className='dropdown-item'> Shop Details 03 </span></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div className='shop-nav-img'>
+                                        <img src={shop} alt="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li className='nav-item  '>
+                            <span className="nav-link ">
+                                Blog <span className='icon'>+</span>
+                            </span>
+                            <ul className='dropdown-menu blog-dropdown'>
+                                <li className='has-submenu  blog-item'> <span className='dropdown-item'> Blog List Views  <span className='icon'>+</span></span>
+                                    <ul className='submenu'>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 01
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 02
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 03
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li className='has-submenu  blog-item'> <span className='dropdown-item'>  Blog Grid Views <span className='icon'>+</span></span>
+                                    <ul className='submenu'>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 01
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 02
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 03
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li className='has-submenu  blog-item'>
+                                    <span className='dropdown-item'>  Blog Details
+                                        <span className='icon'>+</span>  </span>
+
+                                    <ul className='submenu'>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 01
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 02
+                                            </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>
+                                                List Style 03
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className='nav-item '>
+                            <span className="nav-link ">
+                                Pages <span className='icon'>+</span>
+                            </span>
+                            <ul className='dropdown-menu page-dropdown'>
+
+                                <li className='page-item'> <span className='dropdown-item'>About Page</span> </li>
+
+                                <li className='has-submenu page-item'>
+                                    <span className='dropdown-item'>
+                                        Services <span className='icon'>+</span>
+                                    </span>
+                                    <ul className='submenu'>
+                                        <li >
+                                            <span className='dropdown-item'>  Service Page </span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'>  Service Details </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className='has-submenu page-item'>
+
+                                    <span className='dropdown-item'>
+                                        Teams  <span className='icon'>+</span>
+                                    </span>
+
+                                    <ul className='submenu'>
+                                        <li >
+                                            <span className='dropdown-item'> Team Page 01</span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'> Team Page 02</span>
+                                        </li>
+                                        <li >
+                                            <span className='dropdown-item'> Team Details</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className='page-item'>
+                                    <span className='dropdown-item'>404</span>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li className='nav-item '>
+                            <span className="nav-link ">
+                                Contact <span className='icon'>+</span>
+                            </span>
+                            <ul className='dropdown-menu contact-dropdown'>
+                                <li className='page-item'> <span className='dropdown-item'>Contact With Map</span> </li>
+                                <li className='page-item'> <span className='dropdown-item'>Contact Without Map</span> </li>
+                            </ul>
+
+                        </li>
                     </ul>
                 </div>
 
+                <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div className='right-container'>
                     <div className='icon'>
                         <i class="bi bi-heart"></i>
